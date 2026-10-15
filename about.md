@@ -32,7 +32,7 @@ permalink: /about/
     </div>
   </details>
 
-  <<details class="about-accordion">
+  <details class="about-accordion">
     <h2>Research Interests</h2>
     <div class="project-description-content">
       <li>Medical and surgical robotics</li>
@@ -49,7 +49,7 @@ permalink: /about/
       My MRes thesis, <em>Deployable Hybrid Continuum-Eversion Robot for
       Medical Applications in Disaster Scenarios</em>, investigated a
       robotic platform for deployment into confined environments,
-      steering, and localized intervention.
+      steering, and localized intervention. /n
       The project integrated an eversion mechanism, a tendon-driven
       rolling-contact-joint steering module, a continuous central lumen,
       and a vortex-cannon end-effector. I worked across mechanical design,
