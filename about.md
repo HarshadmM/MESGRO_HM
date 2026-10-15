@@ -23,7 +23,7 @@ permalink: /about/
 
 <div class="container" markdown="1">
   <details class="about-accordion">
-    <h2>Background</h2>
+    <summary>Background</summary>
     <div class="project-description-content">
       I completed an MRes in Medical Robotics and Image-Guided Intervention
       at Imperial College London's Hamlyn Centre for Medical Robotics.
@@ -33,7 +33,7 @@ permalink: /about/
   </details>
 
   <details class="about-accordion">
-    <h2>Research Interests</h2>
+    <summary>Research Interests</summary>
     <div class="project-description-content">
       <li>Medical and surgical robotics</li>
       <li>Continuum and deployable robotics</li>
@@ -44,7 +44,7 @@ permalink: /about/
   </details>
 
   <details class="about-accordion">
-    <h2>Featured Research</h2>
+    <summary>Featured Research</summary>
     <div class="project-description-content">
       My MRes thesis, <em>Deployable Hybrid Continuum-Eversion Robot for
       Medical Applications in Disaster Scenarios</em>, investigated a
@@ -58,7 +58,7 @@ permalink: /about/
   </details>
 
   <details class="about-accordion">
-    <h2>Technical Skills</h2>
+    <summary>Technical Skills</summary>
     <div class="project-description-content">
       **Mechanical design:** SolidWorks, CAD, 3D printing, prototyping.
 
@@ -74,7 +74,7 @@ permalink: /about/
   </details>
 
   <details class="about-accordion">
-    <h2>Contact</h2>
+    <summary>Contact</summary>
     <div class="project-description-content">
       **Email:** [harshadmm10131@gmail.com](mailto:harshadmm10131@gmail.com)
 
