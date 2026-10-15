@@ -9,7 +9,7 @@ categories:
   - Mechatronics
   - 3D Printing
 featured_image: "/assets/images/projects/hybrid-eversion-robot/featured.jpg"
----S
+---
 
 <h2>Project Overview</h2>
 
