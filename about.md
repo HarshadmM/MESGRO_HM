@@ -6,7 +6,7 @@ permalink: /about/
 
 
 <div class="hero-personal">
-  <div class="container" markdown="1">
+  <div class="container">
     <div class="hero-content">
       <div class="hero-text">
         <h1 class="hero-name">About Me</h1>
