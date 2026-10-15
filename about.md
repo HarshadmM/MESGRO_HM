@@ -35,11 +35,11 @@ permalink: /about/
   <section class="project-section">
     <h2>Research Interests</h2>
     <div class="project-description-content">
-      - Medical and surgical robotics
-      - Continuum and deployable robotics
-      - Biomimetic mechanisms and mechanical design
-      - Search-and-rescue and field robotics
-      - Mechatronics and robotic actuation
+      <li>Medical and surgical robotics</li>
+      <li>Continuum and deployable robotics</li>
+      <li>Biomimetic mechanisms and mechanical design</li>
+      <li>Search-and-rescue and field robotics</li>
+      <li>Mechatronics and robotic actuation</li>
     </div>
   </section>
 
