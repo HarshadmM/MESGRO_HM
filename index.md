@@ -119,39 +119,39 @@ layout: default
       <h2>Technical Expertise</h2>
       <div class="skills-grid">
         <div class="skill-category">
-          <h3><i class="fas fa-robot"></i> Robotics</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">ROS</span>
-            <span class="skill-tag">Kinematics</span>
-            <span class="skill-tag">Path Planning</span>
-            <span class="skill-tag">SLAM</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-microchip"></i> Electronics</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Arduino</span>
-            <span class="skill-tag">ESP32</span>
-            <span class="skill-tag">PCB Design</span>
-            <span class="skill-tag">Sensors</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-code"></i> Programming</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">C/C++</span>
-            <span class="skill-tag">MATLAB</span>
-            <span class="skill-tag">JavaScript</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-cube"></i> CAD/Design</h3>
+          <h3><i class="fas fa-cube"></i> Mechanical Design</h3>
           <div class="skill-tags">
             <span class="skill-tag">SolidWorks</span>
-            <span class="skill-tag">Fusion 360</span>
+            <span class="skill-tag">CAD</span>
             <span class="skill-tag">3D Printing</span>
-            <span class="skill-tag">KiCad</span>
+            <span class="skill-tag">Prototyping</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-robot"></i> Robotics</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Continuum Mechanisms</span>
+            <span class="skill-tag">Tendon-driven Actuation</span>
+            <span class="skill-tag">Deployable Systems</span>
+            <span class="skill-tag">Kinematic Modelling</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-microchip"></i> Electronics & Control</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Arduino</span>
+            <span class="skill-tag">Stepper Motors</span>
+            <span class="skill-tag">Motor Drivers</span>
+            <span class="skill-tag">Hardware Integration</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-chart-line"></i> Simulation & Research</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">Experimental Analysis</span>
+            <span class="skill-tag">Technical Writing</span>
+            <span class="skill-tag">LaTeX</span>
           </div>
         </div>
       </div>
