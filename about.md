@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-```html
+
 <div class="hero-personal">
   <div class="container" markdown="1">
     <div class="hero-content">
@@ -85,4 +85,3 @@ permalink: /about/
     </div>
   </section>
 </div>
-```
