@@ -56,7 +56,7 @@ permalink: /about/
       and a vortex-cannon end-effector. I worked across mechanical design,
       fabrication, integration, kinematic modelling, and physical testing.
     </div>
-  </section>
+  </details>
 
   <details class="about-accordion">
     <h2>Technical Skills</h2>
@@ -72,7 +72,7 @@ permalink: /about/
       <strong>Simulation and documentation:</strong> MATLAB, LaTeX, technical writing,
       experimental analysis.
     </div>
-  </section>
+  </details>
 
   <details class="about-accordion">
     <h2>Contact</h2>
@@ -83,5 +83,5 @@ permalink: /about/
 
       LinkedIn: [Connect with me]https://www.linkedin.com/in/harshadmm
     </div>
-  </section>
+  </details>
 </div>
