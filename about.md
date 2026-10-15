@@ -50,7 +50,6 @@ permalink: /about/
       Medical Applications in Disaster Scenarios</em>, investigated a
       robotic platform for deployment into confined environments,
       steering, and localized intervention.
-
       The project integrated an eversion mechanism, a tendon-driven
       rolling-contact-joint steering module, a continuous central lumen,
       and a vortex-cannon end-effector. I worked across mechanical design,
