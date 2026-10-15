@@ -22,7 +22,7 @@ permalink: /about/
 </div>
 
 <div class="container" markdown="1">
-  <section class="project-section">
+  <details class="about-accordion">
     <h2>Background</h2>
     <div class="project-description-content">
       I completed an MRes in Medical Robotics and Image-Guided Intervention
@@ -30,9 +30,9 @@ permalink: /about/
       My work spans CAD, mechanical design, rapid prototyping, embedded
       systems, kinematic modelling, and experimental validation.
     </div>
-  </section>
+  </details>
 
-  <section class="project-section">
+  <<details class="about-accordion">
     <h2>Research Interests</h2>
     <div class="project-description-content">
       <li>Medical and surgical robotics</li>
@@ -41,9 +41,9 @@ permalink: /about/
       <li>Search-and-rescue and field robotics</li>
       <li>Mechatronics and robotic actuation</li>
     </div>
-  </section>
+  </details>
 
-  <section class="project-section">
+  <details class="about-accordion">
     <h2>Featured Research</h2>
     <div class="project-description-content">
       My MRes thesis, <em>Deployable Hybrid Continuum-Eversion Robot for
@@ -58,7 +58,7 @@ permalink: /about/
     </div>
   </section>
 
-  <section class="project-section">
+  <details class="about-accordion">
     <h2>Technical Skills</h2>
     <div class="project-description-content">
       **Mechanical design:** SolidWorks, CAD, 3D printing, prototyping.
@@ -69,19 +69,19 @@ permalink: /about/
       **Electronics and control:** Arduino, stepper motors, motor drivers,
       hardware integration.
 
-      **Simulation and documentation:** MATLAB, LaTeX, technical writing,
+      <strong>Simulation and documentation:</strong> MATLAB, LaTeX, technical writing,
       experimental analysis.
     </div>
   </section>
 
-  <section class="project-section">
+  <details class="about-accordion">
     <h2>Contact</h2>
     <div class="project-description-content">
       **Email:** [harshadmm10131@gmail.com](mailto:harshadmm10131@gmail.com)
 
-      **GitHub:** [HarshadmM](https://github.com/HarshadmM)
+      GitHub: [HarshadmM](https://github.com/HarshadmM)
 
-      **LinkedIn:** Add your direct LinkedIn profile URL here.
+      LinkedIn: [Connect with me]https://www.linkedin.com/in/harshadmm
     </div>
   </section>
 </div>
