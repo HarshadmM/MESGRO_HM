@@ -1,4 +1,3 @@
-
 ---
 layout: project
 title: "Hybrid Continuum-Eversion Robot"
@@ -7,79 +6,58 @@ date: 2026-09-01
 categories: [Robotics, Mechatronics, 3D Printing]
 ---
 
-## overview:
-    title: "Project Overview"
-    description: "This MRes thesis investigated the design, fabrication, integration, and experimental evaluation of a hybrid robotic platform for medical applications in disaster scenarios. The system combines a pressure-driven everting body, a distal tendon-driven rolling-contact-joint steering module, and a compact vortex-cannon end-effector."
+## Overview
 
-## system_architecture:
-  ### eversion_based_deployment:
-    description: "The robot uses a pressure-driven everting body for deployment. A transitioner cap incorporating a Reuleaux-triangle geometry and three rollers arranged at 120-degree intervals was developed to facilitate eversion."
+This MRes thesis investigated a hybrid robotic platform for medical applications in disaster scenarios. The system combines a pressure-driven everting body, a tendon-driven rolling-contact-joint (RCJ) steering module, and a compact vortex-cannon end-effector.
 
-  ### rolling_contact_joint_steering:
-    description: "The distal steering module consists of rigid, 3D-printed PLA segments connected by rolling-contact joints (RCJs). Four tendons routed at 90-degree intervals provide directional steering while preserving a continuous central lumen."
-    specifications:
-      segment_outer_diameter: "47.6 mm"
-      central_lumen_diameter: "20 mm"
-      tendon_pitch_circle_radius: "21.51 mm"
-      joint_spacing: "23.77 mm"
-      kinematic_model: "Nine active joints across ten segments"
-      modelled_effective_bending_length: "213.93 mm"
-      final_prototype: "Eight active joints"
+## System Architecture
 
-  ### intervention_end_effector:
-    description: "An elastically actuated vortex cannon was designed to fit inside the steering module's central lumen."
-    test_payload: "All-purpose flour"
-    test_distances:
-      - "2 cm"
-      - "5 cm"
-      - "10 cm"
-    observation: "Sparse spread was observed at 10 cm."
+### Eversion-based deployment
 
-## kinematic_modelling:
-  method: "Piecewise constant-curvature (PCC) model"
-  software: "MATLAB"
-  modelled_parameters:
-    - "Tendon displacement"
-    - "Bending angle"
-    - "Curvature"
-    - "End-effector position"
-  ### assumptions:
-    - "Rigid segments"
-    - "Negligible tendon stretch and friction"
-    - "Negligible torsion and gravity"
-    - "Equal rotation across active joints"
+The robot deploys using a pressure-driven everting body. A transitioner cap with a Reuleaux-triangle geometry and three rollers arranged at 120-degree intervals was developed to guide eversion.
 
-## experimental_evaluation:
-  ### tests:
-    - "Evaluated eversion pressure and deployment performance."
-    - "Measured steering behaviour and directional movement."
-    - "Conducted position-holding tests of approximately three minutes in each tested direction."
-    - "Evaluated interaction with debris and obstacles."
-    - "Tested vortex-cannon payload spread at multiple distances."
-    - "Integrated and experimentally evaluated the hybrid robotic prototype."
-  steering_performance: "Approximately 20–30 degrees"
+### Rolling-contact-joint steering
 
-## engineering_contributions:
-  - "Mechanical design and CAD of the rolling-contact-joint steering module."
-  - "Design and fabrication of the eversion transitioner cap."
-  - "3D printing and assembly of the rigid steering segments."
-  - "Tendon routing and actuation integration."
-  - "PCC kinematic modelling and MATLAB simulation."
-  - "Development of a lumen-compatible vortex-cannon end-effector."
-  - "Experimental testing and evaluation of the integrated prototype."
+The distal steering module uses rigid, 3D-printed PLA segments connected by RCJs. Four tendons, routed at 90-degree intervals, steer the module while preserving a continuous central lumen.
 
-## technologies:
-  - "SolidWorks"
-  - "MATLAB"
-  - "Arduino Mega 2560"
-  - "RAMPS 1.4"
-  - "NEMA 17 stepper motors"
-  - "Tendon-driven actuation"
-  - "PLA 3D printing"
-  - "Piecewise constant-curvature modelling"
+| Parameter | Value |
+| --- | --- |
+| Segment outer diameter | 47.6 mm |
+| Central lumen diameter | 20 mm |
+| Tendon pitch-circle radius | 21.51 mm |
+| Joint spacing | 23.77 mm |
+| Kinematic model | Nine active joints across ten segments |
+| Modelled effective bending length | 213.93 mm |
+| Final prototype | Eight active joints |
 
-## thesis:
-  title: "Deployable Hybrid Continuum-Eversion Robot for Medical Applications in Disaster Scenarios"
-  degree: "MRes Medical Robotics and Image-Guided Intervention"
-  institution: "Imperial College London"
-  research_centre: "Hamlyn Centre for Medical Robotics"
+### Intervention end-effector
+
+An elastically actuated vortex cannon was designed to fit inside the steering module's central lumen. Tests used all-purpose flour as the payload at distances of 2 cm, 5 cm, and 10 cm. At 10 cm, the spread was sparse.
+
+## Kinematic Modelling
+
+A piecewise constant-curvature (PCC) model was implemented in MATLAB to relate tendon displacement to bending angle, curvature, and end-effector position. The model assumed rigid segments, negligible tendon stretch and friction, negligible torsion and gravity, and equal rotation across the active joints.
+
+## Experimental Evaluation
+
+The prototype was evaluated through tests of eversion pressure and deployment, steering behaviour, position holding, interaction with debris and obstacles, and vortex-cannon payload spread. Position-holding tests lasted approximately three minutes in each tested direction. The observed steering range was approximately 20–30 degrees.
+
+## My Engineering Contributions
+
+- Designed the RCJ steering module and its CAD model.
+- Designed and fabricated the eversion transitioner cap.
+- 3D-printed and assembled the rigid steering segments.
+- Integrated tendon routing and actuation.
+- Built the PCC kinematic model and MATLAB simulation.
+- Developed the lumen-compatible vortex-cannon end-effector.
+- Tested and evaluated the integrated prototype.
+
+## Technologies
+
+SolidWorks, MATLAB, Arduino Mega 2560, RAMPS 1.4, NEMA 17 stepper motors, tendon-driven actuation, PLA 3D printing, and piecewise constant-curvature modelling.
+
+## Thesis
+
+**Title:** *Deployable Hybrid Continuum-Eversion Robot for Medical Applications in Disaster Scenarios*  
+**Degree:** MRes Medical Robotics and Image-Guided Intervention  
+**Institution:** Imperial College London, Hamlyn Centre for Medical Robotics
