@@ -5,20 +5,19 @@
 
 /* CSS Custom Properties */
 :root {
-  /* Colors - Light Theme (Bright Blue) */
-  --primary-color: #1565c0;
-  --primary-dark: #0d47a1;
-  --secondary-color: #42a5f5;
-  --accent-color: #64b5f6;
-  /* Bright Sky Blue */
-  --background-color: #ecf0f6;
+  /* Colors - Light Theme (Crimson on Warm Neutral) */
+  --primary-color: #b3132b;
+  --primary-dark: #850f22;
+  --secondary-color: #d82a45;
+  --accent-color: #c91e3a;
+  --background-color: #f3f1f2;
   --surface-color: #ffffff;
-  --text-primary: #0d1b2a;
-  --text-secondary: #37474f;
-  --text-muted: #607d8b;
-  --border-color: #90caf9;
-  --shadow-color: rgba(21, 101, 192, 0.1);
-  --shadow-hover: rgba(21, 101, 192, 0.15);
+  --text-primary: #1b1718;
+  --text-secondary: #4f4548;
+  --text-muted: #72666a;
+  --border-color: #e4ccd1;
+  --shadow-color: rgba(133, 15, 34, 0.12);
+  --shadow-hover: rgba(133, 15, 34, 0.2);
 
   /* Colors - Semantic */
   --success-color: #2d3436;
@@ -87,26 +86,25 @@
   --z-tooltip: 1070;
 }
 
-/* Dark Theme (Deep Space with Soft Blue Accents) */
+/* Dark Theme (Near Black with Crimson Accents) */
 [data-theme="dark"] {
-  --primary-color: #64b5f6;
-  --primary-dark: #90caf9;
-  --secondary-color: #42a5f5;
-  --accent-color: #5dade2;
-  --background-color: #1a2332;
-  --surface-color: #243447;
-  --text-primary: #e3f2fd;
-  --text-secondary: #b3d9f2;
-  --text-muted: #80b3d1;
-  --border-color: #3d5a7a;
-  --shadow-color: rgba(100, 181, 246, 0.2);
-  --shadow-hover: rgba(100, 181, 246, 0.3);
+  --primary-color: #ff526b;
+  --primary-dark: #ff8093;
+  --secondary-color: #e63e58;
+  --accent-color: #ff435e;
+  --background-color: #09090b;
+  --surface-color: #141416;
+  --text-primary: #f6f1f2;
+  --text-secondary: #d5c9cc;
+  --text-muted: #a89a9f;
+  --border-color: #3b242a;
+  --shadow-color: rgba(255, 67, 94, 0.16);
+  --shadow-hover: rgba(255, 67, 94, 0.26);
 
   /* Code Blocks - Dark */
-  --code-bg: #1e2936;
-  /* VS Code Dark style */
-  --code-text: #b3d9f2;
-  --code-border: #3d5a7a;
+  --code-bg: #18181b;
+  --code-text: #e7dce0;
+  --code-border: #3b242a;
 }
 
 [data-theme="light"] {
