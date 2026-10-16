@@ -21,10 +21,8 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name/
-
-# Publications
-publications:
-  output: false
+  publications:
+    output: false
 
 # Defaults
 defaults:
