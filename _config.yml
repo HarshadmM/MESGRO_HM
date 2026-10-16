@@ -22,6 +22,10 @@ collections:
     output: true
     permalink: /:collection/:name/
 
+# Publications
+publications:
+  output: false
+
 # Defaults
 defaults:
   - scope:
@@ -55,6 +59,8 @@ navigation:
     url: "/projects/"
   - title: "About"
     url: "/about/"
+  - title: "Publications"
+    url: "/publications/"
 
 # Project categories
 project_categories:
