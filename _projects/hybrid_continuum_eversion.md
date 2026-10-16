@@ -4,10 +4,9 @@ title: "Hybrid Continuum-Eversion Robot"
 description: "A deployable hybrid robot combining eversion-based locomotion, rolling-contact-joint steering, and a lumen-compatible intervention end-effector for disaster medical scenarios."
 date: 2026-09-01
 categories: [Robotics, Mechatronics, 3D Printing]
-# Add hero_gif and featured_image after placing the animated project GIF in assets.
-# hero_gif: "/assets/images/projects/hybrid_robot/intro.gif"
-# featured_image: "/assets/images/projects/hybrid_robot/intro.gif"
-hero_gif_alt: "Hybrid continuum-eversion robot prototype"
+hero_gif: "/assets/images/projects/hybrid_robot/Everting%20slo%20motion.gif"
+featured_image: "/assets/images/projects/hybrid_robot/Everting%20slo%20motion.gif"
+hero_gif_alt: "Hybrid robot deploying during a slow-motion eversion test"
 ---
 
 ## Overview
@@ -35,6 +34,16 @@ A piecewise constant-curvature (PCC) model was implemented in MATLAB to relate t
 The robot deploys through a pressure-driven everting body. I designed a transitioner cap with a Reuleaux-triangle profile and three rollers arranged at 120-degree intervals to guide the material as the robot everts.
 
 The prototype evaluation included eversion pressure and deployment tests, steering behaviour, position holding, and interaction with debris and obstacles. Position-holding tests lasted approximately three minutes in each tested direction; the observed steering range was approximately 20–30 degrees.
+
+<figure class="hybrid-media">
+  <img src="{{ '/assets/images/projects/hybrid_robot/slow-motion%20shot.gif' | relative_url }}" alt="Slow-motion view of the hybrid robot eversion test" loading="lazy">
+  <figcaption>Slow-motion view of the eversion test.</figcaption>
+</figure>
+
+<figure class="hybrid-media">
+  <img src="{{ '/assets/images/projects/hybrid_robot/top%20view%20eversion.gif' | relative_url }}" alt="Top-down view of the robot during eversion" loading="lazy">
+  <figcaption>Top-down view of the eversion test.</figcaption>
+</figure>
 
 ## 3. Vortex-cannon end-effector
 
