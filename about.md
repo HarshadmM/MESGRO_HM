@@ -11,7 +11,7 @@ permalink: /about/
         <h1 class="hero-name">About Me</h1>
         <p class="hero-title">Medical Graduate | Robotics Researcher</p>
         <p class="hero-description">
-          I work at the intersection of mechanical design, robotics, and
+          Enthusiastic to work at the intersection of mechanical design, robotics,
           medical intervention, combining clinical problem-solving with
           hands-on engineering and experimental research.
         </p>
@@ -26,7 +26,7 @@ permalink: /about/
     <div class="project-description-content">
       <p>
         I completed an MRes in Medical Robotics and Image-Guided Intervention
-        at Imperial College London's Hamlyn Centre for Medical Robotics.
+        at Imperial College London's Hamlyn Centre for Medical Robotics with a Distinction (First Class Honours).
         My work spans CAD, mechanical design, rapid prototyping, embedded
         systems, kinematic modelling, and experimental validation.
       </p>
