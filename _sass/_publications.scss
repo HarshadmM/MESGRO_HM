@@ -1,0 +1,107 @@
+/* Publications page and entry cards */
+.publications-page {
+  min-height: 60vh;
+  padding: var(--spacing-3xl) 0;
+}
+
+.publications-header {
+  max-width: 760px;
+  margin: 0 auto var(--spacing-2xl);
+  text-align: center;
+}
+
+.publications-eyebrow {
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-color);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.publications-header h1 {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+  font-size: var(--font-size-4xl);
+}
+
+.publications-header > p:last-child {
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+.publication-list {
+  display: grid;
+  gap: var(--spacing-lg);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.publication-card,
+.publications-empty {
+  padding: var(--spacing-xl);
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 24px var(--shadow-color);
+}
+
+.publication-year {
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-color);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.publication-card h2,
+.publications-empty h2 {
+  margin: 0 0 var(--spacing-sm);
+  color: var(--text-primary);
+  font-size: var(--font-size-xl);
+}
+
+.publication-authors,
+.publication-venue,
+.publication-abstract {
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+.publication-authors {
+  margin-bottom: var(--spacing-xs);
+}
+
+.publication-venue {
+  margin-bottom: var(--spacing-md);
+  font-style: italic;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.publication-links a {
+  color: var(--primary-color);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+}
+
+.publication-links a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.publications-empty {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.publications-empty p {
+  margin-bottom: 0;
+  color: var(--text-secondary);
+}
