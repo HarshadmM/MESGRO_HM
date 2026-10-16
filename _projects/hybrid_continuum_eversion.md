@@ -4,23 +4,21 @@ title: "Hybrid Continuum-Eversion Robot"
 description: "A deployable hybrid robot combining eversion-based locomotion, rolling-contact-joint steering, and a lumen-compatible intervention end-effector for disaster medical scenarios."
 date: 2026-09-01
 categories: [Robotics, Mechatronics, 3D Printing]
+# Add hero_gif and featured_image after placing the animated project GIF in assets.
+# hero_gif: "/assets/images/projects/hybrid_robot/intro.gif"
+# featured_image: "/assets/images/projects/hybrid_robot/intro.gif"
+hero_gif_alt: "Hybrid continuum-eversion robot prototype"
 ---
 
 ## Overview
 
 This MRes thesis investigated a hybrid robotic platform for medical applications in disaster scenarios. The system combines a pressure-driven everting body, a tendon-driven rolling-contact-joint (RCJ) steering module, and a compact vortex-cannon end-effector.
 
-## System Architecture
+## 1. Continuum steering module
 
-### Eversion-based deployment
+The distal continuum section uses rigid, 3D-printed PLA segments connected by rolling-contact joints (RCJs). Four tendons, routed at 90-degree intervals, steer the module while preserving a continuous central lumen for intervention tools.
 
-The robot deploys using a pressure-driven everting body. A transitioner cap with a Reuleaux-triangle geometry and three rollers arranged at 120-degree intervals was developed to guide eversion.
-
-### Rolling-contact-joint steering
-
-The distal steering module uses rigid, 3D-printed PLA segments connected by RCJs. Four tendons, routed at 90-degree intervals, steer the module while preserving a continuous central lumen.
-
-| Parameter | Value |
+| Design parameter | Value |
 | --- | --- |
 | Segment outer diameter | 47.6 mm |
 | Central lumen diameter | 20 mm |
@@ -30,17 +28,23 @@ The distal steering module uses rigid, 3D-printed PLA segments connected by RCJs
 | Modelled effective bending length | 213.93 mm |
 | Final prototype | Eight active joints |
 
-### Intervention end-effector
+A piecewise constant-curvature (PCC) model was implemented in MATLAB to relate tendon displacement to bending angle, curvature, and end-effector position. It assumed rigid segments, negligible tendon stretch and friction, negligible torsion and gravity, and equal rotation across the active joints.
 
-An elastically actuated vortex cannon was designed to fit inside the steering module's central lumen. Tests used all-purpose flour as the payload at distances of 2 cm, 5 cm, and 10 cm. At 10 cm, the spread was sparse.
+## 2. Eversion system
 
-## Kinematic Modelling
+The robot deploys through a pressure-driven everting body. I designed a transitioner cap with a Reuleaux-triangle profile and three rollers arranged at 120-degree intervals to guide the material as the robot everts.
 
-A piecewise constant-curvature (PCC) model was implemented in MATLAB to relate tendon displacement to bending angle, curvature, and end-effector position. The model assumed rigid segments, negligible tendon stretch and friction, negligible torsion and gravity, and equal rotation across the active joints.
+The prototype evaluation included eversion pressure and deployment tests, steering behaviour, position holding, and interaction with debris and obstacles. Position-holding tests lasted approximately three minutes in each tested direction; the observed steering range was approximately 20–30 degrees.
 
-## Experimental Evaluation
+## 3. Vortex-cannon end-effector
 
-The prototype was evaluated through tests of eversion pressure and deployment, steering behaviour, position holding, interaction with debris and obstacles, and vortex-cannon payload spread. Position-holding tests lasted approximately three minutes in each tested direction. The observed steering range was approximately 20–30 degrees.
+An elastically actuated vortex cannon was designed to fit inside the continuum module's central lumen. This kept the intervention tool integrated with the robot while preserving the lumen-compatible design.
+
+Payload trials used all-purpose flour at distances of 2 cm, 5 cm, and 10 cm. The spread was sparse at 10 cm.
+
+## Integrated system
+
+The project brought together the pressure-driven everting body, tendon-steered continuum section, and lumen-compatible end-effector into one deployable platform for medical applications in disaster scenarios.
 
 ## My Engineering Contributions
 
