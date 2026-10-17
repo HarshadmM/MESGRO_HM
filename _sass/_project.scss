@@ -91,25 +91,27 @@
   position: relative;
   z-index: 2;
   display: flex;
-  min-height: clamp(390px, 38vw, 470px);
+  min-height: clamp(430px, 40vw, 510px);
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: var(--spacing-xl) 0;
 }
 
-.project-header--collage::before {
-  position: absolute;
-  inset: 19% 18%;
-  z-index: 0;
-  border-radius: 50%;
-  background: radial-gradient(ellipse, rgba(34, 5, 10, 0.54) 0%, rgba(34, 5, 10, 0.30) 48%, transparent 82%);
-  filter: blur(24px);
-  pointer-events: none;
-  content: "";
+.project-header--collage .project-header-panel {
+  position: relative;
+  z-index: 3;
+  width: min(900px, 100%);
+  padding: clamp(1.5rem, 3.4vw, 2.8rem);
+  border: 1px solid rgba(255, 235, 239, 0.2);
+  border-radius: clamp(18px, 2.4vw, 30px);
+  background: linear-gradient(145deg, rgba(68, 5, 18, 0.88), rgba(92, 8, 25, 0.80));
+  box-shadow: 0 22px 64px rgba(32, 3, 10, 0.30), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(16px) saturate(1.08);
+  backdrop-filter: blur(16px) saturate(1.08);
 }
 
-.project-header--collage > * {
+.project-header--collage .project-header-panel > * {
   position: relative;
   z-index: 1;
 }
@@ -129,19 +131,19 @@
   left: 50%;
   z-index: 0;
   display: grid;
-  width: min(1160px, 100%);
-  height: clamp(300px, 35vw, 410px);
+  width: min(1260px, 100%);
+  height: clamp(350px, 40vw, 480px);
   grid-auto-flow: dense;
-  grid-auto-rows: clamp(54px, 6vw, 74px);
-  grid-template-columns: repeat(10, minmax(0, 1fr));
+  grid-auto-rows: clamp(58px, 6.1vw, 76px);
+  grid-template-columns: repeat(8, minmax(0, 1fr));
   align-content: center;
   align-items: center;
   justify-items: center;
-  gap: 3px;
+  gap: 2px;
   overflow: hidden;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  opacity: 0.82;
+  opacity: 0.92;
   -webkit-mask-image: radial-gradient(ellipse 68% 72% at 50% 50%, #000 28%, rgba(0, 0, 0, 0.84) 57%, rgba(0, 0, 0, 0.38) 82%, transparent 100%);
   mask-image: radial-gradient(ellipse 68% 72% at 50% 50%, #000 28%, rgba(0, 0, 0, 0.84) 57%, rgba(0, 0, 0, 0.38) 82%, transparent 100%);
 }
@@ -188,7 +190,7 @@
   height: 100%;
   object-fit: contain;
   border-radius: inherit;
-  opacity: 0.58;
+  opacity: 0.66;
   filter: saturate(0.72) contrast(0.96);
   -webkit-mask-image: radial-gradient(ellipse 100% 100% at 50% 50%, #000 50%, rgba(0, 0, 0, 0.78) 76%, transparent 100%);
   mask-image: radial-gradient(ellipse 100% 100% at 50% 50%, #000 50%, rgba(0, 0, 0, 0.78) 76%, transparent 100%);
@@ -246,26 +248,32 @@
 
 @media (max-width: 900px) {
   .project-header--collage {
-    min-height: 410px;
+    min-height: 450px;
   }
 
   .project-hero-collage {
     width: 100%;
-    height: 360px;
-    grid-auto-rows: 42px;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
+    height: 420px;
+    grid-auto-rows: 50px;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 640px) {
   .project-header--collage {
-    min-height: 420px;
+    min-height: 500px;
+  }
+
+  .project-header--collage .project-header-panel {
+    width: calc(100% - 8px);
+    padding: 1.4rem 1.1rem;
+    border-radius: 20px;
   }
 
   .project-hero-collage {
-    height: 390px;
-    grid-auto-rows: 38px;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    height: 450px;
+    grid-auto-rows: 36px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 2px;
     -webkit-mask-image: radial-gradient(ellipse 78% 72% at 50% 50%, #000 28%, rgba(0, 0, 0, 0.78) 64%, transparent 100%);
     mask-image: radial-gradient(ellipse 78% 72% at 50% 50%, #000 28%, rgba(0, 0, 0, 0.78) 64%, transparent 100%);

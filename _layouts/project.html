@@ -3,53 +3,54 @@ layout: default
 ---
 
 <div class="project-hero">
-    <div class="container">
-        <div class="project-header">
-            <h1 class="project-title">{{ page.title }}</h1>
-            <p class="project-description">{{ page.description }}</p>
-
-            {% if page.hero_collage %}
-            <div class="project-hero-collage" aria-label="{{ page.title | escape }} photo and motion collage">
-                {% for media in page.hero_collage %}
-                    {% if media.type == 'clip' %}
-                    <a class="hero-collage-tile hero-collage-tile--clip{% if forloop.first %} hero-collage-tile--featured{% endif %}"
-                        href="{{ media.file | relative_url }}" target="_blank" rel="noopener"
-                        aria-label="Open motion clip: {{ media.description | escape }}">
-                        <img src="{{ media.poster | relative_url }}"
-                            alt="{{ media.poster_alt | default: media.description | escape }}"
-                            class="hero-collage-media" loading="lazy" decoding="async">
-                        <span class="hero-collage-play" aria-hidden="true"></span>
-                        <span class="hero-collage-clip-label">Open motion clip</span>
-                    </a>
-                    {% else %}
-                    <figure class="hero-collage-tile{% if forloop.first %} hero-collage-tile--featured{% endif %}">
-                        <img src="{{ media.file | relative_url }}"
-                            alt="{{ media.description | default: page.title | escape }}"
-                            class="hero-collage-media" loading="lazy" decoding="async">
-                    </figure>
-                    {% endif %}
-                {% endfor %}
-            </div>
-            {% elsif page.hero_gif %}
-            <figure class="project-hero-media">
-                <img src="{{ page.hero_gif | relative_url }}"
-                    alt="{{ page.hero_gif_alt | default: page.title | escape }}"
-                    class="project-hero-gif" loading="eager">
+    {% if page.hero_collage %}
+    <div class="project-hero-collage" role="group" aria-label="{{ page.title | escape }} photo and motion collage">
+        {% for media in page.hero_collage %}
+            {% if media.type == 'clip' %}
+            <a class="hero-collage-tile hero-collage-tile--clip"
+                href="{{ media.file | relative_url }}" target="_blank" rel="noopener"
+                aria-label="Open motion clip: {{ media.description | escape }}">
+                <img src="{{ media.poster | relative_url }}"
+                    alt="{{ media.poster_alt | default: media.description | escape }}"
+                    class="hero-collage-media" loading="lazy" decoding="async">
+                <span class="hero-collage-play" aria-hidden="true"></span>
+            </a>
+            {% else %}
+            <figure class="hero-collage-tile">
+                <img src="{{ media.file | relative_url }}"
+                    alt="{{ media.description | default: page.title | escape }}"
+                    class="hero-collage-media" loading="lazy" decoding="async">
             </figure>
             {% endif %}
+        {% endfor %}
+    </div>
+    {% elsif page.hero_gif %}
+    <figure class="project-hero-media">
+        <img src="{{ page.hero_gif | relative_url }}"
+            alt="{{ page.hero_gif_alt | default: page.title | escape }}"
+            class="project-hero-gif" loading="eager">
+    </figure>
+    {% endif %}
 
-            <div class="project-meta">
-                {% if page.github_url %}
-                <a href="{{ page.github_url }}" class="btn-github" target="_blank">
-                    <i class="fab fa-github"></i> View on GitHub
-                </a>
-                {% endif %}
+    <div class="container">
+        <div class="project-header{% if page.hero_collage %} project-header--collage{% endif %}">
+            <div class="project-header-panel">
+                <h1 class="project-title">{{ page.title }}</h1>
+                <p class="project-description">{{ page.description }}</p>
 
-                {% if page.demo_url %}
-                <a href="{{ page.demo_url }}" class="btn-demo" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-                {% endif %}
+                <div class="project-meta">
+                    {% if page.github_url %}
+                    <a href="{{ page.github_url }}" class="btn-github" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    {% endif %}
+
+                    {% if page.demo_url %}
+                    <a href="{{ page.demo_url }}" class="btn-demo" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
