@@ -7,6 +7,55 @@ categories: [Robotics, Mechatronics, 3D Printing]
 hero_gif: "/assets/images/projects/hybrid_robot/Everting%20slo%20motion.gif"
 featured_image: "/assets/images/projects/hybrid_robot/Front%20profile.jpg"
 hero_gif_alt: "Front profile of the hybrid robot"
+gallery_groups:
+  - title: "Continuum steering directions"
+    layout: "cross"
+    items:
+      - position: "up"
+        file: "/assets/images/projects/hybrid_robot/55%20deg%20upwards.jpg"
+        description: "55° upward steering"
+      - position: "left"
+        file: "/assets/images/projects/hybrid_robot/55%20deg%20left%20turn.jpg"
+        description: "55° left turn"
+      - position: "center"
+        file: "/assets/images/projects/hybrid_robot/Top%20view%20of%20robot%20turning%20up%20and%20left.jpg"
+        description: "Top view of the robot turning up and left"
+      - position: "right"
+        file: "/assets/images/projects/hybrid_robot/55%20ddeg%20righht%20turn.jpg"
+        description: "55° right turn"
+      - position: "down"
+        file: "/assets/images/projects/hybrid_robot/Downward%20bending%20continuum.jpg"
+        description: "Downward continuum bend"
+  - title: "Eversion drop test"
+    layout: "row"
+    items:
+      - file: "/assets/images/projects/hybrid_robot/Eversion%20drop%20test%201.jpg"
+        description: "Eversion drop test 1"
+      - file: "/assets/images/projects/hybrid_robot/Eversion%20drop%20test%202.jpg"
+        description: "Eversion drop test 2"
+      - file: "/assets/images/projects/hybrid_robot/Eversion%20drop%20test%203.jpg"
+        description: "Eversion drop test 3"
+  - title: "Inflated and uninflated full-body views"
+    layout: "stack"
+    items:
+      - file: "/assets/images/projects/hybrid_robot/Fully%20extended%20length.jpg"
+        description: "Fully extended, inflated full-body configuration"
+      - file: "/assets/images/projects/hybrid_robot/Unextended%20and%20uninflated.jpg"
+        description: "Unextended and uninflated full-body configuration"
+  - title: "Eversion front-end comparison"
+    layout: "stack"
+    items:
+      - file: "/assets/images/projects/hybrid_robot/everted%20front%20end.jpg"
+        description: "Everted front end"
+      - file: "/assets/images/projects/hybrid_robot/uneverted%20front%20end%20of%20the%20eversion%20robot.jpg"
+        description: "Uneverted front end of the eversion robot"
+  - title: "Robot overview and modular components"
+    layout: "pair"
+    items:
+      - file: "/assets/images/projects/hybrid_robot/Front%20profile.jpg"
+        description: "Front profile of the hybrid robot"
+      - file: "/assets/images/projects/hybrid_robot/Decoupled.jpg"
+        description: "Decoupled hybrid robot components"
 ---
 
 ## Overview
@@ -48,10 +97,12 @@ The prototype evaluation included eversion pressure and deployment tests, steeri
 ## 3. Vortex-cannon end-effector
 
 An elastically actuated vortex cannon was designed to fit inside the continuum module's central lumen. This kept the intervention tool integrated with the robot while preserving the lumen-compatible design.
+
 <figure class="hybrid-media">
   <img src="{{ '/assets/images/projects/hybrid_robot/slow-motion%20shot.gif' | relative_url }}" alt="Slow-motion view of the hybrid robot eversion test" loading="lazy">
   <figcaption>Slow-motion view of vortex cannon shot controlled from a base established at 3m distance from the robot tip, with tip to target distance of 8cm.</figcaption>
 </figure>
+
 Payload trials used all-purpose flour at distances of 2 cm, 5 cm, and 10 cm. The spread was sparse at 10 cm.
 
 ## Integrated system
