@@ -49,7 +49,7 @@ The prototype evaluation included eversion pressure and deployment tests, steeri
 
 An elastically actuated vortex cannon was designed to fit inside the continuum module's central lumen. This kept the intervention tool integrated with the robot while preserving the lumen-compatible design.
 <figure class="hybrid-media">
-  <img src="{{ '/assets/images/projects/hybrid_robot/slow%20motion%20shot.gif' | relative_url }}" alt="Slow-motion view of the hybrid robot eversion test" loading="lazy">
+  <img src="{{ '/assets/images/projects/hybrid_robot/slow-motion%20shot.gif' | relative_url }}" alt="Slow-motion view of the hybrid robot eversion test" loading="lazy">
   <figcaption>Slow-motion view of vortex cannon shot controlled from a base established at 3m distance from the robot tip, with tip to target distance of 8cm.</figcaption>
 </figure>
 Payload trials used all-purpose flour at distances of 2 cm, 5 cm, and 10 cm. The spread was sparse at 10 cm.
