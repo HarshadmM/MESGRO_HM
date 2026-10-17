@@ -8,8 +8,9 @@ permalink: /publications/
   <div class="container">
     <header class="publications-header">
       <p class="publications-eyebrow">Research &amp; writing</p>
-      <h1>Publications</h1>
+      <h1>Publications and Achievements</h1>
       <p>Research papers and conference contributions related to robotics, mechatronics, and engineering.</p>
+      <p>Significant career milestones and awards</p>
     </header>
 
     {% assign publications = site.publications | sort: "year" | reverse %}
