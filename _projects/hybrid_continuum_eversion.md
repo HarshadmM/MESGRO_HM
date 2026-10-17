@@ -5,8 +5,8 @@ description: "A deployable hybrid robot combining eversion-based locomotion, rol
 date: 2026-09-01
 categories: [Robotics, Mechatronics, 3D Printing]
 hero_gif: "/assets/images/projects/hybrid_robot/Everting%20slo%20motion.gif"
-featured_image: "/assets/images/projects/hybrid_robot/Everting%20slo%20motion.gif"
-hero_gif_alt: "Hybrid robot deploying during a slow-motion eversion test"
+featured_image: "/assets/images/projects/hybrid_robot/Front%20profile.jpg"
+hero_gif_alt: "Front profile of the hybrid robot"
 ---
 
 ## Overview
