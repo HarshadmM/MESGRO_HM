@@ -8,6 +8,14 @@ layout: default
             <h1 class="project-title">{{ page.title }}</h1>
             <p class="project-description">{{ page.description }}</p>
 
+            {% if page.hero_gif %}
+            <figure class="project-hero-media">
+                <img src="{{ page.hero_gif | relative_url }}"
+                    alt="{{ page.hero_gif_alt | default: page.title | escape }}"
+                    class="project-hero-gif" loading="eager">
+            </figure>
+            {% endif %}
+
             <div class="project-meta">
                 {% if page.github_url %}
                 <a href="{{ page.github_url }}" class="btn-github" target="_blank">
@@ -44,8 +52,6 @@ layout: default
                         {{ content }}
                     </div>
                 </section>
-
-
 
                 <!-- Code Section (Collapsible) -->
                 {% if page.code_files %}
@@ -110,9 +116,8 @@ layout: default
                 </section>
                 {% endif %}
 
-                <!-- Meta / Actions (Moved to bottom of left) -->
+                <!-- Meta / Actions -->
                 <div class="project-meta-bottom">
-
                     <div class="project-actions-small">
                         {% if page.github_url %}
                         <a href="{{ page.github_url }}" class="btn-small" target="_blank">
@@ -139,8 +144,6 @@ layout: default
             <!-- Right Column: Media -->
             <div class="project-right-panel">
 
-
-
                 <!-- 3D Models Section -->
                 {% if page.models %}
                 <section class="project-media-group" id="models">
@@ -160,8 +163,29 @@ layout: default
                 {% endif %}
 
                 <!-- Media Gallery -->
-                {% if page.gallery %}
+                {% if page.gallery_groups or page.gallery %}
                 <section class="project-media-group" id="gallery">
+                    {% if page.gallery_groups %}
+                    <div class="project-gallery-groups">
+                        {% for gallery_group in page.gallery_groups %}
+                        <div class="gallery-group gallery-group--{{ gallery_group.layout | default: 'stack' }}">
+                            <h5 class="gallery-group-title">{{ gallery_group.title | escape }}</h5>
+                            <div class="gallery-group-items">
+                                {% for media in gallery_group.items %}
+                                <figure class="gallery-group-item{% if media.position %} gallery-item--{{ media.position }}{% endif %}">
+                                    <img src="{{ media.file | relative_url }}"
+                                        alt="{{ media.description | default: page.title | escape }}"
+                                        class="gallery-image" data-zoomable loading="lazy">
+                                    {% if media.description %}
+                                    <figcaption>{{ media.description | escape }}</figcaption>
+                                    {% endif %}
+                                </figure>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% else %}
                     <div class="media-gallery-stack">
                         {% for media in page.gallery %}
                         <div class="media-item">
@@ -181,10 +205,11 @@ layout: default
                         </div>
                         {% endfor %}
                     </div>
+                    {% endif %}
                 </section>
                 {% endif %}
 
-                <!-- Visualizations (Interactive HTML Plots) -->
+                <!-- Visualizations -->
                 {% if page.visualizations %}
                 <section class="project-media-group" id="visualizations">
                     <h4 style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); border-bottom: 2px solid var(--accent-color); padding-bottom: var(--spacing-sm); margin: 0 0 var(--spacing-md) 0;">Data Visualizations</h4>
@@ -206,7 +231,7 @@ layout: default
                 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
                 {% endif %}
 
-                <!-- Interactive Data Plot (only if page has interactive_plot: true) -->
+                <!-- Interactive Data Plot -->
                 {% if page.interactive_plot %}
                 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
                 <div class="project-media-group">
@@ -234,13 +259,12 @@ layout: default
                         </div>
                         {% endfor %}
                     </div>
-            </div>
-            </section>
-            {% endif %}
+                </section>
+                {% endif %}
 
+            </div>
         </div>
     </div>
-</div>
 </div>
 
 <!-- Project Navigation -->
@@ -268,12 +292,13 @@ layout: default
                 <span>All Projects</span>
             </a>
 
-            {% if current_index < project_array.size %} {% assign next_project=project_array[current_index] %} <a
-                href="{{ next_project.url | relative_url }}" class="nav-link next">
+            {% if current_index < project_array.size %}
+            {% assign next_project = project_array[current_index] %}
+            <a href="{{ next_project.url | relative_url }}" class="nav-link next">
                 <span>{{ next_project.title }}</span>
                 <i class="fas fa-chevron-right"></i>
-                </a>
-                {% endif %}
+            </a>
+            {% endif %}
         </div>
     </div>
 </div>
