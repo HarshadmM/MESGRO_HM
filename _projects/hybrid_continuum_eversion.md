@@ -36,7 +36,7 @@ The robot deploys through a pressure-driven everting body. I designed a transiti
 The prototype evaluation included eversion pressure and deployment tests, steering behaviour, position holding, and interaction with debris and obstacles. Position-holding tests lasted approximately three minutes in each tested direction; the observed steering range was approximately 20–30 degrees.
 
 <figure class="hybrid-media">
-  <img src="{{ '/assets/images/projects/hybrid_robot/slow-motion%20shot.gif' | relative_url }}" alt="Slow-motion view of the hybrid robot eversion test" loading="lazy">
+  <img src="{{ '/assets/images/projects/hybrid_robot/Everting%20slo%20motion.gif' | relative_url }}" alt="Slow-motion view of the hybrid robot eversion test" loading="lazy">
   <figcaption>Slow-motion view of the eversion test.</figcaption>
 </figure>
 
@@ -48,7 +48,10 @@ The prototype evaluation included eversion pressure and deployment tests, steeri
 ## 3. Vortex-cannon end-effector
 
 An elastically actuated vortex cannon was designed to fit inside the continuum module's central lumen. This kept the intervention tool integrated with the robot while preserving the lumen-compatible design.
-
+<figure class="hybrid-media">
+  <img src="{{ '/assets/images/projects/hybrid_robot/slow%20motion%20shot.gif' | relative_url }}" alt="Slow-motion view of the hybrid robot eversion test" loading="lazy">
+  <figcaption>Slow-motion view of vortex cannon shot controlled from a base established at 3m distance from the robot tip, with tip to target distance of 8cm.</figcaption>
+</figure>
 Payload trials used all-purpose flour at distances of 2 cm, 5 cm, and 10 cm. The spread was sparse at 10 cm.
 
 ## Integrated system
