@@ -49,6 +49,10 @@ gallery_groups:
 
 NeoAir was a group project by Amy Lai, Anton Gerasimov, Harshad Malik and Hetarth Bhatt. The team explored ways to make catheter placement confirmation clearer during minimally invasive surfactant therapy (MIST), a treatment used for respiratory distress syndrome in preterm infants.
 
+## Recognition
+
+NeoAir won the **Hackstarter Award: Open Project** at the 2026 Imperial College Advanced Hackspace Hackstarter final. [See the Hackstarter 2026 winners](https://imperialhackspace.com/our-events/hackstarter-26/).
+
 The design brief focused on a practical problem: catheter placement can be difficult to confirm quickly, while an infant remains awake and may move. The background presentation cites a 20–30 second window for an initial catheterisation attempt; the [OPTIMIST-A protocol](https://pmc.ncbi.nlm.nih.gov/articles/PMC4236682/) describes pausing and allowing recovery when placement is not achieved in that period.
 
 ## Design direction

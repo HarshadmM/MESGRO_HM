@@ -1,18 +1,35 @@
 ---
 layout: default
-title: Publications
+title: Publications, Awards & Milestones
 permalink: /publications/
 ---
 
 <section class="publications-page">
   <div class="container">
     <header class="publications-header">
-      <p class="publications-eyebrow">Research &amp; writing</p>
-      <h1>Publications and Achievements</h1>
-      <p>Research papers and conference contributions related to robotics, mechatronics, and engineering.</p>
-      <p>Significant career milestones and awards</p>
+      <p class="publications-eyebrow">Research &amp; recognition</p>
+      <h1>Publications, Awards &amp; Milestones</h1>
+      <p>Research, project awards, and milestones across robotics, mechatronics, and engineering.</p>
     </header>
 
+    <section class="recognition-section" aria-labelledby="awards-heading">
+      <h2 class="publications-section-title" id="awards-heading">Awards &amp; milestones</h2>
+      <div class="publication-list">
+        <article class="publication-card award-card">
+          <p class="publication-year">March 2026 · Winner</p>
+          <h2>Hackstarter Award: Open Project</h2>
+          <p class="publication-venue"><strong>NeoAir</strong> won the Open Project award at Hackstarter 2026, the Imperial College Advanced Hackspace programme final.</p>
+          <p class="publication-authors">Team: Amy Lai, Anton Gerasimov, Harshad Malik</p>
+          <div class="publication-links">
+            <a href="https://imperialhackspace.com/our-events/hackstarter-26/" target="_blank" rel="noopener noreferrer">Hackstarter 2026 winners</a>
+            <a href="{{ '/projects/neoair/' | relative_url }}">View the NeoAir project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="publications-section" aria-labelledby="publications-heading">
+      <h2 class="publications-section-title" id="publications-heading">Publications</h2>
     {% assign publications = site.publications | sort: "year" | reverse %}
     {% if publications.size > 0 %}
       <div class="publication-list">
@@ -54,9 +71,10 @@ permalink: /publications/
       </div>
     {% else %}
       <div class="publications-empty">
-        <h2>Publications will appear here</h2>
-        <p>This section is ready for journal papers, conference papers, and other published research.</p>
+        <h2>No publications listed yet</h2>
+        <p>Journal papers, conference papers, and other published research will be listed here.</p>
       </div>
     {% endif %}
+    </section>
   </div>
 </section>
