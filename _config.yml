@@ -57,7 +57,7 @@ navigation:
     url: "/projects/"
   - title: "About"
     url: "/about/"
-  - title: "Publications, Achievements and Milestones"
+  - title: "Publications, Awards and Milestones"
     url: "/publications/"
 
 # Project categories
