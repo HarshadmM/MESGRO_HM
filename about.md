@@ -11,7 +11,7 @@ permalink: /about/
         <h1 class="hero-name">About Me</h1>
         <p class="hero-title">Medical Graduate | Robotics Researcher</p>
         <p class="hero-description">
-          Enthusiastic to work at the intersection of mechanical design, robotics,
+          I work at the intersection of mechanical design, robotics, and
           medical intervention, combining clinical problem-solving with
           hands-on engineering and experimental research.
         </p>
@@ -26,7 +26,7 @@ permalink: /about/
     <div class="project-description-content">
       <p>
         I completed an MRes in Medical Robotics and Image-Guided Intervention
-        at Imperial College London's Hamlyn Centre for Medical Robotics with a Distinction (First Class Honours).
+        at Imperial College London's Hamlyn Centre for Medical Robotics.
         My work spans CAD, mechanical design, rapid prototyping, embedded
         systems, kinematic modelling, and experimental validation.
       </p>
@@ -88,6 +88,27 @@ permalink: /about/
         <strong>Simulation and research:</strong> MATLAB, LaTeX, technical
         writing, experimental analysis.
       </p>
+    </div>
+  </details>
+
+  <details class="about-accordion">
+    <summary>Beyond Research, Engineering &amp; Professional Life</summary>
+    <div class="project-description-content">
+      <p>
+        I enjoy sharing practical engineering knowledge with others. I taught
+        members of the
+        <a href="https://www.linkedin.com/company/imperial-college-london-prosthetics-society/posts/?feedView=all">
+          Imperial College London Prosthetics Society
+        </a>
+        about cable transmission mechanisms used in prosthetic devices.
+      </p>
+      <figure class="about-feature-figure">
+        <img
+          src="{{ '/assets/images/projects/about_page/teaching%20cable%20management.jpeg' | relative_url }}"
+          alt="Teaching members of the Imperial College London Prosthetics Society about cable transmission mechanisms"
+          loading="lazy">
+        <figcaption>Sharing practical cable-transmission design with the Prosthetics Society.</figcaption>
+      </figure>
     </div>
   </details>
 
