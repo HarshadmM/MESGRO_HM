@@ -4,20 +4,8 @@ title: "NeoAir: MIST Catheter Placement Confirmation"
 description: "A team project exploring rapid carbon dioxide based confirmation of catheter placement during minimally invasive surfactant therapy (MIST)."
 date: 2026-04-17
 categories: [Medical Robotics, Biomedical Engineering, Device Design, Rapid Prototyping]
-featured_image: "/assets/images/projects/neoair/balloon-simulation-setup.jpeg"
-hero_collage:
-  - file: "/assets/images/projects/neoair/balloon-simulation-setup.jpeg"
-    description: "Balloon-based simulated respiratory setup for the detector demonstration"
-  - file: "/assets/images/projects/neoair/inline-detector-demo.jpeg"
-    description: "Inline detector being operated during a bench demonstration"
-  - file: "/assets/images/projects/neoair/inline-colourimetric-cross-section.png"
-    description: "Cross-section of the inline colourimetric detector concept"
-  - file: "/assets/images/projects/neoair/electronic-device-cad.png"
-    description: "CAD render of the electronic detector housing"
-  - file: "/assets/images/projects/neoair/electronic-device-section.png"
-    description: "Section view of the electronic detector concept"
-  - file: "/assets/images/projects/neoair/preliminary-cost-model.png"
-    description: "Team's preliminary cost crossover estimate for the two concepts"
+featured_image: "/assets/images/projects/neoair/hero_neoair_image.jpg"
+hero_image: "/assets/images/projects/neoair/hero_neoair_image.jpg"
 gallery_groups:
   - title: "Bench demonstration"
     layout: "pair"
@@ -43,6 +31,13 @@ gallery_groups:
     items:
       - file: "/assets/images/projects/neoair/preliminary-cost-model.png"
         description: "The team's presentation estimated a cost crossover at about 15 uses, using its stated component costs."
+  - title: "Project work and recognition"
+    layout: "pair"
+    items:
+      - file: "/assets/images/projects/neoair/Working%20on%20NeoAir.jpg"
+        description: "Working on the NeoAir project"
+      - file: "/assets/images/projects/neoair/hackstarter_winning_poster.png"
+        description: "NeoAir Hackstarter winning poster"
 ---
 
 ## Project overview
