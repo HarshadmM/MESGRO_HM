@@ -110,6 +110,16 @@ class MESGROApp {
         
         links.forEach(link => {
             link.addEventListener('click', (e) => {
+                if (link.hasAttribute('data-open-contact-drawer')) {
+                    e.preventDefault();
+                    const drawer = document.querySelector('.contact-drawer');
+                    if (drawer) {
+                        drawer.open = true;
+                        drawer.querySelector('summary')?.focus({ preventScroll: true });
+                    }
+                    return;
+                }
+
                 e.preventDefault();
                 const targetId = link.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
