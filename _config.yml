@@ -5,6 +5,8 @@ url: "https://harshadmm.github.io"
 baseurl: "/MESGRO_HM"
 author: "Harshad Malik"
 email: "harshadmm10131@gmail.com"
+phone_number: "+447424448110"
+phone_display: "+44 7424 448110"
 github_username: "HarshadmM"
 linkedin_username: "Harshad Malik"
 
@@ -55,10 +57,10 @@ navigation:
     url: "/"
   - title: "Projects"
     url: "/projects/"
+  - title: "Publications, Awards & Milestones"
+    url: "/publications/"
   - title: "About"
     url: "/about/"
-  - title: "Publications, Awards and Milestones"
-    url: "/publications/"
 
 # Project categories
 project_categories:
@@ -68,6 +70,9 @@ project_categories:
   - name: "Mechatronics"
     slug: "mechatronics"
     description: "Integration of mechanical, electrical, and software systems"
+  - name: "Haptics"
+    slug: "haptics"
+    description: "Wearable tactile interfaces for robotic interaction and teleoperation"
   - name: "Arduino"
     slug: "arduino"
     description: "Arduino-based projects and prototypes"
