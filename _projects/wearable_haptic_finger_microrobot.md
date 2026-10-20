@@ -5,6 +5,9 @@ description: "A low-cost, modular wearable haptic finger interface for human-in-
 date: 2025-12-12
 categories: [Robotics, Mechatronics, Haptics, Medical Robotics, 3D Printing]
 featured_image: "/assets/images/projects/haptic/Mechanical%20prototype.jpeg"
+models:
+  - file: "/assets/models/haptic-glove/haptic-glove.glb"
+    description: "Interactive CAD assembly of the haptic-glove"
 gallery:
   - file: "/assets/images/projects/haptic/Mechanical%20prototype.jpeg"
     description: "Mechanical prototype of the wearable haptic finger."
