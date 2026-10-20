@@ -37,6 +37,17 @@ gallery_groups:
         description: "Eversion drop test 2"
       - file: "/assets/images/projects/hybrid_robot/Eversion%20drop%20test%203.jpg"
         description: "Eversion drop test 3"
+  - title: "Eversion motion videos"
+    layout: "pair"
+    items:
+      - file: "/assets/images/projects/hybrid_robot/evrsn_bend.mp4"
+        description: "Hybrid robot eversion bending test"
+      - file: "/assets/images/projects/hybrid_robot/evrsn_bend2.mp4"
+        description: "Second view of the eversion bending test"
+      - file: "/assets/images/projects/hybrid_robot/full_loop.mp4"
+        description: "Full eversion cycle"
+      - file: "/assets/images/projects/hybrid_robot/vert_mvmt_cont.mp4"
+        description: "Vertical movement of the continuum section"
   - title: "Inflated and uninflated full-body views"
     layout: "stack"
     items:

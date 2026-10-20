@@ -1,30 +1,27 @@
-<aside class="contact-dock" aria-label="Contact options">
-    <details class="contact-drawer">
-        <summary class="contact-drawer-toggle">
-            <i class="fas fa-address-card" aria-hidden="true"></i>
-            <span>Contact</span>
-            <i class="fas fa-chevron-up contact-drawer-chevron" aria-hidden="true"></i>
-        </summary>
+<aside class="contact-dock" aria-label="Contact links">
+    <a class="contact-action contact-action--linkedin"
+       href="https://www.linkedin.com/in/harshadmm"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Open Harshad's LinkedIn profile">
+        <span class="contact-action-icon" aria-hidden="true"><i class="fab fa-linkedin-in"></i></span>
+        <span class="contact-action-label">LinkedIn</span>
+    </a>
 
-        <div class="contact-drawer-panel" id="contact-drawer-panel">
-            <h2>Get in touch</h2>
-            <a class="contact-drawer-link" href="https://www.linkedin.com/in/harshadmm" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin" aria-hidden="true"></i>
-                <span>LinkedIn</span>
-                <i class="fas fa-arrow-up-right-from-square contact-link-external" aria-hidden="true"></i>
-            </a>
-            {% if site.phone_number %}
-            <a class="contact-drawer-link" href="tel:{{ site.phone_number | escape }}">
-                <i class="fas fa-phone" aria-hidden="true"></i>
-                <span>{{ site.phone_display | default: site.phone_number | escape }}</span>
-            </a>
-            {% endif %}
-            {% if site.email %}
-            <a class="contact-drawer-link" href="mailto:{{ site.email | escape }}">
-                <i class="fas fa-envelope" aria-hidden="true"></i>
-                <span>{{ site.email | escape }}</span>
-            </a>
-            {% endif %}
-        </div>
-    </details>
+    {% if site.phone_number %}
+    <a class="contact-action contact-action--phone"
+       href="tel:{{ site.phone_number | escape }}"
+       aria-label="Call Harshad at {{ site.phone_display | default: site.phone_number | escape }}">
+        <span class="contact-action-icon" aria-hidden="true"><i class="fas fa-phone"></i></span>
+        <span class="contact-action-label">{{ site.phone_display | default: site.phone_number | escape }}</span>
+    </a>
+    {% endif %}
+
+    {% if site.email %}
+    <a class="contact-action contact-action--email"
+       href="mailto:{{ site.email | escape }}"
+       aria-label="Email Harshad at {{ site.email | escape }}">
+        <span class="contact-action-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
+        <span class="contact-action-label">{{ site.email | escape }}</span>
+    </a>
+    {% endif %}
 </aside>

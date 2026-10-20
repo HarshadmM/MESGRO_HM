@@ -12,6 +12,7 @@ class MESGROApp {
         this.setupMobileMenu();
         this.setupThemeToggle();
         this.setupSmoothScrolling();
+        this.setupLoopingVideos();
         this.setupScrollToTop();
         this.setupLazyLoading();
         this.setupAnimations();
@@ -110,16 +111,6 @@ class MESGROApp {
         
         links.forEach(link => {
             link.addEventListener('click', (e) => {
-                if (link.hasAttribute('data-open-contact-drawer')) {
-                    e.preventDefault();
-                    const drawer = document.querySelector('.contact-drawer');
-                    if (drawer) {
-                        drawer.open = true;
-                        drawer.querySelector('summary')?.focus({ preventScroll: true });
-                    }
-                    return;
-                }
-
                 e.preventDefault();
                 const targetId = link.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
@@ -132,6 +123,33 @@ class MESGROApp {
                 }
             });
         });
+    }
+
+    /**
+     * Start muted looping project videos only while they are near the viewport.
+     * This avoids downloading every large video as soon as a project page opens.
+     */
+    setupLoopingVideos() {
+        const videos = document.querySelectorAll('video[data-loop-on-view]');
+        if (!videos.length || !('IntersectionObserver' in window)) return;
+
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reducedMotion) return;
+
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const video = entry.target;
+                if (entry.isIntersecting) {
+                    video.play().catch(() => {
+                        // Keep native controls available if autoplay is blocked.
+                    });
+                } else {
+                    video.pause();
+                }
+            });
+        }, { threshold: 0.25, rootMargin: '100px 0px' });
+
+        videos.forEach(video => videoObserver.observe(video));
     }
 
     /**

@@ -15,9 +15,6 @@ layout: default
           <a href="{{ '/about/' | relative_url }}" class="btn-secondary">
             About
           </a>
-           <a href="#contact-drawer-panel" class="btn-secondary" data-open-contact-drawer>
-            Contact
-          </a>
         </div>
       </div>
     </div>

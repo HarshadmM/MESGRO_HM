@@ -205,116 +205,95 @@ a.nav-link.active::after {
   text-decoration: underline;
 }
 
-/* Floating contact drawer */
+/* Floating contact links */
 .contact-dock {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
   z-index: 1000;
   left: 1.25rem;
   bottom: 1.25rem;
 }
 
-.contact-drawer {
+.contact-action {
   position: relative;
+  display: flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  align-items: center;
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+  isolation: isolate;
+  outline-offset: 4px;
 }
 
-.contact-drawer-toggle {
+.contact-action-icon {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: 0 0 3.25rem;
+  width: 3.25rem;
+  height: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  background: var(--primary-color);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.34);
+  font-size: 1.1rem;
+  transition: transform 240ms ease, box-shadow 240ms ease, background-color 240ms ease;
+}
+
+.contact-action-label {
+  position: absolute;
+  top: 0;
+  left: 2.55rem;
+  z-index: 0;
   display: flex;
   min-height: 3.25rem;
+  max-width: calc(100vw - 5rem);
   align-items: center;
-  gap: 0.7rem;
-  padding: 0.8rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 999px;
-  background: var(--primary-color);
-  color: #fff;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.34);
-  cursor: pointer;
-  font-weight: 650;
-  list-style: none;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
-}
-
-.contact-drawer-toggle::-webkit-details-marker {
-  display: none;
-}
-
-.contact-drawer-toggle:hover,
-.contact-drawer-toggle:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.42);
-}
-
-.contact-drawer-chevron {
-  margin-left: 0.15rem;
-  transition: transform 220ms ease;
-}
-
-.contact-dock:hover .contact-drawer-chevron,
-.contact-dock:focus-within .contact-drawer-chevron,
-.contact-drawer[open] .contact-drawer-chevron {
-  transform: rotate(180deg);
-}
-
-.contact-drawer-panel {
-  position: absolute;
-  left: 0;
-  bottom: 100%;
-  display: flex;
-  width: min(20rem, calc(100vw - 2.5rem));
-  flex-direction: column;
-  gap: 0.45rem;
-  padding: 1rem;
+  overflow: hidden;
+  padding: 0 1rem 0 1.05rem;
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
+  border-left: 0;
+  border-radius: 0 999px 999px 0;
   background: var(--surface-color);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.34);
+  color: var(--text-primary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  white-space: nowrap;
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
-  transform: translate(-10px, 10px);
-  transition: opacity 200ms ease, transform 200ms ease, visibility 200ms ease;
+  transform: translateX(-0.65rem) scaleX(0.88);
+  transform-origin: left center;
+  transition: opacity 180ms ease, transform 240ms ease, visibility 180ms ease;
 }
 
-.contact-dock:hover .contact-drawer-panel,
-.contact-dock:focus-within .contact-drawer-panel,
-.contact-drawer[open] .contact-drawer-panel {
+.contact-action:hover .contact-action-icon,
+.contact-action:focus-visible .contact-action-icon {
+  transform: rotate(12deg) scale(1.04);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.42);
+  background: var(--primary-dark);
+}
+
+.contact-action:hover .contact-action-label,
+.contact-action:focus-visible .contact-action-label {
   opacity: 1;
   visibility: visible;
-  pointer-events: auto;
-  transform: translate(0, 0);
+  transform: translateX(0) scaleX(1);
 }
 
-.contact-drawer-panel h2 {
-  margin: 0 0 0.35rem;
-  color: var(--text-primary);
-  font-size: 1rem;
-}
-
-.contact-drawer-link {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  min-width: 0;
-  padding: 0.7rem;
-  border-radius: var(--radius-md);
-  color: var(--text-secondary);
-  text-decoration: none;
-  transition: background-color var(--transition-fast), color var(--transition-fast);
-}
-
-.contact-drawer-link > span {
-  overflow-wrap: anywhere;
-}
-
-.contact-drawer-link:hover,
-.contact-drawer-link:focus-visible {
-  background: var(--background-color);
-  color: var(--primary-color);
-}
-
-.contact-link-external {
-  margin-left: auto;
-  font-size: 0.75rem;
+@media (hover: none) {
+  .contact-action-label {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
 }
 
 @media (max-width: 640px) {
@@ -323,16 +302,15 @@ a.nav-link.active::after {
     bottom: 0.75rem;
   }
 
-  .contact-drawer-panel {
-    width: min(19rem, calc(100vw - 1.5rem));
+  .contact-action-label {
+    max-width: calc(100vw - 4rem);
+    font-size: 0.8rem;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .contact-drawer-toggle,
-  .contact-drawer-chevron,
-  .contact-drawer-panel,
-  .contact-drawer-link {
+  .contact-action-icon,
+  .contact-action-label {
     transition: none;
   }
 }

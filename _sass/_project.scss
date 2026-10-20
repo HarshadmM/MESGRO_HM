@@ -1388,7 +1388,21 @@ pre[class*="language-"] {
   cursor: zoom-in;
 }
 
+.gallery-group-item .gallery-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  background: #000;
+  object-fit: contain;
+}
+
 .gallery-group--cross .gallery-image {
+  height: 7rem;
+  max-height: 7rem;
+}
+
+.gallery-group--cross .gallery-video {
   height: 7rem;
   max-height: 7rem;
 }
@@ -1398,7 +1412,17 @@ pre[class*="language-"] {
   max-height: 7rem;
 }
 
+.gallery-group--row .gallery-video {
+  height: 7rem;
+  max-height: 7rem;
+}
+
 .gallery-group--pair .gallery-image {
+  height: 9rem;
+  max-height: 9rem;
+}
+
+.gallery-group--pair .gallery-video {
   height: 9rem;
   max-height: 9rem;
 }
