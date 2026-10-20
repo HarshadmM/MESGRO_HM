@@ -6,6 +6,9 @@ date: 2026-09-01
 categories: [Robotics, Mechatronics, 3D Printing]
 featured_image: "/assets/images/projects/hybrid_robot/Front%20profile.jpg"
 hero_image: "/assets/images/projects/hybrid_robot/Front_%20section%20with%20lumen%20opening.jpeg"
+models:
+  - file: "/assets/models/hybrid-robot/hybrid-robot.glb"
+    description: "Interactive CAD assembly of the hybrid robot"
 gallery_groups:
   - title: "Continuum steering directions"
     layout: "cross"
