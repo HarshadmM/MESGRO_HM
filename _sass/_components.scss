@@ -147,9 +147,9 @@
 }
 
 .about-hero-portrait {
-  flex: 0 0 clamp(10rem, 21vw, 16rem);
-  width: clamp(10rem, 21vw, 16rem);
-  height: clamp(10rem, 21vw, 16rem);
+  flex: 0 0 clamp(5rem, 10.5vw, 8rem);
+  width: clamp(5rem, 10.5vw, 8rem);
+  height: clamp(5rem, 10.5vw, 8rem);
   border: 3px solid var(--primary-color);
   border-radius: 50%;
   object-fit: cover;

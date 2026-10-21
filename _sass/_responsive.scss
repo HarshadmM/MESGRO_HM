@@ -75,24 +75,25 @@
   }
 
   .about-hero-profile {
-    flex-direction: column;
-    gap: var(--spacing-lg);
-    text-align: center;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    text-align: left;
   }
 
   .about-hero-portrait {
-    flex-basis: 10rem;
-    width: 10rem;
-    height: 10rem;
+    flex-basis: 5rem;
+    width: 5rem;
+    height: 5rem;
   }
 
   .about-hero-copy {
-    text-align: center;
+    text-align: left;
   }
 
   .about-hero-copy .hero-description {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .hero-info-wrapper {
