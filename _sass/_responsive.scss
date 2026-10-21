@@ -175,6 +175,11 @@
     gap: var(--spacing-lg);
   }
 
+  .homepage-recognition .publication-list {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
   .project-media {
     height: 160px;
   }

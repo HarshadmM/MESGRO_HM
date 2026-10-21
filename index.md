@@ -21,19 +21,16 @@ layout: default
   </div>
 </div>
 
-<div class="projects-showcase">
+<section class="projects-showcase">
   <div class="container">
     <div class="section-header">
-      <h2>Portfolio</h2>
-      <p class="section-subtitle">A curated collection of my research and design</p>
+      <h2>Featured Research Projects</h2>
+      <p class="section-subtitle">Selected work in deployable robotics and haptic interaction</p>
     </div>
     
     <div class="projects-grid-featured">
-      {% assign featured_projects = site.projects | where: "featured", true | sort: "date" | reverse %}
-      {% assign all_projects = site.projects | sort: "date" | reverse %}
-      {% assign combined_projects = featured_projects | concat: all_projects %}
-      {% assign unique_projects = combined_projects | uniq %}
-      {% for project in unique_projects limit: 9 %}
+      {% assign featured_projects = site.projects | where: "featured_homepage", true | sort: "date" | reverse %}
+      {% for project in featured_projects %}
         <div class="project-card-featured">
           <div class="project-media">
             {% if project.featured_image %}
@@ -100,7 +97,7 @@ layout: default
         </div>
       {% endfor %}
     </div>
-    
+
     <div class="showcase-actions">
       <a href="{{ '/projects/' | relative_url }}" class="btn-primary-large">
         <i class="fas fa-th"></i>
@@ -108,50 +105,81 @@ layout: default
       </a>
     </div>
   </div>
-</div>
+</section>
 
-<div class="skills-section">
+<section class="homepage-recognition">
   <div class="container">
-    <div class="skills-content">
+    <div class="section-header">
+      <h2>Awards &amp; Milestones</h2>
+      <p class="section-subtitle">Recent recognition and research presentations</p>
+    </div>
+
+    <div class="publication-list homepage-recognition-list">
+      <article class="publication-card">
+        <p class="publication-year">March 2026 · Winner</p>
+        <h2>Hackstarter Award: Open Project</h2>
+        <p class="publication-abstract"><strong>NeoAir</strong> won the Open Project award at Hackstarter 2026, the Imperial College Advanced Hackspace programme final.</p>
+      </article>
+
+      <article class="publication-card">
+        <p class="publication-year">Poster presentation</p>
+        <h2>Hamlyn Symposium on Medical Robotics</h2>
+        <p class="publication-abstract">Presented my hybrid continuum-eversion robot research at the symposium.</p>
+      </article>
+    </div>
+
+    <div class="showcase-actions">
+      <a href="{{ '/publications/' | relative_url }}" class="btn-primary-large">
+        <i class="fas fa-book-open"></i>
+        View Publications
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="skills-section">
+  <div class="container">
+    <div class="section-header">
       <h2>Technical Expertise</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3><i class="fas fa-cube"></i> Mechanical Design</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">SolidWorks</span>
-            <span class="skill-tag">CAD</span>
-            <span class="skill-tag">3D Printing</span>
-            <span class="skill-tag">Prototyping</span>
-          </div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3><i class="fas fa-cube"></i> Mechanical Design</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">SolidWorks</span>
+          <span class="skill-tag">CAD</span>
+          <span class="skill-tag">3D Printing</span>
+          <span class="skill-tag">Prototyping</span>
         </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-robot"></i> Robotics</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Continuum Mechanisms</span>
-            <span class="skill-tag">Tendon-driven Actuation</span>
-            <span class="skill-tag">Deployable Systems</span>
-            <span class="skill-tag">Kinematic Modelling</span>
-          </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-robot"></i> Robotics</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Continuum Mechanisms</span>
+          <span class="skill-tag">Tendon-driven Actuation</span>
+          <span class="skill-tag">Deployable Systems</span>
+          <span class="skill-tag">Kinematic Modelling</span>
         </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-microchip"></i> Electronics & Control</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Arduino</span>
-            <span class="skill-tag">Stepper Motors</span>
-            <span class="skill-tag">Motor Drivers</span>
-            <span class="skill-tag">Hardware Integration</span>
-          </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-microchip"></i> Electronics &amp; Control</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Arduino</span>
+          <span class="skill-tag">Stepper Motors</span>
+          <span class="skill-tag">Motor Drivers</span>
+          <span class="skill-tag">Hardware Integration</span>
         </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-chart-line"></i> Simulation & Research</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">MATLAB</span>
-            <span class="skill-tag">Experimental Analysis</span>
-            <span class="skill-tag">Technical Writing</span>
-            <span class="skill-tag">LaTeX</span>
-          </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-chart-line"></i> Simulation &amp; Research</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">MATLAB</span>
+          <span class="skill-tag">Experimental Analysis</span>
+          <span class="skill-tag">Technical Writing</span>
+          <span class="skill-tag">LaTeX</span>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>

@@ -3,6 +3,7 @@ layout: project
 title: "Hybrid Continuum-Eversion Robot"
 description: "A deployable hybrid robot combining eversion-based locomotion, rolling-contact-joint steering, and a lumen-compatible intervention end-effector for disaster medical scenarios."
 date: 2026-09-01
+featured_homepage: true
 categories: [Robotics, Mechatronics, 3D Printing]
 featured_image: "/assets/images/projects/hybrid_robot/Front%20profile.jpg"
 hero_image: "/assets/images/projects/hybrid_robot/Front_%20section%20with%20lumen%20opening.jpeg"

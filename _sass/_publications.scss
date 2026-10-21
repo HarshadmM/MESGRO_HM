@@ -1,4 +1,17 @@
-/* Publications page and entry cards */
+/* Homepage awards preview and publications page */
+.homepage-recognition {
+  padding: 0 0 var(--spacing-3xl);
+  background: var(--background-color);
+}
+
+.homepage-recognition .publication-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spacing-xl);
+  max-width: 1000px;
+  margin: 0 auto var(--spacing-2xl);
+}
+
 .publications-page {
   min-height: 60vh;
   padding: var(--spacing-3xl) 0;

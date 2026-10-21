@@ -3,6 +3,7 @@ layout: project
 title: "Wearable Haptic Finger for Microrobot Teleoperation"
 description: "A low-cost, modular wearable haptic finger interface for human-in-the-loop control of a simulated microrobot approximately 200 μm in size."
 date: 2025-12-12
+featured_homepage: true
 categories: [Robotics, Mechatronics, Haptics, Medical Robotics, 3D Printing]
 featured_image: "/assets/images/projects/haptic/Mechanical%20prototype.jpeg"
 models:
