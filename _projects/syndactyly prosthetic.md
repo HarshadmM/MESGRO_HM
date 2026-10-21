@@ -18,7 +18,7 @@ gallery_groups:
 
 ## Project overview
 
-This design was one of two individualized partial-hand prostheses that I developed and supervised. It was created for a client with universal brachydactyly and syndactyly affecting the middle and ring fingers. The mechanism was selected around this specific finger configuration.
+This design was one of two individualized partial-hand prostheses that I helped develop and supervise. It was created for a client with universal brachydactyly and syndactyly affecting the middle and ring fingers. The mechanism was selected around this specific finger configuration.
 
 This project was developed in collaboration with the [Imperial College London Prosthetics Society](https://www.linkedin.com/company/imperial-college-london-prosthetics-society/posts/?feedView=all).
 
@@ -34,4 +34,4 @@ The prosthesis uses a claw-and-plate arrangement assembled from 3D-printed plate
 
 ## My contribution
 
-I developed and supervised this prosthesis concept, focusing on the claw-and-plate mechanism and the integration of its 3D-printed and mechanical components.
+I helped develop and supervise this prosthesis concept, contributing to the claw-and-plate design, CAD, and 3D printing. I also taught collaborating members of the [Imperial College London Prosthetics Society](https://www.linkedin.com/company/imperial-college-london-prosthetics-society/posts/?feedView=all) about Bowden-cable routing constraints and cable transmission, and shared guidance on mechanical material sourcing and component selection.

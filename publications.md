@@ -28,6 +28,20 @@ permalink: /publications/
       </div>
     </section>
 
+    <section class="publications-section" aria-labelledby="presentations-heading">
+      <h2 class="publications-section-title" id="presentations-heading">Presentations</h2>
+      <div class="publication-list">
+        <article class="publication-card">
+          <p class="publication-year">Poster presentation</p>
+          <h2>Deployable Hybrid Continuum-Eversion Robot for Medical Applications in Disaster Scenarios</h2>
+          <p class="publication-venue">Hamlyn Symposium on Medical Robotics</p>
+          <div class="publication-links">
+            <a href="mailto:harshadmm10131@gmail.com?subject=Poster%20and%20thesis%20summary%20request">Request poster and/or thesis summary for detailed reading</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="publications-section" aria-labelledby="publications-heading">
       <h2 class="publications-section-title" id="publications-heading">Publications</h2>
     {% assign publications = site.publications | sort: "year" | reverse %}

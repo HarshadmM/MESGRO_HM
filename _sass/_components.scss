@@ -135,6 +135,40 @@
   font-weight: var(--font-weight-light);
 }
 
+.about-hero-content {
+  max-width: 1120px;
+}
+
+.about-hero-profile {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.about-hero-portrait {
+  flex: 0 0 clamp(10rem, 21vw, 16rem);
+  width: clamp(10rem, 21vw, 16rem);
+  height: clamp(10rem, 21vw, 16rem);
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30%;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.32);
+}
+
+.about-hero-copy {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+.about-hero-copy .hero-description {
+  max-width: 720px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /* Ensure hero-personal text is always visible */
 .hero-personal .hero-title,
 .hero-personal .hero-description {

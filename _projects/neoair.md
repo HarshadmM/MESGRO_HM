@@ -6,6 +6,9 @@ date: 2026-04-17
 categories: [Medical Robotics, Biomedical Engineering, Device Design, Rapid Prototyping]
 featured_image: "/assets/images/projects/neoair/hero_neoair_image.jpg"
 hero_image: "/assets/images/projects/neoair/hero_neoair_image.jpg"
+models:
+  - file: "/assets/models/neoair/inline_neoair.glb"
+    description: "Interactive CAD model of the inline NeoAir concept"
 gallery_groups:
   - title: "Project development"
     layout: "stack"
@@ -23,7 +26,7 @@ gallery_groups:
 
 ## Project overview
 
-NeoAir was a group project by Amy Lai, Anton Gerasimov, Harshad Malik and Hetarth Bhatt. The team explored ways to make catheter placement confirmation clearer during minimally invasive surfactant therapy (MIST), a treatment used for respiratory distress syndrome in preterm infants.
+NeoAir was a group project by [Yu-Chieh Amy Lai](https://www.linkedin.com/in/yu-chieh-amy-lai-4a84ba243/), [Anton Gerasimov](https://www.linkedin.com/in/anton-ger/), [Harshad Malik](https://www.linkedin.com/in/harshadmm), and [Hetarth Bhatt](https://www.linkedin.com/in/hetarth-bhatt-9a4a8123b/). The team explored ways to make catheter placement confirmation clearer during minimally invasive surfactant therapy (MIST), a treatment used for respiratory distress syndrome in preterm infants.
 
 ## Recognition
 
@@ -67,5 +70,5 @@ The presentation identifies realistic simulation, calibration and maintenance pl
 
 - [Yu-Chieh Amy Lai](https://www.linkedin.com/in/yu-chieh-amy-lai-4a84ba243/)
 - [Anton Gerasimov](https://www.linkedin.com/in/anton-ger/)
-- Harshad Malik
+- [Harshad Malik](https://www.linkedin.com/in/harshadmm)
 - [Hetarth Bhatt](https://www.linkedin.com/in/hetarth-bhatt-9a4a8123b/)

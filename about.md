@@ -6,15 +6,21 @@ permalink: /about/
 
 <div class="hero-personal">
   <div class="container">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1 class="hero-name">About Me</h1>
-        <p class="hero-title">Medical Graduate | Robotics Researcher</p>
-        <p class="hero-description">
-          I work at the intersection of mechanical design, robotics, and
-          medical intervention, combining clinical problem-solving with
-          hands-on engineering and experimental research.
-        </p>
+    <div class="hero-content about-hero-content">
+      <div class="about-hero-profile">
+        <img class="about-hero-portrait"
+          src="{{ '/assets/images/self_portrait.jpeg' | relative_url }}"
+          alt="Portrait of Harshad Malik"
+          loading="eager">
+        <div class="about-hero-copy">
+          <h1 class="hero-name">Harshad Malik</h1>
+          <p class="hero-title">Robotics Engineer &amp; Researcher | Medical Graduate</p>
+          <p class="hero-description">
+            I work across mechanical design, robotics, and experimental research,
+            bringing a medical background to engineering problems and a practical,
+            hands-on approach to building and evaluating robotic systems.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -34,14 +40,49 @@ permalink: /about/
   </details>
 
   <details class="about-accordion">
+    <summary>Core Values</summary>
+    <div class="project-description-content">
+      <p>
+        I aim to apply science, technology, and rigorous research for the
+        betterment of humanity. I also believe knowledge carries a responsibility:
+        to pass practical skills and values to coming generations, and to guide
+        them in asking questions and reasoning from scientific principles.
+      </p>
+    </div>
+  </details>
+
+  <details class="about-accordion">
+    <summary>Education</summary>
+    <div class="project-description-content">
+      <p>
+        <strong>MRes Medical Robotics and Image-Guided Intervention</strong><br>
+        Imperial College London · Distinction<br>
+        Research project mark: 75%.
+      </p>
+      <p>
+        I proposed my thesis project to my primary supervisor, Professor George
+        Mylonas, beginning with a paper proposal. I developed that proposal into
+        my research project on a deployable hybrid continuum-eversion robot for
+        medical applications in disaster scenarios.
+      </p>
+      <p>
+        <strong>MBBS</strong><br>
+        Smolensk State Medical University · 2018–2024<br>
+        Final marks: 95.34.
+      </p>
+    </div>
+  </details>
+
+  <details class="about-accordion">
     <summary>Research Interests</summary>
     <div class="project-description-content">
       <ul>
-        <li>Medical and surgical robotics</li>
         <li>Continuum and deployable robotics</li>
+        <li>Prosthetics and assistive technology</li>
         <li>Biomimetic mechanisms and mechanical design</li>
         <li>Search-and-rescue and field robotics</li>
         <li>Mechatronics and robotic actuation</li>
+        <li>Medical and surgical robotics</li>
       </ul>
     </div>
   </details>
@@ -65,6 +106,12 @@ permalink: /about/
         <a href="{{ '/projects/hybrid_continuum_eversion/' | relative_url }}">
           Read the project details
         </a>
+      </p>
+      <p>
+        I also contributed to a wearable haptic interface for microrobot
+        teleoperation. <a href="{{ '/projects/wearable_haptic_finger_microrobot/' | relative_url }}">
+          Explore the haptic finger project
+        </a>.
       </p>
     </div>
   </details>
