@@ -104,13 +104,13 @@ permalink: /about/
       </p>
       <p>
         <a href="{{ '/projects/hybrid_continuum_eversion/' | relative_url }}">
-          Read the project details
+          Read the project details here
         </a>
       </p>
       <p>
         I also contributed to a wearable haptic interface for microrobot
         teleoperation. <a href="{{ '/projects/wearable_haptic_finger_microrobot/' | relative_url }}">
-          Explore the haptic finger project
+          Explore the haptic finger project here
         </a>.
       </p>
     </div>
@@ -135,6 +135,13 @@ permalink: /about/
         <strong>Simulation and research:</strong> MATLAB, LaTeX, technical
         writing, experimental analysis.
       </p>
+      <ul>
+        <li>
+          <strong>Languages known:</strong> English, Hindi, and Marathi (fluent);
+          Russian (advanced/native); Japanese (intermediate, JLPT N4 certified;
+          N3 understood).
+        </li>
+      </ul>
     </div>
   </details>
 
