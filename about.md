@@ -156,6 +156,13 @@ permalink: /about/
           loading="lazy">
         <figcaption>Sharing practical cable-transmission design with the Prosthetics Society.</figcaption>
       </figure>
+      <figure class="about-feature-figure">
+        <img
+          src="{{ '/assets/images/run_extra.jpeg' | relative_url }}"
+          alt="Harshad taking part in an outdoor running event"
+          loading="lazy">
+        <figcaption>Taking part in an outdoor running event.</figcaption>
+      </figure>
     </div>
   </details>
 
