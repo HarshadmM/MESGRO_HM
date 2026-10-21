@@ -27,8 +27,8 @@ permalink: /about/
 </div>
 
 <div class="container">
-  <details class="about-accordion">
-    <summary>Background</summary>
+  <section class="about-accordion">
+    <h2>Background</h2>
     <div class="project-description-content">
       <p>
         I completed an MRes in Medical Robotics and Image-Guided Intervention
@@ -37,10 +37,10 @@ permalink: /about/
         systems, kinematic modelling, and experimental validation.
       </p>
     </div>
-  </details>
+  </section>
 
-  <details class="about-accordion">
-    <summary>Core Values</summary>
+  <section class="about-accordion">
+    <h2>Core Values</h2>
     <div class="project-description-content">
       <p>
         I aim to apply science, technology, and rigorous research for the
@@ -49,10 +49,10 @@ permalink: /about/
         them in asking questions and reasoning from scientific principles.
       </p>
     </div>
-  </details>
+  </section>
 
-  <details class="about-accordion">
-    <summary>Education</summary>
+  <section class="about-accordion">
+    <h2>Education</h2>
     <div class="project-description-content">
       <p>
         <strong>MRes Medical Robotics and Image-Guided Intervention</strong><br>
@@ -71,10 +71,10 @@ permalink: /about/
         Final marks: 95.34.
       </p>
     </div>
-  </details>
+  </section>
 
-  <details class="about-accordion">
-    <summary>Research Interests</summary>
+  <section class="about-accordion">
+    <h2>Research Interests</h2>
     <div class="project-description-content">
       <ul>
         <li>Continuum and deployable robotics</li>
@@ -85,10 +85,10 @@ permalink: /about/
         <li>Medical and surgical robotics</li>
       </ul>
     </div>
-  </details>
+  </section>
 
-  <details class="about-accordion">
-    <summary>Featured Research</summary>
+  <section class="about-accordion">
+    <h2>Featured Research</h2>
     <div class="project-description-content">
       <p>
         My MRes thesis, <em>Deployable Hybrid Continuum-Eversion Robot for
@@ -114,10 +114,10 @@ permalink: /about/
         </a>.
       </p>
     </div>
-  </details>
+  </section>
 
-  <details class="about-accordion">
-    <summary>Technical Skills</summary>
+  <section class="about-accordion">
+    <h2>Technical Skills</h2>
     <div class="project-description-content">
       <p>
         <strong>Mechanical design:</strong> SolidWorks, CAD, 3D printing,
@@ -143,10 +143,10 @@ permalink: /about/
         </li>
       </ul>
     </div>
-  </details>
+  </section>
 
-  <details class="about-accordion">
-    <summary>Beyond Research, Engineering &amp; Professional Life</summary>
+  <section class="about-accordion">
+    <h2>Beyond Research, Engineering &amp; Professional Life</h2>
     <div class="project-description-content">
       <p>
         I enjoy sharing practical engineering knowledge with others. I taught
@@ -171,10 +171,10 @@ permalink: /about/
         <figcaption>Taking part in an outdoor running event.</figcaption>
       </figure>
     </div>
-  </details>
+  </section>
 
-  <details class="about-accordion">
-    <summary>Contact</summary>
+  <section class="about-accordion">
+    <h2>Contact</h2>
     <div class="project-description-content">
       <ul>
         <li>
@@ -191,5 +191,5 @@ permalink: /about/
         </li>
       </ul>
     </div>
-  </details>
+  </section>
 </div>

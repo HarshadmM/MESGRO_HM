@@ -949,7 +949,7 @@
   color: var(--primary-color);
   font-size: 1.2rem;
 }
-/* Expandable About sections */
+/* Always-visible About sections */
 .about-accordion {
   margin-bottom: var(--spacing-lg);
   border: 1px solid var(--border-color);
@@ -958,34 +958,13 @@
   overflow: hidden;
 }
 
-.about-accordion summary {
+.about-accordion h2 {
   padding: var(--spacing-lg);
-  cursor: pointer;
+  margin: 0;
+  font-size: 1rem;
   font-weight: var(--font-weight-semibold);
   color: var(--text-primary);
   background: var(--surface-color);
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.about-accordion summary::-webkit-details-marker {
-  display: none;
-}
-
-.about-accordion summary::after {
-  content: "+";
-  color: var(--primary-color);
-  font-size: 1.4rem;
-}
-
-.about-accordion[open] summary::after {
-  content: "−";
-}
-
-.about-accordion summary:hover {
-  background: var(--surface-color-hover);
 }
 
 .about-accordion .project-description-content {
