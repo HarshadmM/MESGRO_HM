@@ -2,6 +2,11 @@
 layout: default
 title: About
 permalink: /about/
+# Add gallery items here using image, alt, and caption fields.
+# Example sketch: { image: "/assets/images/about/sketches/sketch-01.jpg", alt: "Description", caption: "Sketch title" }
+# Example certificate: { image: "/assets/images/about/half-marathon/certificate-01.jpg", alt: "Race certificate", caption: "Race name · year" }
+sketch_gallery: []
+half_marathon_certificates: []
 ---
 
 <div class="hero-personal">
@@ -86,8 +91,8 @@ permalink: /about/
     </div>
   </section>
 
-  <section class="about-accordion">
-    <h2>Beyond Engineering</h2>
+  <section class="about-accordion" aria-labelledby="beyond-engineering-heading">
+    <h2 id="beyond-engineering-heading">Beyond Engineering</h2>
     <div class="project-description-content">
       <p>
         Language learning is one of the ways I connect with people and cultures
@@ -112,13 +117,56 @@ permalink: /about/
           loading="lazy">
         <figcaption>Sharing practical cable-transmission design with the Prosthetics Society.</figcaption>
       </figure>
-      <figure class="about-feature-figure">
-        <img
-          src="{{ '/assets/images/run_extra.jpeg' | relative_url }}"
-          alt="Harshad taking part in an outdoor running event"
-          loading="lazy">
-        <figcaption>Taking part in an outdoor running event.</figcaption>
-      </figure>
+
+      <section class="about-subsection" aria-labelledby="sketches-heading">
+        <h3 id="sketches-heading">Sketches</h3>
+        <p>A selection of sketches I have made.</p>
+        {% assign sketch_items = page.sketch_gallery %}
+        {% if sketch_items and sketch_items.size > 0 %}
+          <div class="about-gallery-grid">
+            {% for item in sketch_items %}
+              <figure class="about-gallery-card about-gallery-card--art">
+                <img src="{{ item.image | relative_url }}" alt="{{ item.alt | escape }}" loading="lazy">
+                {% if item.caption %}
+                  <figcaption>{{ item.caption | escape }}</figcaption>
+                {% endif %}
+              </figure>
+            {% endfor %}
+          </div>
+        {% else %}
+          <div class="about-gallery-empty">Sketches will appear here.</div>
+        {% endif %}
+      </section>
+
+      <section class="about-subsection" aria-labelledby="physical-heading">
+        <h3 id="physical-heading">Physical pursuits &amp; achievements</h3>
+        <p>Running gives me a different kind of challenge outside the lab.</p>
+        <div class="about-gallery-grid">
+          <figure class="about-gallery-card">
+            <img
+              src="{{ '/assets/images/run_extra.jpeg' | relative_url }}"
+              alt="Harshad taking part in an outdoor running event"
+              loading="lazy">
+            <figcaption>Taking part in an outdoor running event.</figcaption>
+          </figure>
+        </div>
+        <h4>Half-marathon certificates</h4>
+        {% assign certificate_items = page.half_marathon_certificates %}
+        {% if certificate_items and certificate_items.size > 0 %}
+          <div class="about-gallery-grid">
+            {% for item in certificate_items %}
+              <figure class="about-gallery-card about-gallery-card--certificate">
+                <img src="{{ item.image | relative_url }}" alt="{{ item.alt | escape }}" loading="lazy">
+                {% if item.caption %}
+                  <figcaption>{{ item.caption | escape }}</figcaption>
+                {% endif %}
+              </figure>
+            {% endfor %}
+          </div>
+        {% else %}
+          <div class="about-gallery-empty">Half-marathon certificates will appear here.</div>
+        {% endif %}
+      </section>
     </div>
   </section>
 

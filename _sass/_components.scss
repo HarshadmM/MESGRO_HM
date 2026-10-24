@@ -975,3 +975,70 @@
 .about-accordion .project-description-content {
   padding: var(--spacing-lg);
 }
+
+/* About page sub-galleries */
+.about-subsection {
+  margin-top: var(--spacing-2xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--border-color);
+}
+
+.about-subsection h3 {
+  margin: 0 0 var(--spacing-sm);
+  color: var(--text-primary);
+  font-size: var(--font-size-xl);
+}
+
+.about-subsection h4 {
+  margin: var(--spacing-xl) 0 var(--spacing-md);
+  color: var(--text-primary);
+  font-size: var(--font-size-lg);
+}
+
+.about-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-md);
+}
+
+.about-gallery-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--surface-color);
+}
+
+.about-gallery-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.about-gallery-card--art img,
+.about-gallery-card--certificate img {
+  object-fit: contain;
+  padding: var(--spacing-md);
+}
+
+.about-gallery-card figcaption {
+  padding: var(--spacing-md);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.about-gallery-empty {
+  display: flex;
+  min-height: 132px;
+  grid-column: 1 / -1;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--surface-color);
+  color: var(--text-secondary);
+  text-align: center;
+}
