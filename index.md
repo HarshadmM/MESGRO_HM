@@ -8,7 +8,7 @@ layout: default
       <div class="hero-info-wrapper">
         <div class="hero-text">
            <h1 class="hero-name">{{ site.author | default: "Your Name" }}</h1>
-           <p class="hero-title">Robotics & Mechatronics</p>
+           <p class="hero-title">Medical Graduate | Robotics &amp; Mechatronics Researcher</p>
         </div>
         
         <div class="hero-actions">
@@ -25,7 +25,7 @@ layout: default
   <div class="container">
     <div class="section-header">
       <h2>Featured Research Projects</h2>
-      <p class="section-subtitle">Selected work in deployable robotics and haptic interaction</p>
+      <p class="section-subtitle">My MRes thesis is the featured project, followed by selected work in haptic interaction</p>
     </div>
     
     <div class="projects-grid-featured">

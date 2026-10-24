@@ -14,11 +14,11 @@ permalink: /about/
           loading="eager">
         <div class="about-hero-copy">
           <h1 class="hero-name">Harshad Malik</h1>
-          <p class="hero-title">Robotics Engineer &amp; Researcher | Medical Graduate</p>
+          <p class="hero-title">Medical Graduate | Robotics Engineer &amp; Researcher</p>
           <p class="hero-description">
-            I work across mechanical design, robotics, and experimental research,
-            bringing a medical background to engineering problems and a practical,
-            hands-on approach to building and evaluating robotic systems.
+            I bring a medical perspective to robotics: grounding engineering in
+            clinical needs, then using design, prototyping, and research to explore
+            what technology can make possible.
           </p>
         </div>
       </div>
@@ -28,20 +28,25 @@ permalink: /about/
 
 <div class="container">
   <section class="about-accordion">
-    <h2>Background</h2>
+    <h2>Background &amp; Core Values</h2>
     <div class="project-description-content">
       <p>
-        I completed an MRes in Medical Robotics and Image-Guided Intervention
-        at Imperial College London's Hamlyn Centre for Medical Robotics.
-        My work spans CAD, mechanical design, rapid prototyping, embedded
-        systems, kinematic modelling, and experimental validation.
+        My medical background is more than an earlier qualification: it sets the
+        perspective I bring to robotics. I start with the human and clinical need,
+        consider the context in which a device will be used, and judge a design by
+        what it can enable in practice. It is why medical and surgical robotics
+        feel like a natural place to bring medicine and engineering together.
       </p>
-    </div>
-  </section>
-
-  <section class="about-accordion">
-    <h2>Core Values</h2>
-    <div class="project-description-content">
+      <p>
+        My research training at Imperial College London's Hamlyn Centre for
+        Medical Robotics gave me a way to carry that perspective into engineering.
+        I proposed my MRes thesis topic to my primary supervisor, Professor George
+        Mylonas, and developed it from a paper proposal into a project on a
+        deployable hybrid continuum-eversion robot for medical applications in
+        disaster scenarios. That work connected clinical purpose with CAD,
+        mechanical design, prototyping, modelling, integration, and experimental
+        testing.
+      </p>
       <p>
         I aim to apply science, technology, and rigorous research for the
         betterment of humanity. I also believe knowledge carries a responsibility:
@@ -58,12 +63,6 @@ permalink: /about/
         <strong>MRes Medical Robotics and Image-Guided Intervention</strong><br>
         Imperial College London · Distinction<br>
         Research project mark: 75%.
-      </p>
-      <p>
-        I proposed my thesis project to my primary supervisor, Professor George
-        Mylonas, beginning with a paper proposal. I developed that proposal into
-        my research project on a deployable hybrid continuum-eversion robot for
-        medical applications in disaster scenarios.
       </p>
       <p>
         <strong>MBBS</strong><br>
@@ -88,69 +87,19 @@ permalink: /about/
   </section>
 
   <section class="about-accordion">
-    <h2>Featured Research</h2>
+    <h2>Beyond Engineering</h2>
     <div class="project-description-content">
       <p>
-        My MRes thesis, <em>Deployable Hybrid Continuum-Eversion Robot for
-        Medical Applications in Disaster Scenarios</em>, investigated a
-        robotic platform for deployment into confined environments, steering,
-        and localized intervention.
-      </p>
-      <p>
-        The project integrated an eversion mechanism, a tendon-driven
-        rolling-contact-joint steering module, a continuous central lumen, and
-        a vortex-cannon end-effector. I worked across mechanical design,
-        fabrication, integration, kinematic modelling, and physical testing.
-      </p>
-      <p>
-        <a href="{{ '/projects/hybrid_continuum_eversion/' | relative_url }}">
-          Read the project details here
-        </a>
-      </p>
-      <p>
-        I also contributed to a wearable haptic interface for microrobot
-        teleoperation. <a href="{{ '/projects/wearable_haptic_finger_microrobot/' | relative_url }}">
-          Explore the haptic finger project here
-        </a>.
-      </p>
-    </div>
-  </section>
-
-  <section class="about-accordion">
-    <h2>Technical Skills</h2>
-    <div class="project-description-content">
-      <p>
-        <strong>Mechanical design:</strong> SolidWorks, CAD, 3D printing,
-        prototyping.
-      </p>
-      <p>
-        <strong>Robotics:</strong> continuum mechanisms, tendon-driven
-        actuation, deployable systems, kinematic modelling.
-      </p>
-      <p>
-        <strong>Electronics and control:</strong> Arduino, stepper motors,
-        motor drivers, hardware integration.
-      </p>
-      <p>
-        <strong>Simulation and research:</strong> MATLAB, LaTeX, technical
-        writing, experimental analysis.
+        Language learning is one of the ways I connect with people and cultures
+        beyond engineering:
       </p>
       <ul>
-        <li>
-          <strong>Languages known:</strong> English, Hindi, and Marathi (fluent);
-          Russian (advanced/native); Japanese (intermediate, JLPT N4 certified;
-          N3 understood).
-        </li>
+        <li><strong>English, Hindi, and Marathi:</strong> fluent</li>
+        <li><strong>Russian:</strong> advanced/native</li>
+        <li><strong>Japanese:</strong> intermediate; JLPT N4 certified, with N3 understood</li>
       </ul>
-    </div>
-  </section>
-
-  <section class="about-accordion">
-    <h2>Beyond Research, Engineering &amp; Professional Life</h2>
-    <div class="project-description-content">
       <p>
-        I enjoy sharing practical engineering knowledge with others. I taught
-        members of the
+        I also enjoy sharing practical knowledge. I taught members of the
         <a href="https://www.linkedin.com/company/imperial-college-london-prosthetics-society/posts/?feedView=all">
           Imperial College London Prosthetics Society
         </a>
