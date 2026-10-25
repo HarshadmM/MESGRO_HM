@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Hybrid Continuum-Eversion Robot"
-description: "A deployable hybrid robot combining eversion-based locomotion, rolling-contact-joint steering, and a lumen-compatible intervention end-effector for disaster medical scenarios."
+description: "A deployable robot exploring how basic medical intervention could begin before casualty evacuation in debris-filled disaster environments."
 date: 2026-09-01
 featured_homepage: true
 categories: [Robotics, Mechatronics, 3D Printing, Arduino]
@@ -74,7 +74,11 @@ gallery_groups:
 
 ## Motivation
 
-I proposed this MRes topic to explore how a robot might be deployed for medical applications in disaster scenarios. The design question was how to bring deployment, steering, and a route for an intervention tool together in one research platform.
+During my medical studies in Smolensk, I witnessed a drone strike on a nearby town. That experience led me to focus on a gap in disaster response: locating or reaching a casualty does not guarantee they can receive help before evacuation. Rubble can limit responders' access, visibility, and time.
+
+I proposed a human-in-the-loop robot that could navigate debris, sense contact, and support a basic stabilisation task, with the aim of reducing responder exposure and cognitive load. My original proposal explored soft-robot navigation with haptic feedback and an end effector for patient stabilisation.
+
+The MRes project narrowed to a deployable hybrid continuum-eversion robot with an integrated vortex-cannon end effector. I evaluated the engineering system in controlled tests; the work explored feasibility and did not validate clinical outcomes.
 
 ## System concept
 

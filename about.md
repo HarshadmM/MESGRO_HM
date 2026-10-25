@@ -24,8 +24,7 @@ sketch_gallery:
     caption: "Character studies"
 physical_gallery:
   - image: "/assets/images/run_extra.jpeg"
-    alt: "Harshad taking part in an outdoor running event."
-    caption: "Taking part in an outdoor running event"
+    alt: "Harshad at an outdoor running event."
   - image: "/assets/images/10k.jpg"
     alt: "A Rotary Rain Run 10-kilometre race bib and medal."
     caption: "Rotary Rain Run · 10K · Goa, 2024"
@@ -114,6 +113,10 @@ half_marathon_certificates:
         <li>Search-and-rescue and field robotics</li>
         <li>Mechatronics and robotic actuation</li>
         <li>Medical and surgical robotics</li>
+        <li>Microrobotics and dexterous manipulation</li>
+        <li>Microactuation and microactuators</li>
+        <li>Microfabrication</li>
+        <li>Optothermal actuation</li>
       </ul>
     </div>
   </section>
@@ -123,7 +126,6 @@ half_marathon_certificates:
     <div class="project-description-content">
       <section class="about-subsection" aria-labelledby="physical-heading">
         <h3 id="physical-heading">Physical pursuits &amp; achievements</h3>
-        <p>Running gives me a different kind of challenge outside the lab.</p>
         {% assign physical_items = page.physical_gallery %}
         {% assign certificate_items = page.half_marathon_certificates %}
         {% if physical_items.size > 0 or certificate_items.size > 0 %}

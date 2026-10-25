@@ -1056,7 +1056,9 @@
 }
 
 .about-gallery-track--art .about-gallery-card {
-  flex-basis: clamp(250px, 32vw, 380px);
+  flex: 0 0 clamp(300px, 38.4vw, 456px);
+  width: clamp(300px, 38.4vw, 456px);
+  min-width: clamp(300px, 38.4vw, 456px);
 }
 
 .about-gallery-control {
@@ -1117,9 +1119,14 @@
     height: 2rem;
   }
 
-  .about-gallery-card,
-  .about-gallery-track--art .about-gallery-card {
+  .about-gallery-card {
     flex-basis: 78%;
+  }
+
+  .about-gallery-track--art .about-gallery-card {
+    flex-basis: 94%;
+    width: 94%;
+    min-width: 300px;
   }
 }
 
