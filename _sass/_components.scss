@@ -1020,19 +1020,26 @@
 
 .about-gallery-track {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   min-width: 0;
   gap: var(--spacing-md);
-  overflow-x: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
   padding: 2px 2px var(--spacing-sm);
+  direction: ltr;
   scroll-snap-type: x mandatory;
   scroll-padding-inline: 2px;
   scrollbar-color: var(--border-color) transparent;
   scrollbar-width: thin;
+  touch-action: pan-x;
   -webkit-overflow-scrolling: touch;
 }
 
 .about-gallery-card {
   flex: 0 0 clamp(250px, 32vw, 380px);
+  width: clamp(250px, 32vw, 380px);
+  min-width: clamp(250px, 32vw, 380px);
   margin: 0;
   overflow: hidden;
   border: 1px solid var(--border-color);
