@@ -6,28 +6,32 @@ permalink: /about/
 sketch_gallery:
   - image: "/assets/images/sketch1.jpg"
     alt: "Ink-and-wash sketch of a person holding a cup."
-    caption: "Ink-and-wash portrait study"
   - image: "/assets/images/sketch2.jpg"
     alt: "Pencil portrait of a person wearing a knit cap."
-    caption: "Pencil portrait study"
   - image: "/assets/images/sketch3.jpg"
     alt: "Pencil drawing of two figures in profile facing one another."
-    caption: "Figure study"
   - image: "/assets/images/sketch4.jpg"
     alt: "Ink drawing of a fantastical long-necked creature."
-    caption: "Creature study"
   - image: "/assets/images/sketch6.jpg"
     alt: "Pencil character portrait in a sketchbook outdoors."
-    caption: "Sketchbook portrait"
   - image: "/assets/images/sketch_.jpg"
     alt: "Page of rough pencil studies of two character heads."
-    caption: "Character studies"
+  - image: "/assets/images/sketch7.jpeg"
+    alt: "Ink sketch of two hands meeting over a draped garment."
+  - image: "/assets/images/sketch9.jpeg"
+    alt: "Ink figure study of a person leaning forward, with a pen beside the page."
+  - image: "/assets/images/sketch10.jpeg"
+    alt: "Ink study of a person's head, shoulders, and back viewed from behind."
+  - image: "/assets/images/sketch11.jpeg"
+    alt: "Close-up ink sketch of a person's eyes on a small card beside drawing tools."
 physical_gallery:
   - image: "/assets/images/run_extra.jpeg"
     alt: "Harshad at an outdoor running event."
   - image: "/assets/images/10k.jpg"
     alt: "A Rotary Rain Run 10-kilometre race bib and medal."
     caption: "Rotary Rain Run · 10K · Goa, 2024"
+  - video: "/assets/images/lift.mp4"
+    alt: "Harshad lifting weights during a strength-training session."
 half_marathon_certificates:
   - image: "/assets/images/half_marathon.jpg"
     alt: "RG Marathon 5.0 21K participation certificate and medal for Harshad Malik, Goa, 13 October 2024."
@@ -171,10 +175,17 @@ half_marathon_certificates:
             <button class="about-gallery-control" type="button" data-gallery-prev aria-label="Scroll physical activities gallery left" disabled>
               <i class="fas fa-chevron-left" aria-hidden="true"></i>
             </button>
-            <div class="about-gallery-track" data-gallery-track role="list" aria-label="Running and race achievements" tabindex="0">
+            <div class="about-gallery-track" data-gallery-track role="list" aria-label="Physical activities and race achievements" tabindex="0">
               {% for item in physical_items %}
                 <figure class="about-gallery-card" role="listitem">
-                  <img src="{{ item.image | relative_url }}" alt="{{ item.alt | escape }}" loading="lazy">
+                  {% if item.video %}
+                    <video controls preload="metadata" playsinline aria-label="{{ item.alt | escape }}">
+                      <source src="{{ item.video | relative_url }}" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  {% else %}
+                    <img src="{{ item.image | relative_url }}" alt="{{ item.alt | escape }}" loading="lazy">
+                  {% endif %}
                   {% if item.caption %}
                     <figcaption>{{ item.caption | escape }}</figcaption>
                   {% endif %}

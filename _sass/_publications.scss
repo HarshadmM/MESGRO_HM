@@ -118,3 +118,41 @@
   margin-bottom: 0;
   color: var(--text-secondary);
 }
+
+
+.presentation-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.presentation-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.presentation-gallery-poster img {
+  max-height: 680px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.presentation-gallery-photo {
+  max-height: 520px;
+  object-fit: contain;
+}
+
+@media (max-width: 640px) {
+  .presentation-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .presentation-gallery-poster img {
+    max-height: none;
+  }
+}
