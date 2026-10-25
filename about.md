@@ -121,82 +121,93 @@ half_marathon_certificates:
   <section class="about-accordion" aria-labelledby="beyond-engineering-heading">
     <h2 id="beyond-engineering-heading">Beyond Engineering</h2>
     <div class="project-description-content">
-      <p>
-        Language learning is one of the ways I connect with people and cultures
-        beyond engineering:
-      </p>
-      <ul>
-        <li><strong>English, Hindi, and Marathi:</strong> fluent</li>
-        <li><strong>Russian:</strong> advanced/native</li>
-        <li><strong>Japanese:</strong> intermediate; JLPT N4 certified, with N3 understood</li>
-      </ul>
-      <p>
-        I also enjoy sharing practical knowledge. I taught members of the
-        <a href="https://www.linkedin.com/company/imperial-college-london-prosthetics-society/posts/?feedView=all">
-          Imperial College London Prosthetics Society
-        </a>
-        about cable transmission mechanisms used in prosthetic devices.
-      </p>
-      <figure class="about-feature-figure">
-        <img
-          src="{{ '/assets/images/projects/about_page/teaching%20cable%20management.jpeg' | relative_url }}"
-          alt="Teaching members of the Imperial College London Prosthetics Society about cable transmission mechanisms"
-          loading="lazy">
-        <figcaption>Sharing practical cable-transmission design with the Prosthetics Society.</figcaption>
-      </figure>
+      <section class="about-subsection" aria-labelledby="physical-heading">
+        <h3 id="physical-heading">Physical pursuits &amp; achievements</h3>
+        <p>Running gives me a different kind of challenge outside the lab.</p>
+        {% assign physical_items = page.physical_gallery %}
+        {% assign certificate_items = page.half_marathon_certificates %}
+        {% if physical_items.size > 0 or certificate_items.size > 0 %}
+          <div class="about-gallery-carousel" data-about-gallery>
+            <button class="about-gallery-control" type="button" data-gallery-prev aria-label="Scroll physical activities gallery left" disabled>
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="about-gallery-track" data-gallery-track role="list" aria-label="Running and race achievements" tabindex="0">
+              {% for item in physical_items %}
+                <figure class="about-gallery-card" role="listitem">
+                  <img src="{{ item.image | relative_url }}" alt="{{ item.alt | escape }}" loading="lazy">
+                  {% if item.caption %}
+                    <figcaption>{{ item.caption | escape }}</figcaption>
+                  {% endif %}
+                </figure>
+              {% endfor %}
+              {% for item in certificate_items %}
+                <figure class="about-gallery-card about-gallery-card--certificate" role="listitem">
+                  <img src="{{ item.image | relative_url }}" alt="{{ item.alt | escape }}" loading="lazy">
+                  {% if item.caption %}
+                    <figcaption>{{ item.caption | escape }}</figcaption>
+                  {% endif %}
+                </figure>
+              {% endfor %}
+            </div>
+            <button class="about-gallery-control" type="button" data-gallery-next aria-label="Scroll physical activities gallery right">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        {% else %}
+          <div class="about-gallery-empty">Running and race achievements will appear here.</div>
+        {% endif %}
+      </section>
 
       <section class="about-subsection" aria-labelledby="sketches-heading">
         <h3 id="sketches-heading">Sketches</h3>
-        <p>A selection of sketches I have made.</p>
         {% assign sketch_items = page.sketch_gallery %}
         {% if sketch_items and sketch_items.size > 0 %}
-          <div class="about-gallery-grid">
-            {% for item in sketch_items %}
-              <figure class="about-gallery-card about-gallery-card--art">
-                <img src="{{ item.image | relative_url }}" alt="{{ item.alt | escape }}" loading="lazy">
-                {% if item.caption %}
-                  <figcaption>{{ item.caption | escape }}</figcaption>
-                {% endif %}
-              </figure>
-            {% endfor %}
+          <div class="about-gallery-carousel" data-about-gallery>
+            <button class="about-gallery-control" type="button" data-gallery-prev aria-label="Scroll sketches gallery left" disabled>
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="about-gallery-track about-gallery-track--art" data-gallery-track role="list" aria-label="Sketches" tabindex="0">
+              {% for item in sketch_items %}
+                <figure class="about-gallery-card about-gallery-card--art" role="listitem">
+                  <img src="{{ item.image | relative_url }}" alt="{{ item.alt | escape }}" loading="lazy">
+                </figure>
+              {% endfor %}
+            </div>
+            <button class="about-gallery-control" type="button" data-gallery-next aria-label="Scroll sketches gallery right">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
           </div>
         {% else %}
           <div class="about-gallery-empty">Sketches will appear here.</div>
         {% endif %}
       </section>
 
-      <section class="about-subsection" aria-labelledby="physical-heading">
-        <h3 id="physical-heading">Physical pursuits &amp; achievements</h3>
-        <p>Running gives me a different kind of challenge outside the lab.</p>
-        {% assign physical_items = page.physical_gallery %}
-        {% if physical_items and physical_items.size > 0 %}
-          <div class="about-gallery-grid">
-            {% for item in physical_items %}
-              <figure class="about-gallery-card">
-                <img src="{{ item.image | relative_url }}" alt="{{ item.alt | escape }}" loading="lazy">
-                {% if item.caption %}
-                  <figcaption>{{ item.caption | escape }}</figcaption>
-                {% endif %}
-              </figure>
-            {% endfor %}
-          </div>
-        {% endif %}
-        <h4>Half-marathon certificates</h4>
-        {% assign certificate_items = page.half_marathon_certificates %}
-        {% if certificate_items and certificate_items.size > 0 %}
-          <div class="about-gallery-grid">
-            {% for item in certificate_items %}
-              <figure class="about-gallery-card about-gallery-card--certificate">
-                <img src="{{ item.image | relative_url }}" alt="{{ item.alt | escape }}" loading="lazy">
-                {% if item.caption %}
-                  <figcaption>{{ item.caption | escape }}</figcaption>
-                {% endif %}
-              </figure>
-            {% endfor %}
-          </div>
-        {% else %}
-          <div class="about-gallery-empty">Half-marathon certificates will appear here.</div>
-        {% endif %}
+      <section class="about-subsection" aria-labelledby="prosthetics-society-heading">
+        <h3 id="prosthetics-society-heading">Prosthetics Society</h3>
+        <p>
+          I enjoy sharing practical knowledge. I taught members of the
+          <a href="https://www.linkedin.com/company/imperial-college-london-prosthetics-society/posts/?feedView=all">
+            Imperial College London Prosthetics Society
+          </a>
+          about cable transmission mechanisms used in prosthetic devices.
+        </p>
+        <figure class="about-feature-figure">
+          <img
+            src="{{ '/assets/images/projects/about_page/teaching%20cable%20management.jpeg' | relative_url }}"
+            alt="Teaching members of the Imperial College London Prosthetics Society about cable transmission mechanisms"
+            loading="lazy">
+          <figcaption>Sharing practical cable-transmission design with the Prosthetics Society.</figcaption>
+        </figure>
+      </section>
+
+      <section class="about-subsection" aria-labelledby="languages-heading">
+        <h3 id="languages-heading">Languages</h3>
+        <p>Language learning is one of the ways I connect with people and cultures beyond engineering:</p>
+        <ul>
+          <li><strong>English, Hindi, and Marathi:</strong> fluent</li>
+          <li><strong>Russian:</strong> advanced/native</li>
+          <li><strong>Japanese:</strong> intermediate; JLPT N4 certified, with N3 understood</li>
+        </ul>
       </section>
     </div>
   </section>

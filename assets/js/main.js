@@ -16,6 +16,43 @@ class MESGROApp {
         this.setupScrollToTop();
         this.setupLazyLoading();
         this.setupAnimations();
+        this.setupAboutGalleryCarousels();
+    }
+
+    /**
+     * Horizontal About-page galleries with touch scrolling and previous/next controls.
+     */
+    setupAboutGalleryCarousels() {
+        const carousels = document.querySelectorAll('[data-about-gallery]');
+        if (!carousels.length) return;
+
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const behavior = reducedMotion ? 'auto' : 'smooth';
+
+        carousels.forEach((carousel) => {
+            const track = carousel.querySelector('[data-gallery-track]');
+            const previous = carousel.querySelector('[data-gallery-prev]');
+            const next = carousel.querySelector('[data-gallery-next]');
+            if (!track || !previous || !next) return;
+
+            const updateControls = () => {
+                previous.disabled = track.scrollLeft <= 1;
+                next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1;
+            };
+
+            const scrollByTile = (direction) => {
+                const card = track.querySelector('.about-gallery-card');
+                const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+                const distance = card ? card.getBoundingClientRect().width + gap : track.clientWidth * 0.8;
+                track.scrollBy({ left: direction * distance, behavior });
+            };
+
+            previous.addEventListener('click', () => scrollByTile(-1));
+            next.addEventListener('click', () => scrollByTile(1));
+            track.addEventListener('scroll', updateControls, { passive: true });
+            window.addEventListener('resize', updateControls, { passive: true });
+            updateControls();
+        });
     }
 
     /**
