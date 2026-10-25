@@ -2,11 +2,37 @@
 layout: default
 title: About
 permalink: /about/
-# Add gallery items here using image, alt, and caption fields.
-# Example sketch: { image: "/assets/images/about/sketches/sketch-01.jpg", alt: "Description", caption: "Sketch title" }
-# Example certificate: { image: "/assets/images/about/half-marathon/certificate-01.jpg", alt: "Race certificate", caption: "Race name · year" }
-sketch_gallery: []
-half_marathon_certificates: []
+# Gallery entries use image, alt, and caption fields; image paths are relative to the site root.
+sketch_gallery:
+  - image: "/assets/images/sketch1.jpg"
+    alt: "Ink-and-wash sketch of a person holding a cup."
+    caption: "Ink-and-wash portrait study"
+  - image: "/assets/images/sketch2.jpg"
+    alt: "Pencil portrait of a person wearing a knit cap."
+    caption: "Pencil portrait study"
+  - image: "/assets/images/sketch3.jpg"
+    alt: "Pencil drawing of two figures in profile facing one another."
+    caption: "Figure study"
+  - image: "/assets/images/sketch4.jpg"
+    alt: "Ink drawing of a fantastical long-necked creature."
+    caption: "Creature study"
+  - image: "/assets/images/sketch6.jpg"
+    alt: "Pencil character portrait in a sketchbook outdoors."
+    caption: "Sketchbook portrait"
+  - image: "/assets/images/sketch_.jpg"
+    alt: "Page of rough pencil studies of two character heads."
+    caption: "Character studies"
+physical_gallery:
+  - image: "/assets/images/run_extra.jpeg"
+    alt: "Harshad taking part in an outdoor running event."
+    caption: "Taking part in an outdoor running event"
+  - image: "/assets/images/10k.jpg"
+    alt: "A Rotary Rain Run 10-kilometre race bib and medal."
+    caption: "Rotary Rain Run · 10K · Goa, 2024"
+half_marathon_certificates:
+  - image: "/assets/images/half_marathon.jpg"
+    alt: "RG Marathon 5.0 21K participation certificate and medal for Harshad Malik, Goa, 13 October 2024."
+    caption: "RG Marathon 5.0 · 21K · Goa · 13 October 2024"
 ---
 
 <div class="hero-personal">
@@ -141,15 +167,19 @@ half_marathon_certificates: []
       <section class="about-subsection" aria-labelledby="physical-heading">
         <h3 id="physical-heading">Physical pursuits &amp; achievements</h3>
         <p>Running gives me a different kind of challenge outside the lab.</p>
-        <div class="about-gallery-grid">
-          <figure class="about-gallery-card">
-            <img
-              src="{{ '/assets/images/run_extra.jpeg' | relative_url }}"
-              alt="Harshad taking part in an outdoor running event"
-              loading="lazy">
-            <figcaption>Taking part in an outdoor running event.</figcaption>
-          </figure>
-        </div>
+        {% assign physical_items = page.physical_gallery %}
+        {% if physical_items and physical_items.size > 0 %}
+          <div class="about-gallery-grid">
+            {% for item in physical_items %}
+              <figure class="about-gallery-card">
+                <img src="{{ item.image | relative_url }}" alt="{{ item.alt | escape }}" loading="lazy">
+                {% if item.caption %}
+                  <figcaption>{{ item.caption | escape }}</figcaption>
+                {% endif %}
+              </figure>
+            {% endfor %}
+          </div>
+        {% endif %}
         <h4>Half-marathon certificates</h4>
         {% assign certificate_items = page.half_marathon_certificates %}
         {% if certificate_items and certificate_items.size > 0 %}
