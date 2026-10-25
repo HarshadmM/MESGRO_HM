@@ -39,7 +39,7 @@ The control path connected Arduino sensor inputs and wearable actuators, a C# se
 I developed and compared three wearable-finger concepts:
 
 1. A segmented finger made from TPU.
-2. A segmented finger made from PLU.
+2. A segmented finger made from PLA.
 3. A continuous TPU finger.
 
 The concepts followed shared design goals: preserve finger movement and comfort during longer use, keep the device functional and low cost, and provide space for cable routing and a microcontroller. The design work also considered a compact component housing and the practicalities of fabricating and assembling the prototype.
@@ -72,7 +72,7 @@ The prototype used PTFE tubes within the project timeframe. Future iterations co
 ## Technologies and methods
 
 - CAD and mechanical modelling
-- TPU and PLU design concepts
+- TPU and PLA design concepts
 - 3D printing
 - PTFE tubing and mechanical haptic interaction
 - Arduino, analog FSR sensing, and ERM vibration motors
