@@ -1048,11 +1048,21 @@
   scroll-snap-align: start;
 }
 
-.about-gallery-card img {
+.about-gallery-card img,
+.about-gallery-card video {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.about-gallery-card video {
+  background: var(--background-color);
+}
+
+.about-gallery-card--contain img {
+  object-fit: contain;
+  background: var(--background-color);
 }
 
 .about-gallery-track--art .about-gallery-card {

@@ -184,22 +184,40 @@ half_marathon_certificates:
         {% endif %}
       </section>
 
-      <section class="about-subsection" aria-labelledby="prosthetics-society-heading">
-        <h3 id="prosthetics-society-heading">Prosthetics Society</h3>
+      <section class="about-subsection" aria-labelledby="community-research-heading">
+        <h3 id="community-research-heading">Community &amp; Peer Research Involvement</h3>
         <p>
-          I enjoy sharing practical knowledge. I taught members of the
-          <a href="https://www.linkedin.com/company/imperial-college-london-prosthetics-society/posts/?feedView=all">
-            Imperial College London Prosthetics Society
-          </a>
-          about cable transmission mechanisms used in prosthetic devices.
+          My clinical background has shaped my active involvement in peer research in medical robotics at the Hamlyn Centre and beyond. I also teach junior colleagues and undergraduate students important concepts through hands-on sessions, including with the
+          <a href="https://www.linkedin.com/company/imperial-college-london-prosthetics-society/posts/?feedView=all">Imperial College London Prosthetics Society</a>.
         </p>
-        <figure class="about-feature-figure">
-          <img
-            src="{{ '/assets/images/projects/about_page/teaching%20cable%20management.jpeg' | relative_url }}"
-            alt="Teaching members of the Imperial College London Prosthetics Society about cable transmission mechanisms"
-            loading="lazy">
-          <figcaption>Sharing practical cable-transmission design with the Prosthetics Society.</figcaption>
-        </figure>
+        <div class="about-gallery-carousel" data-about-gallery>
+          <button class="about-gallery-control" type="button" data-gallery-prev aria-label="Scroll community and peer research gallery left" disabled>
+            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <div class="about-gallery-track" data-gallery-track role="list" aria-label="Community and peer research involvement" tabindex="0">
+            <figure class="about-gallery-card" role="listitem">
+              <video class="about-gallery-video" controls preload="metadata" playsinline aria-label="Peer research video in medical robotics">
+                <source src="{{ '/assets/images/peer_research1.mp4' | relative_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption>Peer research in medical robotics.</figcaption>
+            </figure>
+            <figure class="about-gallery-card about-gallery-card--contain" role="listitem">
+              <img src="{{ '/assets/images/peer_research2.jpg' | relative_url }}" alt="Medical robotics research setup with a surgical robot and simulated operative field on the monitor." loading="lazy">
+              <figcaption>Medical robotics peer research at the Hamlyn Centre.</figcaption>
+            </figure>
+            <figure class="about-gallery-card" role="listitem">
+              <img
+                src="{{ '/assets/images/projects/about_page/teaching%20cable%20management.jpeg' | relative_url }}"
+                alt="Teaching members of the Imperial College London Prosthetics Society about cable transmission mechanisms"
+                loading="lazy">
+              <figcaption>Hands-on teaching about cable-transmission design with the Prosthetics Society.</figcaption>
+            </figure>
+          </div>
+          <button class="about-gallery-control" type="button" data-gallery-next aria-label="Scroll community and peer research gallery right">
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
       </section>
 
       <section class="about-subsection" aria-labelledby="languages-heading">
