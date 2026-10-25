@@ -171,6 +171,7 @@ layout: default
                                 background-color="{{ site.models.default_background | default: '#f0f0f0' }}"
                                 shadow-intensity="1" class="model-viewer">
                             </model-viewer>
+                            <p class="model-viewer-caption">{{ model.description | default: page.title | escape }}</p>
                         </div>
                         {% endfor %}
                     </div>
