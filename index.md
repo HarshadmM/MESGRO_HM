@@ -9,6 +9,16 @@ layout: default
         <div class="hero-text">
            <h1 class="hero-name">{{ site.author | default: "Your Name" }}</h1>
            <p class="hero-title">Medical Graduate | Robotics &amp; Mechatronics Researcher</p>
+           {% assign prosthesis_project = site.projects | where: "title", "Right-Hand Partial Prosthesis" | first %}
+           {% assign thesis_project = site.projects | where: "title", "Hybrid Continuum-Eversion Robot" | first %}
+           <p class="hero-intro">
+             My clinical training in medicine gave me a foundation in anatomy, physiology, and clinical care. I bring that knowledge into
+             design by starting with the person and task: shaping a
+             {% if prosthesis_project %}<a href="{{ prosthesis_project.url | relative_url }}">partial-hand prosthesis</a>{% else %}partial-hand prosthesis{% endif %}
+             around a client's remaining movement, and exploring how a
+             {% if thesis_project %}<a href="{{ thesis_project.url | relative_url }}">deployable medical robot</a>{% else %}deployable medical robot{% endif %}
+             might support medical work in disaster scenarios.
+           </p>
         </div>
         
         <div class="hero-actions">

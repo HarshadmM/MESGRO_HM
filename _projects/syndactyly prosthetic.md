@@ -8,7 +8,7 @@ featured_image: "/assets/images/projects/syndactyly/syndactyly_prosthetic%20solu
 hero_image: "/assets/images/projects/syndactyly/syndactyly_prosthetic%20solution.gif"
 gallery_groups:
   - title: "Prototype development"
-    layout: "pair"
+    layout: "stack"
     items:
       - file: "/assets/images/projects/syndactyly/syndachtyly_first_working_prototype.gif"
         description: "First working prototype of the syndactyly prosthesis"

@@ -8,6 +8,22 @@
   padding: var(--spacing-xl) 0;
 }
 
+.project-lead-media {
+  max-width: 1080px;
+  margin: 0 auto var(--spacing-2xl);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--surface-color);
+}
+
+.project-lead-image {
+  display: block;
+  width: 100%;
+  max-height: min(68vh, 620px);
+  object-fit: contain;
+}
+
 .project-grid {
   display: flex;
   flex-direction: column;

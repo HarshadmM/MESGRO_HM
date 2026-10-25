@@ -62,10 +62,11 @@ half_marathon_certificates:
     <h2>Background &amp; Core Values</h2>
     <div class="project-description-content">
       <p>
-        My medical background is more than an earlier qualification: it sets the
-        perspective I bring to robotics. I start with the human and clinical need,
-        consider the context in which a device will be used, and judge a design by
-        what it can enable in practice. It is why medical and surgical robotics
+        My medical training gave me a grounding in anatomy, physiology, and clinical
+        context. I bring that knowledge into design by starting with the person and
+        task: considering a client's anatomy and remaining movement when developing
+        a partial-hand prosthesis, and the practical demands of medical intervention
+        when exploring deployable robotics. It is why medical and surgical robotics
         feel like a natural place to bring medicine and engineering together.
       </p>
       <p>

@@ -124,6 +124,21 @@
   letter-spacing: 0.1em;
 }
 
+.hero-intro {
+  max-width: 720px;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-relaxed);
+}
+
+.hero-intro a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .hero-description {
   font-size: var(--font-size-lg);
   color: var(--text-secondary);

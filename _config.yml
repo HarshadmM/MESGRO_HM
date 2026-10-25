@@ -75,13 +75,10 @@ project_categories:
     description: "Wearable tactile interfaces for robotic interaction and teleoperation"
   - name: "Arduino"
     slug: "arduino"
-    description: "Arduino-based projects and prototypes"
+    description: "Arduino-based sensing and control in robotics projects"
   - name: "3D Printing"
     slug: "3d-printing"
     description: "Custom 3D printed components and designs"
-  - name: "IoT"
-    slug: "iot"
-    description: "Internet of Things devices and applications"
 
 # 3D Model settings
 models:

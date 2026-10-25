@@ -4,7 +4,7 @@ title: "Hybrid Continuum-Eversion Robot"
 description: "A deployable hybrid robot combining eversion-based locomotion, rolling-contact-joint steering, and a lumen-compatible intervention end-effector for disaster medical scenarios."
 date: 2026-09-01
 featured_homepage: true
-categories: [Robotics, Mechatronics, 3D Printing]
+categories: [Robotics, Mechatronics, 3D Printing, Arduino]
 featured_image: "/assets/images/projects/hybrid_robot/Front%20profile.jpg"
 hero_image: "/assets/images/projects/hybrid_robot/Front_%20section%20with%20lumen%20opening.jpeg"
 models:
@@ -72,9 +72,13 @@ gallery_groups:
         description: "Decoupled hybrid robot components"
 ---
 
-## Overview
+## Motivation
 
-This MRes thesis investigated a hybrid robotic platform for medical applications in disaster scenarios. The system combines a pressure-driven everting body, a tendon-driven rolling-contact-joint (RCJ) steering module, and a compact vortex-cannon end-effector.
+I proposed this MRes topic to explore how a robot might be deployed for medical applications in disaster scenarios. The design question was how to bring deployment, steering, and a route for an intervention tool together in one research platform.
+
+## System concept
+
+The thesis investigated a hybrid robotic platform combining a pressure-driven everting body, a tendon-driven rolling-contact-joint (RCJ) steering module, and a compact vortex-cannon end-effector.
 
 ## 1. Continuum steering module
 

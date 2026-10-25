@@ -3,15 +3,7 @@ layout: default
 ---
 
 <div class="project-hero">
-    {% if page.hero_image %}
-<div class="project-hero-background" aria-hidden="true">
-    <img src="{{ page.hero_image | relative_url }}"
-         alt=""
-         class="project-hero-background-image"
-         loading="eager"
-         decoding="async">
-</div>
-{% elsif page.hero_collage %}
+    {% if page.hero_collage %}
     <div class="project-hero-collage" role="group" aria-label="{{ page.title | escape }} photo and motion collage">
         {% for media in page.hero_collage %}
             {% if media.type == 'clip' %}
@@ -32,19 +24,12 @@ layout: default
             {% endif %}
         {% endfor %}
     </div>
-    {% elsif page.hero_gif %}
-    <figure class="project-hero-media">
-        <img src="{{ page.hero_gif | relative_url }}"
-            alt="{{ page.hero_gif_alt | default: page.title | escape }}"
-            class="project-hero-gif" loading="eager">
-    </figure>
     {% endif %}
 
     <div class="container">
-<div class="project-header{% if page.hero_collage or page.hero_image %} project-header--collage{% endif %}">            <div class="project-header-panel">
+        <div class="project-header{% if page.hero_collage %} project-header--collage{% endif %}">
+            <div class="project-header-panel">
                 <h1 class="project-title">{{ page.title }}</h1>
-                <p class="project-description">{{ page.description }}</p>
-
                 <div class="project-meta">
                     {% if page.github_url %}
                     <a href="{{ page.github_url }}" class="btn-github" target="_blank">
@@ -66,9 +51,14 @@ layout: default
 <div class="project-content">
     <div class="container">
 
-        <div class="project-header-simple">
-            <h1 class="project-title-simple">{{ page.title }}</h1>
-        </div>
+        {% assign project_lead_image = page.hero_image | default: page.hero_gif | default: page.featured_image %}
+        {% if project_lead_image %}
+        <figure class="project-lead-media">
+            <img src="{{ project_lead_image | relative_url }}"
+                alt="{{ page.title | escape }} project image"
+                class="project-lead-image" loading="eager" decoding="async">
+        </figure>
+        {% endif %}
 
         <div class="project-split-layout">
             <!-- Left Column: Text & Info -->
@@ -76,9 +66,7 @@ layout: default
 
                 <!-- Overview / Description -->
                 <section class="project-section-clean" id="description">
-                    <h3>Overview</h3>
                     <div class="project-description-content">
-                        <p class="project-lead">{{ page.description }}</p>
                         {{ content }}
                     </div>
                 </section>
@@ -202,6 +190,7 @@ layout: default
                             <h5 class="gallery-group-title">{{ gallery_group.title | escape }}</h5>
                             <div class="gallery-group-items">
                                 {% for media in gallery_group.items %}
+                                {% if media.file != project_lead_image %}
                                 <figure class="gallery-group-item{% if media.position %} gallery-item--{{ media.position }}{% endif %}">
                                     {% assign file_extension = media.file | split: '.' | last | downcase %}
                                     {% if file_extension == 'mp4' or file_extension == 'webm' or file_extension == 'ogg' %}
@@ -218,6 +207,7 @@ layout: default
                                     <figcaption>{{ media.description | escape }}</figcaption>
                                     {% endif %}
                                 </figure>
+                                {% endif %}
                                 {% endfor %}
                             </div>
                         </div>
@@ -226,6 +216,7 @@ layout: default
                     {% else %}
                     <div class="media-gallery-stack">
                         {% for media in page.gallery %}
+                        {% if media.file != project_lead_image %}
                         <div class="media-item">
                             {% assign file_extension = media.file | split: '.' | last | downcase %}
                             {% if file_extension == 'mp4' or file_extension == 'webm' or file_extension == 'avi' %}
@@ -241,6 +232,7 @@ layout: default
                             <p class="media-caption">{{ media.description }}</p>
                             {% endif %}
                         </div>
+                        {% endif %}
                         {% endfor %}
                     </div>
                     {% endif %}
