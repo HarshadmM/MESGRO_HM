@@ -969,7 +969,7 @@
   color: var(--primary-color);
   font-size: 1.2rem;
 }
-/* Always-visible About sections */
+/* About sections; Beyond Engineering is the only disclosure. */
 .about-accordion {
   margin-bottom: var(--spacing-lg);
   border: 1px solid var(--border-color);
@@ -985,6 +985,38 @@
   font-weight: var(--font-weight-semibold);
   color: var(--text-primary);
   background: var(--surface-color);
+}
+
+.about-beyond-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none;
+}
+
+.about-beyond-summary::-webkit-details-marker {
+  display: none;
+}
+
+.about-beyond-summary h2 {
+  flex: 1;
+}
+
+.about-beyond-summary::after {
+  padding: 0 var(--spacing-lg);
+  color: var(--text-secondary);
+  content: "+";
+  font-weight: var(--font-weight-semibold);
+}
+
+.about-beyond-details[open] > .about-beyond-summary::after {
+  content: "−";
+}
+
+.about-beyond-summary:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: -2px;
 }
 
 .about-accordion .project-description-content {

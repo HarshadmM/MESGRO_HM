@@ -157,8 +157,10 @@ half_marathon_certificates:
     </div>
   </section>
 
-  <section class="about-accordion" aria-labelledby="beyond-engineering-heading">
-    <h2 id="beyond-engineering-heading">Beyond Engineering</h2>
+  <details class="about-accordion about-beyond-details" aria-labelledby="beyond-engineering-heading" open>
+    <summary class="about-beyond-summary">
+      <h2 id="beyond-engineering-heading">Beyond Engineering</h2>
+    </summary>
     <div class="project-description-content">
       <section class="about-subsection" aria-labelledby="physical-heading">
         <h3 id="physical-heading">Physical pursuits &amp; achievements</h3>
@@ -232,7 +234,7 @@ half_marathon_certificates:
         </ul>
       </section>
     </div>
-  </section>
+  </details>
 
   <section class="about-accordion">
     <h2>Contact</h2>

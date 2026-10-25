@@ -71,42 +71,39 @@ layout: default
                     </div>
                 </section>
 
-                <!-- Code Section (Collapsible) -->
+                <!-- Code Files: always visible -->
                 {% if page.code_files %}
                 <section class="project-section-clean" id="code">
-                    <details class="code-details">
-                        <summary>Code Files</summary>
-                        <div class="code-list-container">
-                            {% for code_file in page.code_files %}
-                            <div class="code-file-wrapper">
-                                {% if code_file.content %}
-                                <details class="code-file-details">
-                                    <summary class="code-file-summary">
-                                        <span class="file-name"><i class="fas fa-code"></i> {{ code_file.name }}</span>
-                                        <div class="file-meta">
-                                            <span class="lang-tag">{{ code_file.language }}</span>
-                                            {% if code_file.download_url %}
-                                            <a href="{{ code_file.download_url }}" class="file-download-icon" download
-                                                title="Download"><i class="fas fa-download"></i></a>
-                                            {% endif %}
-                                        </div>
-                                    </summary>
-                                    <div class="code-block-content">
-                                        <pre><code class="language-{{ code_file.language }}">{{ code_file.content | escape }}</code></pre>
+                    <h3 class="code-section-heading">Code Files</h3>
+                    <div class="code-list-container">
+                        {% for code_file in page.code_files %}
+                        <div class="code-file-wrapper">
+                            {% if code_file.content %}
+                            <div class="code-file-entry">
+                                <div class="code-file-header">
+                                    <span class="file-name"><i class="fas fa-code"></i> {{ code_file.name }}</span>
+                                    <div class="file-meta">
+                                        <span class="lang-tag">{{ code_file.language }}</span>
+                                        {% if code_file.download_url %}
+                                        <a href="{{ code_file.download_url }}" class="file-download-icon" download title="Download"><i class="fas fa-download"></i></a>
+                                        {% endif %}
                                     </div>
-                                </details>
-                                {% else %}
-                                <div class="code-file-item">
-                                    <i class="fas fa-code"></i> {{ code_file.name }}
-                                    {% if code_file.download_url %}
-                                    <a href="{{ code_file.download_url }}" download><i class="fas fa-download"></i></a>
-                                    {% endif %}
                                 </div>
+                                <div class="code-block-content">
+                                    <pre><code class="language-{{ code_file.language }}">{{ code_file.content | escape }}</code></pre>
+                                </div>
+                            </div>
+                            {% else %}
+                            <div class="code-file-item">
+                                <i class="fas fa-code"></i> {{ code_file.name }}
+                                {% if code_file.download_url %}
+                                <a href="{{ code_file.download_url }}" download><i class="fas fa-download"></i></a>
                                 {% endif %}
                             </div>
-                            {% endfor %}
+                            {% endif %}
                         </div>
-                    </details>
+                        {% endfor %}
+                    </div>
                 </section>
                 {% endif %}
 
