@@ -25,7 +25,7 @@ At this scale, visual feedback alone can make subtle contact forces difficult to
 ## Project team and supervision
 
 - **Supervisor — Dr. Belal:** Lecturer (Assistant Professor), University of Bath.
-- **Haoyun Feng:** MATLAB and integration.
+- **[Haoyun Feng](https://www.linkedin.com/in/haoyun-feng-061340393/):** MATLAB and integration.
 - **Yacui Zhao:** Overall project oversight, drawing on previous experience, and PID.
 - **Xueyi Fu:** Electronics.
 - **Cai Jingtong:** PID and control in collaboration with Yacui Zhao.
