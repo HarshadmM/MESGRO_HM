@@ -5,10 +5,12 @@ description: "A microrobotic teleoperation project that evolved from a wearable 
 date: 2025-12-12
 featured_homepage: true
 categories: [Microrobotics, Control, Microactuation, Mechatronics, Haptics, Medical Robotics, 3D Printing, Arduino]
-featured_image: "/assets/images/projects/haptic/new_magnetic%20encoder%20based.png"
+featured_image: "/assets/images/projects/haptic/Mechanical%20prototype.jpeg"
 models:
+  - file: "/assets/models/haptic-glove/haptic%20glove2.glb"
+    description: "Interactive CAD assembly of the magnetic-encoder glove prototype from August 2026."
   - file: "/assets/models/haptic-glove/haptic-glove.glb"
-    description: "Interactive CAD assembly of the haptic-glove"
+    description: "Earlier CAD assembly of the wearable haptic glove."
 gallery_groups:
   - title: "Initial wearable prototype"
     layout: pair
@@ -20,8 +22,10 @@ gallery_groups:
       - file: "/assets/images/projects/haptic/mech_prototype2.jpeg"
         description: "Second view of the initial wearable finger prototype."
   - title: "Magnetic-encoder redesign · August 2026"
-    layout: stack
+    layout: pair-large
     items:
+      - file: "/assets/images/projects/haptic/new_magnetic%20encoder%20based.png"
+        description: "Side view of the segmented glove redesigned around magnetic encoders."
       - file: "/assets/images/projects/haptic/Top%20view%20of%20new%20segmented%20glove%20with%20magnetic%20encoders.png"
         description: "Top view of the segmented glove with magnetic encoders."
 ---
@@ -66,7 +70,7 @@ The feedback concept combined coin-style eccentric rotating mass (ERM) motors fo
 
 The first prototype left operator-side finger joint-angle sensing as an important unresolved issue. I proposed using magnetic encoders to measure those angles directly at the operator's hand. Haoyun Feng and I then developed a redesigned, segmented-glove prototype around that approach in early August 2026.
 
-This iteration reflects my growth as a designer: I used the sensing requirement to shape the glove's mechanical layout and segmentation. The lead image shows the redesigned glove from the side, with a top view in the gallery.
+This iteration reflects my growth as a designer: I used the sensing requirement to shape the glove's mechanical layout and segmentation. The gallery shows side and top views of the redesigned prototype together.
 
 ## My contribution
 
