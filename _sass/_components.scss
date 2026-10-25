@@ -1092,6 +1092,10 @@
   background: var(--background-color);
 }
 
+.about-gallery-card video.about-gallery-video--contain {
+  object-fit: contain;
+}
+
 .about-gallery-card--contain img {
   object-fit: contain;
   background: var(--background-color);

@@ -35,11 +35,23 @@ permalink: /publications/
           <p class="publication-year">Poster presentation</p>
           <h2>Deployable Hybrid Continuum-Eversion Robot for Medical Applications in Disaster Scenarios</h2>
           <p class="publication-venue">Hamlyn Symposium on Medical Robotics</p>
-          <div class="presentation-gallery" role="group" aria-label="Poster and presentation images">
-            <a class="presentation-gallery-poster" href="{{ '/assets/images/projects/publications/Harshad_Malik_06062560%20HS%20poster.png' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open the research poster at full size">
-              <img src="{{ '/assets/images/projects/publications/Harshad_Malik_06062560%20HS%20poster.png' | relative_url }}" alt="Research poster titled A Deployable Hybrid Soft Robotic Platform for Emergency Medical Intervention in Extreme Environments" loading="lazy">
-            </a>
-            <img class="presentation-gallery-photo" src="{{ '/assets/images/projects/publications/Poster_presentation4.jpeg' | relative_url }}" alt="Harshad Malik presenting his research poster at the Hamlyn Symposium on Medical Robotics" loading="lazy">
+          <div class="about-gallery-carousel presentation-gallery-carousel" data-about-gallery>
+            <button class="about-gallery-control" type="button" data-gallery-prev aria-label="Scroll poster and presentation gallery left" disabled>
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="about-gallery-track presentation-gallery-track" data-gallery-track role="list" aria-label="Poster and presentation images" tabindex="0">
+              <figure class="about-gallery-card presentation-gallery-card--poster" role="listitem">
+                <a href="{{ '/assets/images/projects/publications/Harshad_Malik_06062560%20HS%20poster.png' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open the research poster at full size">
+                  <img src="{{ '/assets/images/projects/publications/Harshad_Malik_06062560%20HS%20poster.png' | relative_url }}" alt="Research poster titled A Deployable Hybrid Soft Robotic Platform for Emergency Medical Intervention in Extreme Environments" loading="lazy">
+                </a>
+              </figure>
+              <figure class="about-gallery-card presentation-gallery-card--photo" role="listitem">
+                <img src="{{ '/assets/images/projects/publications/Poster_presentation4.jpeg' | relative_url }}" alt="Harshad Malik presenting his research poster at the Hamlyn Symposium on Medical Robotics" loading="lazy">
+              </figure>
+            </div>
+            <button class="about-gallery-control" type="button" data-gallery-next aria-label="Scroll poster and presentation gallery right">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
           </div>
           <div class="publication-links">
             <a href="mailto:harshadmm10131@gmail.com?subject=Poster%20and%20thesis%20summary%20request">Request poster and/or thesis summary for detailed reading</a>

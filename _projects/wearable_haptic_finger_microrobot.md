@@ -22,6 +22,14 @@ This MRes group project focused on human-in-the-loop teleoperation of a simulate
 
 At this scale, visual feedback alone can make subtle contact forces difficult to judge. The glove explored tactile feedback as one part of a wider microrobotic control and actuation system.
 
+## Project team and supervision
+
+- **Supervisor — Dr. Belal:** Lecturer (Assistant Professor), University of Bath.
+- **Haoyun Feng:** MATLAB and integration.
+- **Yacui Zhao:** Overall project oversight, drawing on previous experience, and PID.
+- **Xueyi Fu:** Electronics.
+- **Cai Jingtong:** PID and control in collaboration with Yacui Zhao.
+
 ## Microrobotic control and actuation
 
 The control path connected Arduino sensor inputs and wearable actuators, a C# serial interface, and a MATLAB/Simulink microrobot simulation, with UDP carrying data between the interface and simulation. Operator inputs informed the simulated robot, while simulation outputs returned to the glove's physical actuators. The microrobot remained simulated; the physical prototype was the wearable interface and its feedback hardware.

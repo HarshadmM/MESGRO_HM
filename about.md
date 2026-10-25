@@ -4,6 +4,14 @@ title: About
 permalink: /about/
 # Gallery entries use image, alt, and caption fields; image paths are relative to the site root.
 sketch_gallery:
+  - image: "/assets/images/sketch7.jpeg"
+    alt: "Ink sketch of two hands meeting over a draped garment."
+  - image: "/assets/images/sketch9.jpeg"
+    alt: "Ink figure study of a person leaning forward, with a pen beside the page."
+  - image: "/assets/images/sketch10.jpeg"
+    alt: "Ink study of a person's head, shoulders, and back viewed from behind."
+  - image: "/assets/images/sketch11.jpeg"
+    alt: "Close-up ink sketch of a person's eyes on a small card beside drawing tools."
   - image: "/assets/images/sketch1.jpg"
     alt: "Ink-and-wash sketch of a person holding a cup."
   - image: "/assets/images/sketch2.jpg"
@@ -16,22 +24,14 @@ sketch_gallery:
     alt: "Pencil character portrait in a sketchbook outdoors."
   - image: "/assets/images/sketch_.jpg"
     alt: "Page of rough pencil studies of two character heads."
-  - image: "/assets/images/sketch7.jpeg"
-    alt: "Ink sketch of two hands meeting over a draped garment."
-  - image: "/assets/images/sketch9.jpeg"
-    alt: "Ink figure study of a person leaning forward, with a pen beside the page."
-  - image: "/assets/images/sketch10.jpeg"
-    alt: "Ink study of a person's head, shoulders, and back viewed from behind."
-  - image: "/assets/images/sketch11.jpeg"
-    alt: "Close-up ink sketch of a person's eyes on a small card beside drawing tools."
 physical_gallery:
+  - video: "/assets/images/lift.mp4"
+    alt: "Harshad lifting weights during a strength-training session."
   - image: "/assets/images/run_extra.jpeg"
     alt: "Harshad at an outdoor running event."
   - image: "/assets/images/10k.jpg"
     alt: "A Rotary Rain Run 10-kilometre race bib and medal."
     caption: "Rotary Rain Run · 10K · Goa, 2024"
-  - video: "/assets/images/lift.mp4"
-    alt: "Harshad lifting weights during a strength-training session."
 half_marathon_certificates:
   - image: "/assets/images/half_marathon.jpg"
     alt: "RG Marathon 5.0 21K participation certificate and medal for Harshad Malik, Goa, 13 October 2024."
@@ -179,7 +179,7 @@ half_marathon_certificates:
               {% for item in physical_items %}
                 <figure class="about-gallery-card" role="listitem">
                   {% if item.video %}
-                    <video controls preload="metadata" playsinline aria-label="{{ item.alt | escape }}">
+                    <video class="about-gallery-video--contain" controls preload="metadata" playsinline aria-label="{{ item.alt | escape }}">
                       <source src="{{ item.video | relative_url }}" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
