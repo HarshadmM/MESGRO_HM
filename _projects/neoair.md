@@ -3,7 +3,7 @@ layout: project
 title: "NeoAir: MIST Catheter Placement Confirmation"
 description: "A team project exploring rapid carbon dioxide based confirmation of catheter placement during minimally invasive surfactant therapy (MIST)."
 date: 2026-04-17
-categories: [Medical Robotics, Biomedical Engineering, Device Design, Rapid Prototyping]
+categories: [Biomedical Engineering, "CAD & Design", Rapid Prototyping]
 featured_image: "/assets/images/projects/neoair/hero_neoair_image.jpg"
 hero_image: "/assets/images/projects/neoair/hero_neoair_image.jpg"
 models:

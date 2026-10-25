@@ -1,10 +1,10 @@
 ---
 layout: project
 title: "Wearable Haptic Finger for Microrobot Teleoperation"
-description: "A low-cost, modular wearable haptic finger interface for human-in-the-loop control of a simulated microrobot approximately 200 μm in size."
+description: "A microrobotic teleoperation project focused on control and actuation for a simulated 200 μm robot, using a wearable haptic finger as the operator interface."
 date: 2025-12-12
 featured_homepage: true
-categories: [Robotics, Mechatronics, Haptics, Medical Robotics, 3D Printing, Arduino]
+categories: [Microrobotics, Control, Microactuation, Mechatronics, Haptics, Medical Robotics, 3D Printing, Arduino]
 featured_image: "/assets/images/projects/haptic/Mechanical%20prototype.jpeg"
 models:
   - file: "/assets/models/haptic-glove/haptic-glove.glb"
@@ -18,11 +18,15 @@ gallery:
 
 ## Overview
 
-This MRes group project explored a wearable finger interface for haptic interaction during teleoperation of a simulated microrobot approximately 200 μm in size. At this scale, visual feedback alone can make subtle contact forces difficult to judge. The project investigated how a human operator could receive tactile cues while controlling a microrobot in a simulated medical intervention.
+This MRes group project focused on human-in-the-loop teleoperation of a simulated 200 μm microrobot in a medical-intervention scenario. The wearable haptic finger served as the operator's interface to the control loop.
 
-The group combined a wearable mechanical design, embedded sensing, and a software link between the hardware and a MATLAB/Simulink microrobot simulation. The prototype also explored PTFE tubing and its backlash as part of the mechanical haptic interaction.
+At this scale, visual feedback alone can make subtle contact forces difficult to judge. The glove explored tactile feedback as one part of a wider microrobotic control and actuation system.
 
-## Mechanical design
+## Microrobotic control and actuation
+
+The control path connected Arduino sensor inputs and wearable actuators, a C# serial interface, and a MATLAB/Simulink microrobot simulation, with UDP carrying data between the interface and simulation. Operator inputs informed the simulated robot, while simulation outputs returned to the glove's physical actuators. The microrobot remained simulated; the physical prototype was the wearable interface and its feedback hardware.
+
+## Haptic interface design
 
 I developed and compared three wearable-finger concepts:
 
@@ -32,7 +36,7 @@ I developed and compared three wearable-finger concepts:
 
 The concepts followed shared design goals: preserve finger movement and comfort during longer use, keep the device functional and low cost, and provide space for cable routing and a microcontroller. The design work also considered a compact component housing and the practicalities of fabricating and assembling the prototype.
 
-## Sensing and haptic feedback
+## Haptic sensing and feedback
 
 The system used four force-sensitive resistors (FSRs), read through Arduino analog inputs A0–A3 and voltage-divider circuits. As the finger interface bent or compressed, the FSR readings changed. The project software normalized the sensor values and used them in the feedback loop.
 
