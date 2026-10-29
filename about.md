@@ -161,7 +161,7 @@ half_marathon_certificates:
     </div>
   </section>
 
-  <details class="about-accordion about-beyond-details" aria-labelledby="beyond-engineering-heading" open>
+  <details class="about-accordion about-beyond-details" aria-labelledby="beyond-engineering-heading">
     <summary class="about-beyond-summary">
       <h2 id="beyond-engineering-heading">Beyond Engineering</h2>
     </summary>
