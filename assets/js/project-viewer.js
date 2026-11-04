@@ -303,6 +303,8 @@ class ProjectViewer {
             triggerImage = image;
             preview.src = image.currentSrc || image.src;
             preview.alt = image.alt;
+            const rotation = Number(image.dataset.rotation) || 0;
+            preview.style.transform = rotation ? `rotate(${rotation}deg)` : '';
 
             const imageCaption = image.closest('figure')
                 ?.querySelector('figcaption, .media-caption')
