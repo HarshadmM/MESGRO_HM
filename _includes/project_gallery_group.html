@@ -1,5 +1,5 @@
 {% assign gallery_group = include.gallery_group %}
-<div class="gallery-group gallery-group--{{ gallery_group.layout | default: 'stack' }}">
+<div class="gallery-group gallery-group--{{ gallery_group.layout | default: 'stack' }}"{% if gallery_group.placement %} data-mobile-gallery-placement="{{ gallery_group.placement | slugify }}"{% endif %}>
     {% if gallery_group.title %}
     <h5 class="gallery-group-title">{{ gallery_group.title | escape }}</h5>
     {% endif %}

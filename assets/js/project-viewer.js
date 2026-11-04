@@ -13,6 +13,7 @@ class ProjectViewer {
         this.setupSchematicZoom();
         this.setupCodeTabs();
         this.setupImageZoom();
+        this.setupResponsiveGalleryPlacement();
     }
 
     /**
@@ -347,6 +348,52 @@ class ProjectViewer {
                 }
             });
         });
+    }
+
+    /**
+     * Keep the desktop media column, but place mapped galleries after their
+     * related text sections when the project layout becomes a single column.
+     */
+    setupResponsiveGalleryPlacement() {
+        const gallery = document.querySelector('#gallery');
+        const content = document.querySelector('.project-description-content');
+        const galleryRoot = gallery?.querySelector('.project-gallery-sections, .project-gallery-groups');
+        if (!gallery || !content || !galleryRoot) return;
+
+        const mediaItems = Array.from(galleryRoot.children)
+            .filter(item => item.dataset.mobileGalleryPlacement);
+        if (!mediaItems.length) return;
+
+        const anchors = new Map(
+            Array.from(content.querySelectorAll('[data-gallery-anchor]'))
+                .map(anchor => [anchor.dataset.galleryAnchor, anchor])
+        );
+        const mobileLayout = window.matchMedia('(max-width: 900px)');
+
+        const updatePlacement = () => {
+            if (mobileLayout.matches) {
+                mediaItems.forEach((item) => {
+                    const anchor = anchors.get(item.dataset.mobileGalleryPlacement);
+                    if (anchor) anchor.insertAdjacentElement('afterend', item);
+                });
+
+                const allPlacedInline = mediaItems.every(item => item.parentElement !== galleryRoot);
+                galleryRoot.classList.toggle('project-gallery-root--empty', allPlacedInline);
+                gallery.classList.toggle('project-gallery--relocated', allPlacedInline);
+                return;
+            }
+
+            gallery.classList.remove('project-gallery--relocated');
+            galleryRoot.classList.remove('project-gallery-root--empty');
+            mediaItems.forEach(item => galleryRoot.appendChild(item));
+        };
+
+        updatePlacement();
+        if (typeof mobileLayout.addEventListener === 'function') {
+            mobileLayout.addEventListener('change', updatePlacement);
+        } else {
+            mobileLayout.addListener(updatePlacement);
+        }
     }
 
     /**

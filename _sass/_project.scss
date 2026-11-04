@@ -1419,6 +1419,22 @@ pre[class*="language-"] {
   padding: var(--spacing-md);
 }
 
+.project-gallery-sections.project-gallery-root--empty,
+.project-gallery-groups.project-gallery-root--empty,
+.project-media-group.project-gallery--relocated,
+.project-gallery-anchor {
+  display: none;
+}
+
+.project-description-content > .project-gallery-section,
+.project-description-content > .gallery-group {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--surface-color);
+}
+
 .project-gallery-section {
   min-width: 0;
 }

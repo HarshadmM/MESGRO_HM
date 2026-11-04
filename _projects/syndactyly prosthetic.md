@@ -8,6 +8,7 @@ featured_image: "/assets/images/projects/syndactyly/syndactyly_prosthetic%20solu
 hero_image: "/assets/images/projects/syndactyly/syndactyly_prosthetic%20solution.gif"
 gallery_groups:
   - title: "Prototype development"
+    placement: "mechanism"
     layout: "stack"
     items:
       - file: "/assets/images/projects/syndactyly/syndachtyly_first_working_prototype.gif"
@@ -25,6 +26,8 @@ This project was developed in collaboration with the [Imperial College London Pr
 ## Mechanism
 
 The prosthesis uses a claw-and-plate arrangement assembled from 3D-printed plates, torsion springs, and Bowden sleeves. These components form the mechanical basis of the client-specific design.
+
+<div class="project-gallery-anchor" data-gallery-anchor="mechanism" aria-hidden="true"></div>
 
 ## Design priorities
 

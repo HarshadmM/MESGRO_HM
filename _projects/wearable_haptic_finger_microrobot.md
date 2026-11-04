@@ -13,6 +13,7 @@ models:
     description: "Earlier CAD assembly of the wearable haptic glove."
 gallery_groups:
   - title: "Initial wearable prototype"
+    placement: "haptic-interface-design"
     layout: pair
     items:
       - file: "/assets/images/projects/haptic/haptic_glove_very%20first%20prototype.jpg"
@@ -22,6 +23,7 @@ gallery_groups:
       - file: "/assets/images/projects/haptic/mech_prototype2.jpeg"
         description: "Second view of the initial wearable finger prototype."
   - title: "Magnetic-encoder redesign · August 2026"
+    placement: "prototype-evolution"
     layout: pair-large
     items:
       - file: "/assets/images/projects/haptic/new_magnetic%20encoder%20based.png"
@@ -58,6 +60,8 @@ I developed and compared three wearable-finger concepts:
 
 The concepts followed shared design goals: preserve finger movement and comfort during longer use, keep the device functional and low cost, and provide space for cable routing and a microcontroller. The design work also considered a compact component housing and the practicalities of fabricating and assembling the prototype.
 
+<div class="project-gallery-anchor" data-gallery-anchor="haptic-interface-design" aria-hidden="true"></div>
+
 ## Haptic sensing and feedback
 
 In the first prototype, the system used four force-sensitive resistors (FSRs), read through Arduino analog inputs A0–A3 and voltage-divider circuits. As the finger interface bent or compressed, the FSR readings changed. The project software normalized the sensor values and used them in the feedback loop.
@@ -71,6 +75,8 @@ The feedback concept combined coin-style eccentric rotating mass (ERM) motors fo
 The first prototype left operator-side finger joint-angle sensing as an important unresolved issue. I proposed using magnetic encoders to measure those angles directly at the operator's hand. Haoyun Feng and I then developed a redesigned, segmented-glove prototype around that approach in early August 2026.
 
 This iteration reflects my growth as a designer: I used the sensing requirement to shape the glove's mechanical layout and segmentation. The gallery shows side and top views of the redesigned prototype together.
+
+<div class="project-gallery-anchor" data-gallery-anchor="prototype-evolution" aria-hidden="true"></div>
 
 ## My contribution
 

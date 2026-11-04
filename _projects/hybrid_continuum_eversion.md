@@ -12,6 +12,7 @@ models:
     description: "Interactive CAD assembly of the hybrid robot"
 gallery_sections:
   - title: "Continuum"
+    placement: "continuum"
     groups:
       - title: "Steering directions"
         layout: "cross"
@@ -42,6 +43,7 @@ gallery_sections:
           - file: "/assets/images/projects/hybrid_robot/vert_mvmt_cont.mp4"
             description: "Vertical movement of the continuum section"
   - title: "Eversion"
+    placement: "eversion"
     groups:
       - title: "Drop tests"
         layout: "row"
@@ -72,6 +74,7 @@ gallery_sections:
           - file: "/assets/images/projects/hybrid_robot/full_loop.mp4"
             description: "Full eversion cycle"
   - title: "Robot overview"
+    placement: "robot-overview"
     groups:
       - title: "Full-body configurations"
         layout: "pair"
@@ -118,6 +121,8 @@ The distal continuum section uses rigid, 3D-printed PLA segments connected by ro
 
 A piecewise constant-curvature (PCC) model was implemented in MATLAB to relate tendon displacement to bending angle, curvature, and end-effector position. It assumed rigid segments, negligible tendon stretch and friction, negligible torsion and gravity, and equal rotation across the active joints.
 
+<div class="project-gallery-anchor" data-gallery-anchor="continuum" aria-hidden="true"></div>
+
 ## 2. Eversion system
 
 The robot deploys through a pressure-driven everting body. I designed a transitioner cap with a Reuleaux-triangle profile and three rollers arranged at 120-degree intervals to guide the material as the robot everts.
@@ -134,6 +139,8 @@ The prototype evaluation included eversion pressure and deployment tests, steeri
   <figcaption>Top-down view of the eversion test.</figcaption>
 </figure>
 
+<div class="project-gallery-anchor" data-gallery-anchor="eversion" aria-hidden="true"></div>
+
 ## 3. Vortex-cannon end-effector
 
 An elastically actuated vortex cannon was designed to fit inside the continuum module's central lumen. This kept the intervention tool integrated with the robot while preserving the lumen-compatible design.
@@ -148,6 +155,8 @@ Payload trials used all-purpose flour at distances of 2 cm, 5 cm, and 10 cm. The
 ## Integrated system
 
 The project brought together the pressure-driven everting body, tendon-steered continuum section, and lumen-compatible end-effector into one deployable platform for medical applications in disaster scenarios.
+
+<div class="project-gallery-anchor" data-gallery-anchor="robot-overview" aria-hidden="true"></div>
 
 ## My Engineering Contributions
 

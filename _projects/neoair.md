@@ -11,11 +11,13 @@ models:
     description: "Interactive CAD model of the inline NeoAir concept"
 gallery_groups:
   - title: "Project development"
+    placement: "design-direction"
     layout: "stack"
     items:
       - file: "/assets/images/projects/neoair/Working%20on%20NeoAir.jpg"
         description: "Developing the NeoAir project concept"
   - title: "Project team"
+    placement: "project-team"
     layout: "pair"
     items:
       - file: "/assets/images/projects/neoair/hackstarter_winning_poster.png"
@@ -48,6 +50,8 @@ The second concept packages the detector in a reusable housing. The CAD work exp
 
 Published work has also investigated CO₂ detection for MIST catheter location confirmation. In a small study, capnography distinguished tracheal from esophageal placement; this informed the project direction, but does not validate the NeoAir concepts. [Read the study](https://pubmed.ncbi.nlm.nih.gov/36720984/).
 
+<div class="project-gallery-anchor" data-gallery-anchor="design-direction" aria-hidden="true"></div>
+
 ## Prototype demonstration and trade-offs
 
 The supplied presentation shows an inline detector bench demonstration using a balloon-and-tubing setup as a simulated respiratory system. This was a concept demonstration, not testing with patients or clinical validation.
@@ -72,3 +76,5 @@ The presentation identifies realistic simulation, calibration and maintenance pl
 - [Anton Gerasimov](https://www.linkedin.com/in/anton-ger/)
 - [Harshad Malik](https://www.linkedin.com/in/harshadmm)
 - [Hetarth Bhatt](https://www.linkedin.com/in/hetarth-bhatt-9a4a8123b/)
+
+<div class="project-gallery-anchor" data-gallery-anchor="project-team" aria-hidden="true"></div>

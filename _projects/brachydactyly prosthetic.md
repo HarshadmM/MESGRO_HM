@@ -7,6 +7,7 @@ categories: [Assistive Technology, Prosthetics, Mechanical Design]
 featured_image: "/assets/images/projects/brachydactyly/right_fullprosthesis.jpeg"
 gallery_groups:
   - title: "Brachydactyly prosthesis"
+    placement: "mechanism"
     layout: "pair"
     items:
       - file: "/assets/images/projects/brachydactyly/right_fullprosthesis.jpeg"
@@ -30,6 +31,8 @@ This project was developed in collaboration with the [Imperial College London Pr
 ## Mechanism
 
 The prosthesis uses a capstan-drive tendon mechanism. The intact thumb acts as the primary driver, while residual movement of the brachydactyly stubs supplements the input. This approach uses the client's remaining movement as part of the device's actuation.
+
+<div class="project-gallery-anchor" data-gallery-anchor="mechanism" aria-hidden="true"></div>
 
 ## Design priorities
 

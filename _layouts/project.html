@@ -187,7 +187,7 @@ layout: default
                     {% if page.gallery_sections %}
                     <div class="project-gallery-sections">
                         {% for gallery_section in page.gallery_sections %}
-                        <section class="project-gallery-section" aria-labelledby="gallery-section-{{ gallery_section.title | slugify }}">
+                        <section class="project-gallery-section"{% if gallery_section.placement %} data-mobile-gallery-placement="{{ gallery_section.placement | slugify }}"{% endif %} aria-labelledby="gallery-section-{{ gallery_section.title | slugify }}">
                             <h4 class="project-gallery-section-title" id="gallery-section-{{ gallery_section.title | slugify }}">{{ gallery_section.title | escape }}</h4>
                             <div class="project-gallery-section-groups">
                                 {% for gallery_group in gallery_section.groups %}
