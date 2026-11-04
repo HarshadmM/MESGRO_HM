@@ -13,6 +13,7 @@ class MESGROApp {
         this.setupThemeToggle();
         this.setupSmoothScrolling();
         this.setupLoopingVideos();
+        this.setupVideoFullscreenButtons();
         this.setupScrollToTop();
         this.setupLazyLoading();
         this.setupAnimations();
@@ -187,6 +188,50 @@ class MESGROApp {
         }, { threshold: 0.25, rootMargin: '100px 0px' });
 
         videos.forEach(video => videoObserver.observe(video));
+    }
+
+    /**
+     * Add an explicit fullscreen control to portfolio videos.
+     */
+    setupVideoFullscreenButtons() {
+        const videos = document.querySelectorAll(
+            '.gallery-video, .about-gallery-video, .about-gallery-video--contain'
+        );
+
+        videos.forEach((video) => {
+            const container = video.parentElement;
+            if (!container) return;
+
+            container.classList.add('video-expand-container');
+
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'video-expand-button';
+            button.setAttribute('aria-label', 'Enlarge video');
+            button.title = 'Enlarge video';
+            button.innerHTML = `
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5" />
+                </svg>
+            `;
+
+            button.addEventListener('click', async () => {
+                if (typeof video.webkitEnterFullscreen === 'function') {
+                    video.webkitEnterFullscreen();
+                    return;
+                }
+
+                if (typeof video.requestFullscreen === 'function') {
+                    try {
+                        await video.requestFullscreen();
+                    } catch (error) {
+                        console.warn('Could not open video fullscreen:', error);
+                    }
+                }
+            });
+
+            container.appendChild(button);
+        });
     }
 
     /**

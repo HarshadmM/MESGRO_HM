@@ -895,6 +895,58 @@
   display: block;
 }
 
+.video-expand-container {
+  position: relative;
+}
+
+.video-expand-button {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  z-index: 5;
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: var(--radius-sm);
+  background: rgba(20, 16, 18, 0.78);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.video-expand-button svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.video-expand-button:hover,
+.video-expand-button:focus-visible {
+  background: rgba(20, 16, 18, 0.96);
+  transform: scale(1.05);
+}
+
+.video-expand-button:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.video-expand-container video:fullscreen,
+.video-expand-container video:-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  background: #000;
+  object-fit: contain;
+}
+
 .media-caption {
   padding: var(--spacing-sm) var(--spacing-md);
   color: var(--text-secondary);
