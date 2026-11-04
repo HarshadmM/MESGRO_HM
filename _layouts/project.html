@@ -171,7 +171,10 @@ layout: default
                                 background-color="{{ site.models.default_background | default: '#f0f0f0' }}"
                                 shadow-intensity="1" class="model-viewer">
                             </model-viewer>
-                            <p class="model-viewer-caption">{{ model.description | default: page.title | escape }}</p>
+                            {% assign model_caption = model.description | default: page.title | strip %}
+                            {% if model_caption != "" %}
+                            <p class="model-viewer-caption">{{ model_caption | escape }}</p>
+                            {% endif %}
                         </div>
                         {% endfor %}
                     </div>
@@ -201,8 +204,9 @@ layout: default
                                         alt="{{ media.description | default: page.title | escape }}"
                                         class="gallery-image" data-zoomable loading="lazy">
                                     {% endif %}
-                                    {% if media.description %}
-                                    <figcaption>{{ media.description | escape }}</figcaption>
+                                    {% assign media_caption = media.description | strip %}
+                                    {% if media_caption != "" %}
+                                    <figcaption>{{ media_caption | escape }}</figcaption>
                                     {% endif %}
                                 </figure>
                                 {% endif %}
@@ -226,8 +230,9 @@ layout: default
                             <img src="{{ media.file | relative_url }}"
                                 alt="{{ media.description | default: page.title }}" class="gallery-image" data-zoomable>
                             {% endif %}
-                            {% if media.description %}
-                            <p class="media-caption">{{ media.description }}</p>
+                            {% assign media_caption = media.description | strip %}
+                            {% if media_caption != "" %}
+                            <p class="media-caption">{{ media_caption | escape }}</p>
                             {% endif %}
                         </div>
                         {% endif %}

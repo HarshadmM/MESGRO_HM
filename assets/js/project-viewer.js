@@ -273,15 +273,78 @@ class ProjectViewer {
     }
 
     /**
-     * Setup general image zoom using medium-zoom
+     * Setup an accessible lightbox for project images
      */
     setupImageZoom() {
-        if (typeof mediumZoom !== 'undefined') {
-            mediumZoom('.gallery-image:not([data-zoomable])', {
-                background: 'rgba(0, 0, 0, 0.8)',
-                scrollOffset: 40
+        const images = document.querySelectorAll('.gallery-image, .project-lead-image');
+        if (!images.length) return;
+
+        const dialog = document.createElement('dialog');
+        dialog.className = 'image-lightbox';
+        dialog.id = 'image-lightbox';
+        dialog.setAttribute('aria-label', 'Image preview');
+        dialog.innerHTML = `
+            <button class="image-lightbox-close" type="button" aria-label="Close image preview">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <figure class="image-lightbox-figure">
+                <img class="image-lightbox-image" alt="">
+                <figcaption class="image-lightbox-caption" hidden></figcaption>
+            </figure>
+        `;
+        document.body.appendChild(dialog);
+
+        const preview = dialog.querySelector('.image-lightbox-image');
+        const caption = dialog.querySelector('.image-lightbox-caption');
+        const closeButton = dialog.querySelector('.image-lightbox-close');
+        let triggerImage = null;
+
+        const openImage = (image) => {
+            triggerImage = image;
+            preview.src = image.currentSrc || image.src;
+            preview.alt = image.alt;
+
+            const imageCaption = image.closest('figure')
+                ?.querySelector('figcaption, .media-caption')
+                ?.textContent.trim() || '';
+            caption.textContent = imageCaption;
+            caption.hidden = !imageCaption;
+
+            image.setAttribute('aria-expanded', 'true');
+            dialog.showModal();
+            closeButton.focus({ preventScroll: true });
+        };
+
+        const closeDialog = () => {
+            if (dialog.open) dialog.close();
+        };
+
+        closeButton.addEventListener('click', closeDialog);
+        dialog.addEventListener('click', (event) => {
+            if (event.target === dialog) closeDialog();
+        });
+        dialog.addEventListener('close', () => {
+            triggerImage?.setAttribute('aria-expanded', 'false');
+            triggerImage?.focus({ preventScroll: true });
+            triggerImage = null;
+        });
+
+        images.forEach((image) => {
+            image.tabIndex = 0;
+            image.setAttribute('role', 'button');
+            image.setAttribute('aria-haspopup', 'dialog');
+            image.setAttribute('aria-controls', dialog.id);
+            image.setAttribute('aria-expanded', 'false');
+            image.setAttribute('aria-label', `Enlarge image: ${image.alt || 'project image'}`);
+
+            image.addEventListener('click', () => openImage(image));
+            image.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    openImage(image);
+                }
             });
-        }
+        });
     }
 
     /**
