@@ -6,8 +6,6 @@ permalink: /about/
 sketch_gallery:
   - image: "/assets/images/sketch7.jpeg"
     alt: "Ink sketch of two hands meeting over a draped garment."
-  - image: "/assets/images/sketch9.jpeg"
-    alt: "Ink figure study of a person leaning forward, with a pen beside the page."
   - image: "/assets/images/sketch10.jpeg"
     alt: "Ink study of a person's head, shoulders, and back viewed from behind."
   - image: "/assets/images/sketch11.jpeg"
