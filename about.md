@@ -20,8 +20,6 @@ sketch_gallery:
     alt: "Ink drawing of a fantastical long-necked creature."
   - image: "/assets/images/sketch6.jpg"
     alt: "Pencil character portrait in a sketchbook outdoors."
-  - image: "/assets/images/sketch_.jpg"
-    alt: "Page of rough pencil studies of two character heads."
 physical_gallery:
   - video: "/assets/images/lift.mp4"
     alt: "Harshad lifting weights during a strength-training session."

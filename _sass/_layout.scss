@@ -288,17 +288,16 @@ a.nav-link.active::after {
   transform: translateX(0) scaleX(1);
 }
 
-@media (hover: none) {
-  .contact-action:hover .contact-action-icon {
+@media (max-width: 768px) {
+  .contact-action:hover .contact-action-icon,
+  .contact-action:focus-visible .contact-action-icon {
     transform: none;
     box-shadow: 0 8px 28px rgba(0, 0, 0, 0.34);
     background: var(--primary-color);
   }
 
-  .contact-action:hover .contact-action-label {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(-0.65rem) scaleX(0.88);
+  .contact-action-label {
+    display: none;
   }
 }
 
