@@ -14,11 +14,12 @@
                 Your browser does not support the video tag.
             </video>
             {% else %}
+            {% assign image_alt = media.alt | default: media.description | default: page.title %}
             <img src="{{ media.file | relative_url }}"
-                alt="{{ media.description | default: page.title | escape }}"
+                alt="{{ image_alt | escape }}"
                 class="gallery-image" data-zoomable data-rotation="{{ media.rotation | default: 0 }}" loading="lazy">
             {% endif %}
-            {% assign media_caption = media.description | strip %}
+            {% assign media_caption = media.caption | default: media.description | strip %}
             {% if media_caption != "" %}
             <figcaption>{{ media_caption | escape }}</figcaption>
             {% endif %}

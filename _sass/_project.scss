@@ -1515,6 +1515,10 @@ pre[class*="language-"] {
   grid-template-columns: minmax(0, 1fr);
 }
 
+.gallery-group--graph .gallery-group-items {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .gallery-group-item {
   min-width: 0;
   margin: 0;
@@ -1535,6 +1539,10 @@ pre[class*="language-"] {
 
 .gallery-group-item .gallery-image[data-rotation="180"] {
   transform: rotate(180deg);
+}
+
+.gallery-group--graph .gallery-group-item .gallery-image {
+  max-height: none;
 }
 
 .gallery-group-item .gallery-video {

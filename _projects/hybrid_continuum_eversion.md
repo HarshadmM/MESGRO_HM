@@ -32,6 +32,12 @@ gallery_sections:
           - position: "down"
             file: "/assets/images/projects/hybrid_robot/Downward%20bending%20continuum.jpg"
             description: "Downward continuum bend"
+      - title: "Active RCJ segments and bending performance"
+        layout: "graph"
+        items:
+          - file: "/assets/images/projects/hybrid_robot/maximum_bending_vs_rcj_segments.png"
+            alt: "Bar and line chart: maximum bending angle increases from 35° at 6 active RCJ segments to 90° at 10 segments, while relative tendon slack also rises."
+            caption: "Figure 4.1. Effect of active RCJ segment number on maximum bending angle and tendon slack."
       - title: "Horizontal movement"
         layout: "stack"
         items:
@@ -54,6 +60,12 @@ gallery_sections:
             description: "Eversion drop test 2"
           - file: "/assets/images/projects/hybrid_robot/Eversion%20drop%20test%203.jpg"
             description: "Eversion drop test 3"
+      - title: "Transitioner-cap response to maintenance pressure"
+        layout: "graph"
+        items:
+          - file: "/assets/images/projects/hybrid_robot/transitioner_bending_vs_pressure.png"
+            alt: "Line chart of transitioner-cap bending angle against maintenance pressure: the angle peaks at 40° near 0.7 bar and returns to 0° at 3 bar."
+            caption: "Figure 4.3. Measured bending angle of the transitioner cap as a function of maintenance pressure."
       - title: "Bending tests"
         layout: "pair"
         items:
