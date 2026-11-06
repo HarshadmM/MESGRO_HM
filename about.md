@@ -93,7 +93,8 @@ half_marathon_certificates:
       <p>
         <strong>MRes Medical Robotics and Image-Guided Intervention</strong><br>
         Imperial College London · Distinction<br>
-        Research project mark: 75%.
+        Overall mark: 72.73%<br>
+        Research project mark: 74.48%.
       </p>
       <p>
         <strong>MBBS</strong><br>
