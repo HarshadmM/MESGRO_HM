@@ -38,6 +38,11 @@ This MRes group project focused on human-in-the-loop teleoperation of a simulate
 
 At this scale, visual feedback alone can make subtle contact forces difficult to judge. The wearable interface explored tactile feedback as one part of a wider microrobotic control and actuation system.
 
+<figure class="hybrid-media">
+<img src="{{ '/assets/images/projects/haptic/system_architecture.png' | relative_url }}" alt="Project overview showing the physical glove prototype, wearable interface electronics, the control interface, and MATLAB/Simulink simulation." class="gallery-image" data-zoomable loading="lazy" decoding="async">
+<figcaption>System overview linking the wearable interface, control software, and simulated microrobot.</figcaption>
+</figure>
+
 ## Project team and supervision
 
 - **Supervisor — Dr. Belal:** Lecturer (Assistant Professor), University of Bath.
@@ -49,6 +54,16 @@ At this scale, visual feedback alone can make subtle contact forces difficult to
 ## Microrobotic control and actuation
 
 The control path connected Arduino sensor inputs and wearable actuators, a C# serial interface, and a MATLAB/Simulink microrobot simulation, with UDP carrying data between the interface and simulation. Operator inputs informed the simulated robot, while simulation outputs returned to the glove's physical actuators. The microrobot remained simulated; the physical prototype was the wearable interface and its feedback hardware.
+
+<figure class="hybrid-media">
+<img src="{{ '/assets/images/projects/haptic/simulink_feedback_path.png' | relative_url }}" alt="MATLAB/Simulink teleoperation model showing coordinate transformation, safety and control logic, microrobot model, haptic feedback, and data transmission." class="gallery-image" data-zoomable loading="lazy" decoding="async">
+<figcaption>Simulink environment for microrobot control and return haptic feedback.</figcaption>
+</figure>
+
+<figure class="hybrid-media">
+<img src="{{ '/assets/images/projects/haptic/teleoperation_control_interface.png' | relative_url }}" alt="C# teleoperation interface with serial-port controls, sensor data monitor, UDP communication panel, and live plots from four FSR sensors." class="gallery-image" data-zoomable loading="lazy" decoding="async">
+<figcaption>Control interface for sensor monitoring and communication with the MATLAB simulation.</figcaption>
+</figure>
 
 ## Haptic interface design
 
@@ -66,9 +81,24 @@ The concepts followed shared design goals: preserve finger movement and comfort 
 
 In the first prototype, the system used four force-sensitive resistors (FSRs), read through Arduino analog inputs A0–A3 and voltage-divider circuits. As the finger interface bent or compressed, the FSR readings changed. The project software normalized the sensor values and used them in the feedback loop.
 
+<figure class="hybrid-media">
+<img src="{{ '/assets/images/projects/haptic/fsr_sensor_operating_principle.png' | relative_url }}" alt="FSR sensor process from finger pressure and resistance change through a voltage divider and Arduino analog inputs to serial data." class="gallery-image" data-zoomable loading="lazy" decoding="async">
+<figcaption>Sensor operating principle used to turn local finger pressure into data for the feedback loop.</figcaption>
+</figure>
+
 The team considered a flex sensor strip, but its size and distributed resistance response made it difficult to identify where bending occurred and map the reading clearly to finger motion. Point-pressure FSRs offered a more localized sensing area. Their response is nonlinear, so calibration is needed before sensor values can represent motion or contact consistently.
 
 The feedback concept combined coin-style eccentric rotating mass (ERM) motors for vibration with a servo-driven soft tube for bending or tension cues. A C# interface handled serial-port selection and sensor monitoring, and bridged data over UDP to MATLAB/Simulink, where the simulated microrobot ran. Arduino handled the sensor and actuator connection at the hardware end.
+
+<figure class="hybrid-media">
+<img src="{{ '/assets/images/projects/haptic/arduino_fsr_erm_circuit.png' | relative_url }}" alt="Arduino circuit with four FSR channels, two ERM vibration motors using transistor drivers and diode protection, and a servo." class="gallery-image" data-zoomable loading="lazy" decoding="async">
+<figcaption>Circuit design for FSR sensing, vibration motors, and servo actuation.</figcaption>
+</figure>
+
+<figure class="hybrid-media">
+<img src="{{ '/assets/images/projects/haptic/vibration_operating_principle.png' | relative_url }}" alt="Four-stage vibration feedback path from input signal through vibration-level mapping and PWM output to ERM motor actuation." class="gallery-image" data-zoomable loading="lazy" decoding="async">
+<figcaption>Vibration feedback maps normalized signal levels to PWM-driven ERM motor output.</figcaption>
+</figure>
 
 ## Prototype evolution: magnetic-encoder glove (early August 2026)
 
