@@ -1130,6 +1130,60 @@
   font-size: 0.9rem;
 }
 
+.project-system-details {
+  margin: var(--spacing-xl) 0;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--background-color);
+  overflow: hidden;
+}
+
+.project-system-details > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  color: var(--text-primary);
+  background: var(--surface-color);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  list-style: none;
+}
+
+.project-system-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-system-details > summary::after {
+  flex: 0 0 auto;
+  color: var(--text-secondary);
+  content: "+";
+  font-size: 1.25rem;
+}
+
+.project-system-details[open] > summary::after {
+  content: "−";
+}
+
+.project-system-details > summary:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: -2px;
+}
+
+.project-system-details-content {
+  padding: var(--spacing-lg);
+  border-top: 1px solid var(--border-color);
+}
+
+.project-system-details-content > :first-child {
+  margin-top: 0;
+}
+
+.project-system-details-content > :last-child {
+  margin-bottom: 0;
+}
+
 /* Components Table */
 .components-table {
   width: 100%;
@@ -1184,7 +1238,6 @@
   font-size: 0.85rem;
   color: var(--text-primary);
 }
-
 
 /* Code Section Styles */
 .code-list-container {
@@ -1241,7 +1294,6 @@
 .file-download-icon:hover {
   color: var(--primary-color);
 }
-
 
 .code-block-content {
   background: #1e1e1e;
@@ -1304,7 +1356,6 @@
   background: var(--primary-color);
   color: white;
 }
-
 
 .code-block-content pre {
   margin: 0;
