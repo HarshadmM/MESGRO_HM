@@ -38,42 +38,13 @@ This MRes group project focused on human-in-the-loop teleoperation of a simulate
 
 At this scale, visual feedback alone can make subtle contact forces difficult to judge. The wearable interface explored tactile feedback as one part of a wider microrobotic control and actuation system.
 
-<details class="project-details project-details--system">
-<summary>Overall system and contributions by other members</summary>
+## Project team and supervision
 
-<div class="project-details-content">
-<h4>Overall system</h4>
-<p>The project linked the wearable interface, a C# teleoperation tool, and a MATLAB/Simulink microrobot simulation. Arduino read the four FSR inputs and drove the vibration motors and servo; serial and UDP carried data between the hardware, host software, and simulation.</p>
-
-<div class="project-system-gallery">
-<figure class="project-system-figure">
-<img src="{{ '/assets/images/projects/haptic/system_architecture.png' | relative_url }}" alt="Overview of the wearable interface, control software, and MATLAB/Simulink microrobot simulation" class="gallery-image" loading="lazy" decoding="async">
-<figcaption>System overview showing the wearable electronics, control software, and simulated microrobot connected as one teleoperation system.</figcaption>
-</figure>
-<figure class="project-system-figure">
-<img src="{{ '/assets/images/projects/haptic/arduino_fsr_erm_circuit.png' | relative_url }}" alt="Arduino circuit with four force-sensitive resistor inputs, vibration motors, transistor drivers, and servo connection" class="gallery-image" loading="lazy" decoding="async">
-<figcaption>Arduino circuit for the four FSR inputs and the wearable vibration and servo feedback.</figcaption>
-</figure>
-<figure class="project-system-figure">
-<img src="{{ '/assets/images/projects/haptic/simulink_feedback_path.png' | relative_url }}" alt="MATLAB Simulink diagram of coordinate transformation, robot model, haptic feedback strategy, and UDP data transmission" class="gallery-image" loading="lazy" decoding="async">
-<figcaption>Simulink model showing coordinate transformation, the microrobot model, haptic feedback, and the UDP data path.</figcaption>
-</figure>
-<figure class="project-system-figure">
-<img src="{{ '/assets/images/projects/haptic/teleoperation_control_interface.png' | relative_url }}" alt="Teleoperation control software with serial port controls, data monitors, UDP interface, and live FSR plots" class="gallery-image" loading="lazy" decoding="async">
-<figcaption>Control interface with serial-port configuration, live sensor plots, and the UDP link to the simulation.</figcaption>
-</figure>
-</div>
-
-<h4>Project supervision and contributions by other members</h4>
-<ul>
-<li><strong>Supervisor — Dr. Belal:</strong> Lecturer (Assistant Professor), University of Bath.</li>
-<li><strong><a href="https://www.linkedin.com/in/haoyun-feng-061340393/">Haoyun Feng</a>:</strong> MATLAB and integration.</li>
-<li><strong>Yacui Zhao:</strong> Overall project oversight, drawing on previous experience, and PID.</li>
-<li><strong>Xueyi Fu:</strong> Electronics.</li>
-<li><strong>Cai Jingtong:</strong> PID and control in collaboration with Yacui Zhao.</li>
-</ul>
-</div>
-</details>
+- **Supervisor — Dr. Belal:** Lecturer (Assistant Professor), University of Bath.
+- **[Haoyun Feng](https://www.linkedin.com/in/haoyun-feng-061340393/):** MATLAB and integration.
+- **Yacui Zhao:** Overall project oversight, drawing on previous experience, and PID.
+- **Xueyi Fu:** Electronics.
+- **Cai Jingtong:** PID and control in collaboration with Yacui Zhao.
 
 ## Microrobotic control and actuation
 
