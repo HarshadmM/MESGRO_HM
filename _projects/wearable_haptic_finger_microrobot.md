@@ -38,10 +38,7 @@ This MRes group project focused on human-in-the-loop teleoperation of a simulate
 
 At this scale, visual feedback alone can make subtle contact forces difficult to judge. The wearable interface explored tactile feedback as one part of a wider microrobotic control and actuation system.
 
-<figure class="hybrid-media">
-<img src="{{ '/assets/images/projects/haptic/system_architecture.png' | relative_url }}" alt="Project overview showing the physical glove prototype, wearable interface electronics, the control interface, and MATLAB/Simulink simulation." class="gallery-image" data-zoomable loading="lazy" decoding="async">
-<figcaption>System overview linking the wearable interface, control software, and simulated microrobot.</figcaption>
-</figure>
+
 
 ## Project team and supervision
 
@@ -61,8 +58,8 @@ The control path connected Arduino sensor inputs and wearable actuators, a C# se
 </figure>
 
 <figure class="hybrid-media">
-<img src="{{ '/assets/images/projects/haptic/teleoperation_control_interface.png' | relative_url }}" alt="C# teleoperation interface with serial-port controls, sensor data monitor, UDP communication panel, and live plots from four FSR sensors." class="gallery-image" data-zoomable loading="lazy" decoding="async">
-<figcaption>Control interface for sensor monitoring and communication with the MATLAB simulation.</figcaption>
+<img src="{{ '/assets/images/projects/haptic/teleoperation_control_interface.png' | relative_url }}" alt="Four time-series plots showing the FSR sensor channels S1–S4 during operation." class="gallery-image" data-zoomable loading="lazy" decoding="async">
+<figcaption>Live traces from the four FSR channels during teleoperation.</figcaption>
 </figure>
 
 ## Haptic interface design
