@@ -22,6 +22,7 @@ permalink: /publications/
           <p class="publication-authors">Team: Amy Lai, Anton Gerasimov, Hetarth Bhatt, Harshad Malik</p>
           <div class="publication-links">
             <a href="https://imperialhackspace.com/our-events/hackstarter-26/" target="_blank" rel="noopener noreferrer">Hackstarter 2026 winners</a>
+            <a href="https://imperialhackspace.com/successstories/neoair/" target="_blank" rel="noopener noreferrer">NeoAir success story · Imperial Advanced Hackspace</a>
             <a href="{{ '/projects/neoair/' | relative_url }}">View the NeoAir project</a>
           </div>
         </article>
