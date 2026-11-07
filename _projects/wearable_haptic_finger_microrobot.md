@@ -4,7 +4,7 @@ title: "Wearable Haptic Interface for Microrobot Teleoperation"
 description: "A microrobotic teleoperation project that evolved from a wearable finger prototype into a magnetic-encoder glove for operator-side joint-angle sensing and haptic feedback."
 date: 2025-12-12
 featured_homepage: true
-categories: [Microrobotics, Control, Microactuation, Mechatronics, Haptics, Medical Robotics, 3D Printing, Arduino]
+categories: [Microrobotics, Control, Microactuation, Mechatronics, Haptics, Medical Robotics, "CAD & Design", 3D Printing, Arduino]
 featured_image: "/assets/images/projects/haptic/Mechanical%20prototype.jpeg"
 models:
   - file: "/assets/models/haptic-glove/haptic%20glove2.glb"

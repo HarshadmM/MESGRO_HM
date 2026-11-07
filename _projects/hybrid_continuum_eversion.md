@@ -4,7 +4,7 @@ title: "Hybrid Continuum-Eversion Robot"
 description: "A deployable robot exploring how basic medical intervention could begin before casualty evacuation in debris-filled disaster environments."
 date: 2026-09-01
 featured_homepage: true
-categories: [Robotics, Mechatronics, 3D Printing, Arduino]
+categories: [Robotics, Mechatronics, Control, "CAD & Design", 3D Printing, Arduino]
 featured_image: "/assets/images/projects/hybrid_robot/Front%20profile.jpg"
 hero_image: "/assets/images/projects/hybrid_robot/Front_%20section%20with%20lumen%20opening.jpeg"
 models:

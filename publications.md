@@ -20,6 +20,10 @@ permalink: /publications/
           <h2>Hackstarter Award: Open Project</h2>
           <p class="publication-venue"><strong>NeoAir</strong> won the Open Project award at Hackstarter 2026, the Imperial College Advanced Hackspace programme final.</p>
           <p class="publication-authors">Team: Amy Lai, Anton Gerasimov, Hetarth Bhatt, Harshad Malik</p>
+          <figure class="award-team-photo">
+            <img src="{{ '/assets/images/projects/about_page/NeoAir%20team.jpg' | relative_url }}" alt="NeoAir team members Amy Lai, Anton Gerasimov, Hetarth Bhatt, and Harshad Malik with their Hackstarter Open Project certificate." class="gallery-image" data-zoomable loading="lazy" decoding="async">
+            <figcaption>NeoAir team with the Hackstarter Open Project certificate.</figcaption>
+          </figure>
           <div class="publication-links">
             <a href="https://imperialhackspace.com/our-events/hackstarter-26/" target="_blank" rel="noopener noreferrer">Hackstarter 2026 winners</a>
             <a href="https://imperialhackspace.com/successstories/neoair/" target="_blank" rel="noopener noreferrer">NeoAir success story · Imperial Advanced Hackspace</a>
