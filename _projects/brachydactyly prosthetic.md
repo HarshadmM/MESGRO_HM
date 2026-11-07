@@ -3,7 +3,7 @@ layout: project
 title: "Right-Hand Partial Prosthesis"
 description: "A client-specific partial hand prosthesis for brachydactyly, using an intact thumb to drive a capstan-based tendon mechanism."
 date: 2026-10-17
-categories: [Assistive Technology, Prosthetics, Mechanical Design]
+categories: [Assistive Technology, Prosthetics, Mechanical Design, "CAD & Design", 3D Printing]
 featured_image: "/assets/images/projects/brachydactyly/right_fullprosthesis.jpeg"
 gallery_groups:
   - title: "Brachydactyly prosthesis"

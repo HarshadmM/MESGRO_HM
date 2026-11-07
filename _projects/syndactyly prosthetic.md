@@ -3,7 +3,7 @@ layout: project
 title: "Left-Hand Partial Prosthesis"
 description: "A client-specific partial hand prosthesis for universal brachydactyly and syndactyly of the middle and ring fingers, using a spring-assisted claw-and-plate mechanism."
 date: 2026-10-17
-categories: [Assistive Technology, Prosthetics, Mechanical Design]
+categories: [Assistive Technology, Prosthetics, Mechanical Design, "CAD & Design", 3D Printing]
 featured_image: "/assets/images/projects/syndactyly/syndactyly_prosthetic%20solution.gif"
 hero_image: "/assets/images/projects/syndactyly/syndactyly_prosthetic%20solution.gif"
 gallery_groups:
