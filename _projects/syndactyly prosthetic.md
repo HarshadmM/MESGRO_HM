@@ -6,6 +6,9 @@ date: 2026-10-17
 categories: [Assistive Technology, Prosthetics, Mechanical Design, "CAD & Design", 3D Printing]
 featured_image: "/assets/images/projects/syndactyly/syndactyly_prosthetic%20solution.gif"
 hero_image: "/assets/images/projects/syndactyly/syndactyly_prosthetic%20solution.gif"
+models:
+  - file: "/assets/models/syndactyly/left-hand-prosthesis.glb"
+    description: "Interactive 3D model of the elbow-powered left-hand partial prosthesis."
 gallery_groups:
   - title: "Prototype development"
     placement: "mechanism"
