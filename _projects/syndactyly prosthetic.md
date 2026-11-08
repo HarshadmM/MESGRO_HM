@@ -8,7 +8,7 @@ featured_image: "/assets/images/projects/syndactyly/syndactyly_prosthetic%20solu
 hero_image: "/assets/images/projects/syndactyly/syndactyly_prosthetic%20solution.gif"
 models:
   - file: "/assets/models/syndactyly/left-hand-prosthesis.glb"
-    description: "3D scan showing the left hand for this client, with shortened middle and ring fingers joined together; used to inform the prosthesis design."
+    description: "Interactive 3D model of the elbow-powered left-hand partial prosthesis."
 gallery_groups:
   - title: "Prototype development"
     placement: "mechanism"
