@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Left-Hand Partial Prosthesis"
-description: "A client-specific partial hand prosthesis for universal brachydactyly and syndactyly of the middle and ring fingers, using a spring-assisted claw-and-plate mechanism."
+description: "A client-specific, elbow-powered partial hand prosthesis for universal brachydactyly and syndactyly of the middle and ring fingers, using a spring-assisted claw-and-plate mechanism."
 date: 2026-10-17
 categories: [Assistive Technology, Prosthetics, Mechanical Design, "CAD & Design", 3D Printing]
 featured_image: "/assets/images/projects/syndactyly/syndactyly_prosthetic%20solution.gif"
@@ -25,7 +25,7 @@ This project was developed in collaboration with the [Imperial College London Pr
 
 ## Mechanism
 
-The prosthesis uses a claw-and-plate arrangement assembled from 3D-printed plates, torsion springs, and Bowden sleeves. These components form the mechanical basis of the client-specific design.
+The prosthesis uses a claw-and-plate arrangement assembled from 3D-printed plates, torsion springs, and Bowden sleeves. These components form the mechanical basis of the client-specific design. It is powered only by elbow movement: flexion closes the claw and draws the grasping end toward the wearer, while extension opens the clamps and pushes the arm outward. No motor or electronic actuator is used.
 
 <div class="project-gallery-anchor" data-gallery-anchor="mechanism" aria-hidden="true"></div>
 
