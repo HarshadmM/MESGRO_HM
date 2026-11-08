@@ -7,8 +7,8 @@ categories: [Assistive Technology, Prosthetics, Mechanical Design, "CAD & Design
 featured_image: "/assets/images/projects/syndactyly/syndactyly_prosthetic%20solution.gif"
 hero_image: "/assets/images/projects/syndactyly/syndactyly_prosthetic%20solution.gif"
 models:
-  - file: "/assets/models/syndactyly/left-hand-prosthesis.glb"
-    description: "Interactive 3D model of the elbow-powered left-hand partial prosthesis."
+  - file: "/assets/models/syndactyly/left-hand-scan.glb"
+    description: "3D scan showing the left hand of the client, with shortened middle and ring fingers joined together. The scan informed the prosthesis design."
 gallery_groups:
   - title: "Prototype development"
     placement: "mechanism"

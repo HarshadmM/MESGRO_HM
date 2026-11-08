@@ -6,8 +6,8 @@ date: 2026-10-17
 categories: [Assistive Technology, Prosthetics, Mechanical Design, "CAD & Design", 3D Printing]
 featured_image: "/assets/images/projects/brachydactyly/right_fullprosthesis.jpeg"
 models:
-  - file: "/assets/models/brachydactyly/right-hand-prosthesis.glb"
-    description: "Interactive 3D model of the right-hand partial prosthesis."
+  - file: "/assets/models/brachydactyly/right-hand-scan.glb"
+    description: "3D scan showing the right hand of the client, with shortened fingers and an intact thumb. The scan informed the prosthesis design."
 gallery_groups:
   - title: "Brachydactyly prosthesis"
     placement: "mechanism"
