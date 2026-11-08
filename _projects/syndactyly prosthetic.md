@@ -8,7 +8,7 @@ featured_image: "/assets/images/projects/syndactyly/syndactyly_prosthetic%20solu
 hero_image: "/assets/images/projects/syndactyly/syndactyly_prosthetic%20solution.gif"
 models:
   - file: "/assets/models/syndactyly/left-hand-scan.glb"
-    description: "3D scan showing the left hand of the client, with shortened middle and ring fingers joined together. The scan informed the prosthesis design."
+    description: "3D scan showing the left hand of the client, with shortened middle and ring fingers joined together."
 gallery_groups:
   - title: "Prototype development"
     placement: "mechanism"
