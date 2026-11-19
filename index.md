@@ -89,6 +89,13 @@ layout: default
                 </span>
               {% endif %}
               
+              {% if project.github_url %}
+                <a href="{{ project.github_url | escape }}" class="feature-badge-small github-feature-badge" title="View source code on GitHub" aria-label="View {{ project.title | escape }} on GitHub" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span>GitHub</span>
+                </a>
+              {% endif %}
+              
               {% if project.schematics %}
                 <span class="feature-badge-small" title="Schematics">
                   <i class="fas fa-microchip"></i>

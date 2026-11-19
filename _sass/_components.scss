@@ -489,6 +489,16 @@
   border: 1px solid var(--border-color);
 }
 
+.github-feature-badge {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.github-feature-badge:hover,
+.github-feature-badge:focus-visible {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
 .showcase-actions {
   display: flex;
   flex-wrap: wrap;
