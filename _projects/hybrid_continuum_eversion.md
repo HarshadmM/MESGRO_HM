@@ -2,6 +2,7 @@
 layout: project
 title: "Hybrid Continuum-Eversion Robot"
 description: "A deployable robot exploring how basic medical intervention could begin before casualty evacuation in debris-filled disaster environments."
+github_url: "https://github.com/HarshadmM/MRes_thesis_Hybrid_robot"
 date: 2026-09-01
 featured_homepage: true
 categories: [Robotics, Mechatronics, Control, "CAD & Design", 3D Printing, Arduino]

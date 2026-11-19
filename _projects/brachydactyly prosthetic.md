@@ -27,7 +27,7 @@ gallery_groups:
 
 ## Project overview
 
-This design was one of two individualized partial-hand prostheses that I developed and supervised. It was created for a client with brachydactyly and an intact thumb, making use of the movement available in the thumb and shortened digit stubs.
+This design was one of two individualized partial-hand prostheses that I helped develop and supervise. It was created for a client with brachydactyly and an intact thumb, making use of the movement available in the thumb and shortened digit stubs.
 
 This project was developed in collaboration with the [Imperial College London Prosthetics Society](https://www.linkedin.com/company/imperial-college-london-prosthetics-society/posts/?feedView=all).
 
@@ -45,4 +45,4 @@ The prosthesis uses a capstan-drive tendon mechanism. The intact thumb acts as t
 
 ## My contribution
 
-I developed and supervised this client-specific prosthesis concept, focusing on the capstan drive and tendon mechanism and how it could use the client's available thumb and stub motion.
+I helped develop and supervise this client-specific prosthesis concept, focusing on the capstan drive and tendon mechanism and how it could use the client's available thumb and stub motion.
